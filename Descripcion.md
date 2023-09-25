@@ -1,1 +1,0 @@
-## Descripción de la Empresa, del Proceso de Negocio Elegido y Motivación
