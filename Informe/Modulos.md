@@ -29,3 +29,13 @@
 
 ### Responsabilidades: Administra el personal, incluyendo contratación, capacitación y evaluación del desempeño.
 ### Interacciones con Otros Módulos: Interactúa con el Módulo de Atención al Cliente y Módulo de Ventas de Servicios.
+
+## Módulo de Ventas de Servicios
+
+### Responsabilidades: Gestiona las ventas de servicios de mantenimiento, reparación y capacitación a los clientes, elabora presupuestos y contratos.
+### Interacciones con Otros Módulos: Interactúa con el Módulo de Atención al Cliente y Módulo de Mantenimiento y Reparación.
+
+## Módulo de Gestión de Recursos Humanos
+
+### Responsabilidades: Administra el personal, incluyendo contratación, capacitación y evaluación del desempeño.
+### Interacciones con Otros Módulos: Interactúa con el Módulo de Atención al Cliente y Módulo de Ventas de Servicios.
