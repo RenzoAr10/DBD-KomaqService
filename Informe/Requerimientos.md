@@ -13,5 +13,7 @@ Requerimientos funcionales
    3.-El cliente escoge el tipo de solicitud
    4.-El cliente escoge las maquinarias disponibles que pedirá
    5.-El sistema guarda el nuevo servicio
-   7.-El sistema 
+   7.-El caso de uso termina
+
+3) 
    
