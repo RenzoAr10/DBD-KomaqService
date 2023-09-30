@@ -1,6 +1,6 @@
 Requerimientos funcionales
 
-1)Creacion de usuario
+1) Creacion de usuario
    1.-El usuario accede a la página oficial 
    2.-El usuario entra a la sección de Sesión y escoge 'Crear cuenta'
    3.-El usuario proporciona su nombre, apellido, DNI, correo electrónico y contraseña además de confirmar los Terminos y condiciones.
