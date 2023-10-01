@@ -14,7 +14,7 @@ Requerimientos funcionales
    4.-El sistema guarda el nuevo servicio.
    5.-El caso de uso termina.
 
-4) Pagar Servicio
+3) Pagar Servicio
    1.-El cliente accede a su cuenta.
    2.-El cliente selecciona la seccion Recibo.
    3.-El sistema mostrará un resumen de los gastos del mes de los servicios que ya han sidos completados.
