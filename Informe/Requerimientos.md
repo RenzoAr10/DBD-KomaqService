@@ -12,8 +12,18 @@ Requerimientos funcionales
    2.-El cliente accede a su cuenta
    3.-El cliente escoge el tipo de solicitud
    4.-El cliente escoge las maquinarias disponibles que pedirá
-   5.-El sistema guarda el nuevo servicio
+   5.-El cliente especifica el tiempo de préstamo
+   6.-El sistema guarda el nuevo servicio
    7.-El caso de uso termina
 
-3) 
-   
+3) Pedir servicio de diagnostico
+   1.-El sistema actualiza los bienes y servicios disponibles
+   2.-El cliente accede a su cuenta
+   3.-El cliente escoge el tipo de solicitud
+   4.-El cliente especifica la informacion de la maquinaria a diagnosticar
+   5.-El sistema guarda el nuevo servicio
+   6.-El caso de uso termina
+
+) Pagar Servicio
+   Tras terminar la solicitud del servicio
+   1.-
