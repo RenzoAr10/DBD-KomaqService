@@ -1,5 +1,5 @@
-#PROTOTIPO
-#Cliente
+# PROTOTIPO
+# Cliente
 ## Pantalla de inicio de sesión:
 
 El cliente o administrador (empleado) tendrá que ingresar su usuario y contraseña. Para ambos casos, se cuenta con la opción de recordar datos para el próximo inicio de sesión. Si el cliente es nuevo y no cuenta con una cuenta, podrá registrarse en el sistema.
