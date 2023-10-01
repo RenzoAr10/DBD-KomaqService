@@ -44,7 +44,7 @@ Luego de iniciar sesión el personal de la empresa, podrá ver los datos asociad
 ## Listar Solicitudes 
 El empleado podrá ver las solicitudes de todos los clientes, pudiendo filtrar estas mismas por , Cliente (contratante) , el jefe de proyecto (usuario de la cuenta) ,  Tipo de actividad del servicio brindada
 
-
+![Texto Alternativo](/Documentacion%20de%20Soporte/pedidos-admin.png)
 
 ## Visualizar datos y/o modificar estado:
 El personal de la empresa podrá ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes 
