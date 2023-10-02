@@ -28,9 +28,23 @@
 ## Módulo de Gestion de pedidos y solicitudes
 ### Funcion:  permitir procesar y gestionar las solicitudes y pedidos, ademas de informar a los actores los cuales pueden hacer un seguimiento de los servicios solicitados 
 ### Responsabilidades: 
-#### Gestiona la comunicación con los clientes
-#### Recibe solicitudes de servicio.
-#### la empresa evaluará la solicitud, cambiando el estado de esta, la cual puede tomar 4 estados(Pendiente , en curso , Rechazado , Completado)  , en los datos solicitados , se menciona al contratante , el cual será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. 
+#### °  Todos los usuarios deben registrarse y autenticarse en la plataforma para acceder a las funcionalidades relacionadas con la gestión de pedidos y solicitudes.
+#### °  Los usuarios deben gerantizar, conjuntamente con Komaq, garantizar la seguridad cumpliendo con las regulaciones de privacidad aplicables.
+#### °  Los empleados evaluaran las solicitudes, cambiando el estado de esta, la cual puede tomar 4 estados(Pendiente , en curso , Rechazado , Completado)
+#### °  Los clientes pueden iniciar nuevas solicitudes o pedidos de servicios o productos a través de la plataforma.
+#### °   Los clientes pueden realizar un seguimiento del estado de sus solicitudes o pedidos y recibir notificaciones cuando cambia su estado.
+####  ° Los clientes pueden comunicarse directamente con el contratante asignado para recibir asistencia o aclaraciones adicionales sobre sus solicitudes.
+#### °  Los contratantes son responsables de comunicarse directamente con los clientes que han solicitado servicios y proporcionarles asistencia o información adicional.
+####  °  Los contratantes pueden actualizar el estado de las solicitudes o pedidos asignados a ellos a medida que avanzan en su proceso de resolución.
+#### °   Los contratantes pueden generar informes de desempeño relacionados con las solicitudes que han manejado.
+####  ° Los empleados pueden acceder a las solicitudes asignadas a ellos y actualizar su estado a medida que progresan.
+#### °  Los empleados pueden comunicarse con otros empleados, clientes o contratantes en relación con las solicitudes o pedidos en curso
+#### °  Los empleados pueden registrar el tiempo empleado en cada solicitud para fines de seguimiento y facturación si es necesario.
+####  ° Los administradores pueden agregar, editar o eliminar usuarios dentro del sistema, incluyendo clientes, empleados y contratantes.
+####  ° Los administradores pueden supervisar y administrar el flujo de trabajo de todas las solicitudes y pedidos en la plataforma.
+####  ° Los administradores pueden asignar solicitudes o pedidos a empleados o contratantes específicos, según la disponibilidad y la capacidad.
+####  ° Los administradores pueden intervenir en caso de problemas o disputas en el proceso de gestión de solicitudes.
+
 
 
 ### Responsabilidades: 
