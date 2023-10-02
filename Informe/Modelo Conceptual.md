@@ -41,7 +41,7 @@ Tabla 1
 
 **Entidad: Informe** 
 
-**Semántica: Representa un registro detallado y documentado de las actividades de servicios realizados.**
+**Semántica: Representa un registro detallado y documentado de las actividades que se tiene previsto realizar.**
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/Informe.png?raw=true)
 
