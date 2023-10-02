@@ -3,9 +3,11 @@
 ## Módulo de Interaccion con el usuario
 ### Funcion: permitir a los clientes y empleados interactuar con la empresa a través de la aplicación.
 ### Responsabilidades: 
-#### El cliente o empleado tendrá que ingresar su usuario y contraseña.
-#### Si el cliente es nuevo y no cuenta con una cuenta, podrá registrarse en el sistema.
-#### Para ambos casos, se cuenta con la opción de recordar datos para el próximo inicio de sesión.
+#### El cliente al ser nuevo no cuenta con una cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
+#### Un empleado al ser nuevo y no tener cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
+#### Un empleado al ser nuevo en algun cargo (admin) o al cambiarse de area de trabajo en la empresa entonces este podrá registrarse en el sistema con un nuevo cargo o en una nueva area.
+#### El cliente o empleado podra loguarse al sistema con su usuario y contraseña.
+#### El usuario al no poder loguearse por olvido de su nombre de usuario o contraseña,este tiene la opción de recordar datos en la plataforma para el próximo inicio de sesión.
 #### El cliente a registrar tendrá que registrarse para solicitar un servicio , los campos solicitados son todos obligatorios exceptuando la foto de perfil
 #### El cliente al iniciar sesión podrá visualizar los datos personales con los cuales fueron registrados la cuenta, en caso actualizar alguno de los campos deberá contactarse con el soporte
 #### El cliente podrá solicitar un servicio de los cuales ofrece la empresa, la empresa evaluará la solicitud, cambiando el estado de esta, la cual puede tomar 4 estados (Pendiente , en curso , Rechazado , Completado) , en los datos solicitados , se menciona al contratante , el cual será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. Este contratante, no necesariamente es el mismo de usuario de la cuenta, que el usuario de la cuenta por lo general será el administrador o jefe de proyecto de la empresa que requiere los servicios, el contratante será la persona que estará en constante comunicación con KOMAQ para validar e informar el progreso del servicio.
