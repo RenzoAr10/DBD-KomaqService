@@ -3,9 +3,9 @@
 ## Módulo de Atención al Cliente
 
 ### Responsabilidades: 
-*Gestiona la comunicación con los clientes
-*recibe solicitudes de servicio.
-### Interacciones con Otros Módulos: Interactúa con el Módulo de Diagnóstico y Evaluación, Módulo de Ventas de Servicios, y Módulo de Gestión de Recursos Humanos.
+#Gestiona la comunicación con los clientes
+#Recibe solicitudes de servicio.
+###Interactúa con el Módulo de Diagnóstico y Evaluación, Módulo de Ventas de Servicios, y Módulo de Gestión de Recursos Humanos.
 
 ## Módulo de Diagnóstico y Evaluación
 
