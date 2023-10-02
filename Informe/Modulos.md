@@ -53,9 +53,8 @@
 #### Ofrece soporte técnico en persona y remoto para resolver problemas y consultas técnicas de los clientes.
 #### Realiza diagnósticos técnicos de equipos de maquinaria pesada
 #### identifica problemas y necesidades de reparación o mantenimiento.
-#### Interactúa con el Módulo de Mantenimiento y Reparación, Módulo de Soporte Técnico, y Módulo de Ventas de Repuestos.
-#### Interactúa con el Módulo de Atención al Cliente y Módulo de Diagnóstico y Evaluación.
-#### Interactúa con el Módulo de Diagnóstico y Evaluación, Módulo de Ventas de Repuestos y Módulo de Gestión de Calidad.
+#### Administra el personal, incluyendo contratación, capacitación y evaluación del desempeño.
+
 
 ## Módulo de Ventas de Servicios
 
@@ -64,9 +63,5 @@
 #### elabora presupuestos y contratos.
 #### Interactúa con el Módulo de Atención al Cliente y Módulo de Mantenimiento y Reparación.
 
-## Módulo de Gestión de Recursos Humanos
 
-### Responsabilidades
-#### Administra el personal, incluyendo contratación, capacitación y evaluación del desempeño.
-#### Interactúa con el Módulo de Atención al Cliente y Módulo de Ventas de Servicios.
 
