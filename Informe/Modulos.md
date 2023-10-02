@@ -24,12 +24,13 @@
 #### ° El empleado, como usuario, puede ver las solicitudes de todos los clientes, pudiendo filtrar estas mismas por , Cliente (contratante) , el jefe de proyecto (usuario de la cuenta) , Tipo de actividad del servicio brindada
 #### ° El empleado puede ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes
 #### ° El empleado puede visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
+#### °  Todos los usuarios deben registrarse y autenticarse en la plataforma para acceder a las funcionalidades relacionadas con la gestión de pedidos y solicitudes.
+#### °  Los usuarios deben gerantizar, conjuntamente con Komaq, garantizar la seguridad cumpliendo con las regulaciones de privacidad aplicables.
+
 
 ## Módulo de Gestion de pedidos y solicitudes
 ### Funcion:  permitir procesar y gestionar las solicitudes y pedidos, ademas de informar a los actores los cuales pueden hacer un seguimiento de los servicios solicitados 
 ### Responsabilidades: 
-#### °  Todos los usuarios deben registrarse y autenticarse en la plataforma para acceder a las funcionalidades relacionadas con la gestión de pedidos y solicitudes.
-#### °  Los usuarios deben gerantizar, conjuntamente con Komaq, garantizar la seguridad cumpliendo con las regulaciones de privacidad aplicables.
 #### °  Los empleados evaluaran las solicitudes, cambiando el estado de esta, la cual puede tomar 4 estados(Pendiente , en curso , Rechazado , Completado)
 #### °  Los clientes pueden iniciar nuevas solicitudes o pedidos de servicios o productos a través de la plataforma.
 #### °   Los clientes pueden realizar un seguimiento del estado de sus solicitudes o pedidos y recibir notificaciones cuando cambia su estado.
