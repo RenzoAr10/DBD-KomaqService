@@ -72,12 +72,12 @@
 ####  ° Los clientes pueden revisar y aprobar los presupuestos proporcionados por la empresa a través de la plataforma web.
 ####  ° Los clientes pueden acceder a los contratos de servicios celebrados con la empresa y verificar los términos y condiciones a través de la plataforma.
 ####  ° Los empleados de ventas pueden crear presupuestos para servicios de mantenimiento, reparación y capacitación a partir de las solicitudes de los clientes.
-####  ° Los empleados de ventasgenerar contratos en función de los presupuestos aprobados por los clientes.
+####  ° Los empleados de ventas pueden  generar contratos en función de los presupuestos aprobados por los clientes.
 ####  ° Los empleados de ventas mantienen una comunicación activa con los clientes a través de la plataforma para discutir detalles de presupuestos y contratos.
 ####  °  Los contratantes pueden revisar propuestas de servicios y contratos a través de la plataforma antes de su aprobación final.
 ####  ° Los contratantes pueden firmar digitalmente los contratos a través de la plataforma.
 ####  ° Los administradores pueden agregar, editar o eliminar usuarios en el sistema, incluyendo personal de ventas y clientes.
-####  ° Los administradores  supervisar las actividades de ventas, incluyendo la generación de presupuestos y la firma de contratos.
+####  ° Los administradores  pueden supervisar las actividades de ventas, incluyendo la generación de presupuestos y la firma de contratos.
 
 
 
