@@ -46,14 +46,22 @@
 ####  ° Los administradores pueden intervenir en caso de problemas o disputas en el proceso de gestión de solicitudes.
 
 
-
+## Módulo de Gestion de pedidos y solicitudes:
+### Funcion: permite gestionar eficazmente la ejecución de los servicios solicitados a través de la plataforma web.
 ### Responsabilidades: 
-#### Planifica y ejecuta tareas de mantenimiento preventivo y correctivo en equipos de maquinaria pesada
-#### administra repuestos y materiales necesarios.
-#### Ofrece soporte técnico en persona y remoto para resolver problemas y consultas técnicas de los clientes.
-#### Realiza diagnósticos técnicos de equipos de maquinaria pesada
-#### identifica problemas y necesidades de reparación o mantenimiento.
-#### Administra el personal, incluyendo contratación, capacitación y evaluación del desempeño.
+####  ° Los clientes pueden solicitar servicios de mantenimiento preventivo o correctivo a través de la plataforma web.
+####  ° Los clientes pueden realizar un seguimiento del estado de sus solicitudes de servicio y recibir actualizaciones sobre el progreso.
+####  ° Los clientes pueden  utilizar la plataforma para realizar consultas técnicas y recibir orientación sobre problemas relacionados con la maquinaria pesada.
+####  °  Los contratantes pueden comunicarse con los técnicos asignados para coordinar y programar servicios de mantenimiento.
+####  °  Los contratantes pueden solicitar informes y actualizaciones sobre el progreso de los servicios contratados.
+####  °  Los contratantes pueden realizar pagos relacionados con los servicios ejecutados a través de la plataforma.
+####  ° Los administradores pueden agregar, editar o eliminar usuarios en el sistema, incluyendo personal técnico y clientes.
+####  ° Los administradores pueden asignar técnicos o ingenieros específicos para realizar tareas de mantenimiento o resolver problemas técnicos.
+####  ° Los administradores pueden realizar un seguimiento del desempeño del personal técnico, incluyendo evaluaciones y capacitación.
+####  ° Los empleados técnicos pueden acceder a las tareas de mantenimiento asignadas a ellos a través de la plataforma y actualizar su estado a medida que avanzan en la ejecución de servicios.
+####  ° Los empleados técnicos pueden hacer un registro de los diagnósticos técnicos realizados en los equipos de maquinaria pesada, identificando problemas y necesidades de reparación.
+####  ° Los empleados técnicos pueden hacer una actualizacion del inventario de repuestos y materiales utilizados durante la ejecución de servicios.
+
 
 
 ## Módulo de Ventas de Servicios
