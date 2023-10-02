@@ -35,8 +35,6 @@ Para el funcionamiento de la empresa se dividen en 3 rubros: administración, pa
 
 Para la movilidad se tienes 2 automóviles de uso exclusivo para la empresa y 3 unidades más pero pertenecen a los dueños, pero de ser necesario también se podría usar para brindar servicio. 
 
-Una vez que se atiende el servicio se recaba la información y se elabora un informe técnico y vuelve ese informe técnico al encargado del área comercial, él gestiona el informe como podría ser las recomendaciones, repuestos o un mantenimiento para el cliente, mientras que el encargado del área administrativa contabiliza cuánto pago el cliente, cuánto generó en costo y cuánto quedaría de utilidad de ese servicio.
-
 ## Principales actividades
 
 * Diagnostico de falla en la maquinaria.
@@ -71,7 +69,7 @@ El principal proceso de negocio es el brindar mantenimiento para una maquinaria
 
 * Se realiza el mantenimiento
   
-Una vez que se atiende el servicio se recaba la información y se elabora un informe técnico y vuelve ese informe técnico al encargado del área comercial, él gestiona el informe como podría ser las recomendaciones, repuestos o un mantenimiento para el cliente, mientras que el encargado del área administrativa contabiliza cuánto pago el cliente, cuánto generó en costo y cuánto quedaría de utilidad de ese servicio.
+Una vez que se atiende el servicio se recaba la información y se elabora un informe técnico y vuelve ese informe técnico al encargado del área administrativa que contabiliza cuánto pago el cliente, cuánto generó en costo y cuánto quedaría de utilidad de ese servicio.
 
 ![Flujograma](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%201.jpg)
 
