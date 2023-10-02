@@ -22,14 +22,16 @@ Ser empresa líder a nivel nacional y reconocidos por nuestros clientes por nues
 ## Motivacion 
 
 La elección del grupo en la empresa Komaq Service ha sido motivada por una serie de razones significativas. Esta decisión no solo está respaldada por la relevancia y la constante demanda que presenta esta industria, sino también por las oportunidades de crecimiento profesional, el potencial económico y la posibilidad de contribuir al desarrollo sostenible del país:
+
 Tiene relevancia en la industria minera del peru
+
 El trabajo en el mantenimiento de maquinaria pesada es desafiante y gratificante
 
 ## OOrganigrama
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/organigrama.png?raw=true)
 
-Para el funcionamiento de la empresa se dividen en 3 rubros: administración, parte técnica y comercial. El área comercial  se encarga de la prestacion de servicios, en la parte técnica se encarga de programar varios los pedidos tanto en taller como en campo y en la administración se encarga de mover todo el tema de logística. Además cuenta con 8 personas que son netamente técnicos que se dedican a brindar soporte y mantenimiento.
+Para el funcionamiento de la empresa se dividen en 3 rubros: administración, parte técnica y comercial. El área comercial  se encarga de la prestacion de servicios, en la parte técnica se encarga de programar los pedidos tanto en taller como en el campo y en la administración se encarga de mover todo el tema de logística. Además cuenta con 8 personas que son netamente técnicos que se dedican a brindar soporte y mantenimiento.
 
 Para la movilidad se tienes 2 automóviles de uso exclusivo para la empresa y 3 unidades más pero pertenecen a los dueños, pero de ser necesario también se podría usar para brindar servicio. 
 
@@ -51,7 +53,7 @@ Una vez que se atiende el servicio se recaba la información y se elabora un inf
 
 ## Descripción del proceso de negocio
 
-* El principal proceso de negocio es el brindar mantenimiento para una maquinaria
+El principal proceso de negocio es el brindar mantenimiento para una maquinaria
 
 * El cliente se contacta mediante el correo con la empresa
 
@@ -68,6 +70,7 @@ Una vez que se atiende el servicio se recaba la información y se elabora un inf
 * Se procede asignar a los tecnicos
 
 * Se realiza el mantenimiento
+Una vez que se atiende el servicio se recaba la información y se elabora un informe técnico y vuelve ese informe técnico al encargado del área comercial, él gestiona el informe como podría ser las recomendaciones, repuestos o un mantenimiento para el cliente, mientras que el encargado del área administrativa contabiliza cuánto pago el cliente, cuánto generó en costo y cuánto quedaría de utilidad de ese servicio.
 
 ![Flujograma](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%201.jpg)
 
