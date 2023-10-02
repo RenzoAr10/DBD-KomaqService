@@ -45,7 +45,7 @@ Tabla 1
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/Informe.png?raw=true)
 
-## Reglas de Negocio y Restricciones
+## Reglas de Negocio 
 
 ***Cliente Solicita Servicio:***
 
