@@ -30,10 +30,8 @@
 ### Responsabilidades: 
 #### Gestiona la comunicación con los clientes
 #### Recibe solicitudes de servicio.
-
-#### Interactúa con el Módulo de Diagnóstico y Evaluación, Módulo de Ventas de Servicios, y Módulo de Gestión de Recursos Humanos.
 #### la empresa evaluará la solicitud, cambiando el estado de esta, la cual puede tomar 4 estados(Pendiente , en curso , Rechazado , Completado)  , en los datos solicitados , se menciona al contratante , el cual será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. 
-## Módulo de Mantenimiento, Soporte Técnico y Reparación
+
 
 ### Responsabilidades: 
 #### Planifica y ejecuta tareas de mantenimiento preventivo y correctivo en equipos de maquinaria pesada
