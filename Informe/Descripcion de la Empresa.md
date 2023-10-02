@@ -19,10 +19,15 @@ Proporcionar valor agregado y soluciones con servicios y repuestos de calidad su
 ### vision 
 Ser empresa líder a nivel nacional y reconocidos por nuestros clientes por nuestra exitosa trayectoria en el mercado de maquinarias de mineria y construccion.
 
+## Motivacion 
 
-## Organigrama
+La elección del grupo en la empresa Komaq Service ha sido motivada por una serie de razones significativas. Esta decisión no solo está respaldada por la relevancia y la constante demanda que presenta esta industria, sino también por las oportunidades de crecimiento profesional, el potencial económico y la posibilidad de contribuir al desarrollo sostenible del país:
+Tiene relevancia en la industria minera del peru
+El trabajo en el mantenimiento de maquinaria pesada es desafiante y gratificante
 
-![Organigrama](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/organigrama.png?raw=true)
+## OOrganigrama
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/organigrama.png?raw=true)
 
 Para el funcionamiento de la empresa se dividen en 3 rubros: administración, parte técnica y comercial. El área comercial  se encarga de la prestacion de servicios, en la parte técnica se encarga de programar varios los pedidos tanto en taller como en campo y en la administración se encarga de mover todo el tema de logística. Además cuenta con 8 personas que son netamente técnicos que se dedican a brindar soporte y mantenimiento.
 
@@ -64,6 +69,9 @@ Una vez que se atiende el servicio se recaba la información y se elabora un inf
 
 * Se realiza el mantenimiento
 
+![Flujograma](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%201.jpg)
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%202.jpg?raw=true)
 
 ## Propuestas de valor 
 En Komaq Service S.A.C. se trabaja siempre con la palabra ABC, al cliente se le ofrece la opción a, b y c, 1 en costos y 2 en calidad de repuesto, la calidad de servicio no cambia, el cliente siempre va a ver la relación directa entre su presupuesto y el servicio, entonces, no significa que le brinden un repuesto barato, pero se le da una opción de las tres que existen en el mercado y en base a ello, deciden; y lógicamente al margen del repuesto también está la opción del servicio, la inversion es al final del servicio.
