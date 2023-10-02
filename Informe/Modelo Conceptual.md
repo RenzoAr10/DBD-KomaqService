@@ -41,7 +41,7 @@ Tabla 1
 
 **Entidad: Informe** 
 
-**Semántica: Representa al área que se ocupa de la planificación y el tiempo promedio para terminar un servicio, trabaja de la mano con el área comercial.**
+**Semántica: Representa un registro detallado y documentado de las actividades de servicios realizados.**
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/Informe.png?raw=true)
 
