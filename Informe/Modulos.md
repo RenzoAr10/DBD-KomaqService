@@ -80,5 +80,7 @@
 ####  ° Los administradores pueden agregar, editar o eliminar usuarios en el sistema, incluyendo personal de ventas y clientes.
 ####  ° Los administradores  pueden supervisar las actividades de ventas, incluyendo la generación de presupuestos y la firma de contratos.
 
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/8ee1d12f-c61c-425b-ac88-46ef3946b6a1)
+
 
 
