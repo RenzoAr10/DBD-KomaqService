@@ -1,4 +1,4 @@
-Requerimientos funcionales
+# Requerimientos funcionales
 
 1) Creacion de usuario
    1.-El usuario accede a la página oficial .
