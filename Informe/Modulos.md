@@ -25,8 +25,9 @@
 #### ° El empleado puede ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes
 #### ° El empleado puede visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
 
-
-
+## Módulo de Gestion de pedidos y solicitudes
+### Funcion:  permitir procesar y gestionar las solicitudes y pedidos, ademas de informar a los actores los cuales pueden hacer un seguimiento de los servicios solicitados 
+### Responsabilidades: 
 #### Gestiona la comunicación con los clientes
 #### Recibe solicitudes de servicio.
 
