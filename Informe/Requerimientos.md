@@ -21,3 +21,4 @@ Requerimientos funcionales
    4.-El cliente selecciona la opcion Pagar para eventualmente colocar los datos de la tarjeta requeridos.
    5.-El sistema solicita confirmacion del cliente para concluir el pago.
    6.-El caso de us termina.
+
