@@ -27,7 +27,7 @@ Tiene relevancia en la industria minera del peru
 
 El trabajo en el mantenimiento de maquinaria pesada es desafiante y gratificante
 
-## OOrganigrama
+## Organigrama
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/organigrama.png?raw=true)
 
@@ -48,7 +48,7 @@ Una vez que se atiende el servicio se recaba la información y se elabora un inf
 * Reparación de componentes (Motores, sistemas hidráulicos, transmisiones, mando finales y diferenciales).
   
 * Importacion y venta de repuestos de maquinaria pesada.
-* 
+  
 * Asistencia remota y soporte técnico en campo. 
 
 ## Descripción del proceso de negocio
@@ -70,6 +70,7 @@ El principal proceso de negocio es el brindar mantenimiento para una maquinaria
 * Se procede asignar a los tecnicos
 
 * Se realiza el mantenimiento
+  
 Una vez que se atiende el servicio se recaba la información y se elabora un informe técnico y vuelve ese informe técnico al encargado del área comercial, él gestiona el informe como podría ser las recomendaciones, repuestos o un mantenimiento para el cliente, mientras que el encargado del área administrativa contabiliza cuánto pago el cliente, cuánto generó en costo y cuánto quedaría de utilidad de ese servicio.
 
 ![Flujograma](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%201.jpg)
