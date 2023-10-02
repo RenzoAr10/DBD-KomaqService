@@ -3,8 +3,8 @@
 ## Módulo de Interaccion con el usuario
 ### Funcion: permitir a los clientes y empleados interactuar con la empresa a través de la aplicación.
 ### Responsabilidades: 
-#### El cliente al ser nuevo no cuenta con una cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
-#### Un empleado al ser nuevo y no tener cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
+#### ° El cliente al ser nuevo no cuenta con una cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
+#### ° Un empleado al ser nuevo y no tener cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
 #### Un empleado al ser nuevo en algun cargo (admin) o al cambiarse de area de trabajo en la empresa entonces este podrá registrarse en el sistema con un nuevo cargo o en una nueva area.
 #### El cliente o empleado podra loguarse al sistema con su usuario y contraseña.
 #### El usuario al no poder loguearse por olvido de su nombre de usuario o contraseña,este tiene la opción de recordar datos en la plataforma para el próximo inicio de sesión.
