@@ -47,7 +47,35 @@ Tabla 1
 
 ## Reglas de Negocio y Restricciones
 
+***Cliente Solicita Servicio:***
 
+Regla: Un cliente puede solicitar uno o varios servicios de mantenimiento.
+
+Descripción: Los clientes tienen la capacidad de iniciar solicitudes de servicio cuando requieren mantenimiento o reparación en su maquinaria pesada. Pueden solicitar múltiples servicios en diferentes momentos.
+
+***AreaComercial Recepciona Servicio:***
+
+Regla: El área comercial es responsable de recibir y registrar las solicitudes de servicio de los clientes.
+
+Descripción: El personal del área comercial debe estar disponible para recibir y documentar las solicitudes de servicio realizadas por los clientes.
+
+***AreaComercial Documenta Informe:***
+
+Regla: El área comercial es responsable de registrar la información relacionada con la creación de informes de servicio.
+
+Descripción: Cuando se completa un servicio, el área comercial debe documentar la información relevante para la generación de informes, como la fecha de finalización y el contenido del informe.
+
+***AreaLogistica Recepciona Informe:***
+
+Regla: El área logística recibe y registra los informes de servicio generados por el área comercial.
+
+Descripción: Los informes de servicio, una vez generados por el área comercial, se envían al área logística para su recepción y almacenamiento.
+
+***AreaLogistica Asigna Técnico:***
+
+Regla: El área logística es responsable de asignar técnicos para llevar a cabo los servicios de mantenimiento.
+
+Descripción: El área logística debe asegurarse de que se asigne un técnico calificado para realizar el servicio de mantenimiento programado, teniendo en cuenta la disponibilidad y las habilidades del técnico.
 
 
 
