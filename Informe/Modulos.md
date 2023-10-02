@@ -12,13 +12,17 @@
 #### ° Los campos solicitados son todos obligatorios exceptuando la foto de perfil
 #### ° El cliente al loguearse podrá visualizar los datos personales con los cuales fueron registrados la cuenta
 #### ° Si el cliente desea actualizar alguno de sus datos,este deberá contactarse con el area de soporte para poder realizar el cambio
-#### ° El cliente podrá solicitar un servicio de los cuales ofrece la empresa, la empresa evaluará la solicitud, cambiando el estado de esta, la cual puede tomar 4 estados (Pendiente , en curso , Rechazado , Completado) , en los datos solicitados , se menciona al contratante , el cual será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. Este contratante, no necesariamente es el mismo de usuario de la cuenta, que el usuario de la cuenta por lo general será el administrador o jefe de proyecto de la empresa que requiere los servicios, el contratante será la persona que estará en constante comunicación con KOMAQ para validar e informar el progreso del servicio.
-#### El cliente podrá ver todos los servicios que ha realizado, detallando información al seleccionar alguna celda de la tabla
-#### Esta selección permitirá ver el estado del pedido el cual como se mencionó , podrá cambiar conforme el servicio siga su curso , además también podrá ver pero no editar los siguiente campos mostrados
-#### Esta selección permitirá ver el estado del pedido el cual como se mencionó , podrá cambiar conforme el servicio siga su curso , además también podrá ver pero no editar los siguiente campos mostrados
-#### El empleado podrá ver las solicitudes de todos los clientes, pudiendo filtrar estas mismas por , Cliente (contratante) , el jefe de proyecto (usuario de la cuenta) , Tipo de actividad del servicio brindada
-#### El personal de la empresa podrá ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes
-#### El empleado de la empresa KOMAQ podrá visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
+#### ° El cliente podrá visualizar su historial de todos los servicios solicitados, detallando información al seleccionar alguna celda de la tabla
+#### ° El cliente al realizar una selección de pedido podra ver el estado (Pendiente , en curso , Rechazado , Completado) del pedido el cual como se mencionó , podrá cambiar conforme el servicio siga su curso
+#### ° El cliente  puede ver pero no editar los siguiente campos mostrados
+#### ° El cliente puede solicitar un servicio de los cuales ofrece la empresa por medio de su plataforma web
+#### la empresa evaluará la solicitud, cambiando el estado de esta, la cual puede tomar 4 estados(Pendiente , en curso , Rechazado , Completado)  , en los datos solicitados , se menciona al contratante , el cual será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. 
+#### ° El contratante no necesariamente es el mismo de usuario de la cuenta
+#### ° El usuario como contratante, por lo general, será el administrador o jefe de proyecto de la empresa que requiere los servicios.
+#### ° El contratante será la persona que estará en constante comunicación con KOMAQ para validar e informar el progreso del servicio.
+#### ° El empleado, como usuario, puede ver las solicitudes de todos los clientes, pudiendo filtrar estas mismas por , Cliente (contratante) , el jefe de proyecto (usuario de la cuenta) , Tipo de actividad del servicio brindada
+#### ° El empleado puede ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes
+#### ° El empleado puede visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
 
 
 
