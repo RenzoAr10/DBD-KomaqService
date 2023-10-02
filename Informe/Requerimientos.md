@@ -7,6 +7,8 @@ Requerimientos funcionales
    4.-El sistema guarda la nueva cuenta.
    5.-El caso de uso termina.
 
+   3.-En caso que no se haya completado uno de los datos necesarios, el sistema mostrara un mensaje para que termine de completar.
+
 2) Solicitar servicio 
    1.-El cliente accede a su cuenta.
    2.-El cliente selecciona la seccion Solicitar Servicio.
