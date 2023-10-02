@@ -47,7 +47,7 @@
 ####  ° Los administradores pueden intervenir en caso de problemas o disputas en el proceso de gestión de solicitudes.
 
 
-## Módulo de Gestion de pedidos y solicitudes:
+## Módulo de Ejecución de Servicios:
 ### Funcion: permite gestionar eficazmente la ejecución de los servicios solicitados a través de la plataforma web.
 ### Responsabilidades: 
 ####  ° Los clientes pueden solicitar servicios de mantenimiento preventivo o correctivo a través de la plataforma web.
