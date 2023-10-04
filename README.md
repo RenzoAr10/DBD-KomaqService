@@ -20,6 +20,6 @@
 
 [Vinculo a Prototipo](./Informe/04Prototipo.md)
 
-[Vinculo al Modelo Conceptual](./Informe/05Modelo Conceptual.md)
+[Vinculo al Modelo Conceptual](./Informe/05ModeloConceptual.md)
 
 
