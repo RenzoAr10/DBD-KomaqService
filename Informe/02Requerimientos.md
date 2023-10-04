@@ -108,5 +108,11 @@
    
    # Requerimientos de atributos de calidad
 
+1) Disponibilidad: El sistema está disponible para que los usuarios realicen solicitudes y accedan a la información en un horario amplio.
 
+2) Seguridad: El sistema garantiza la seguridad de los datos del usuario, además de protección de información personal y financiera.
+   
+3)Fiabilidad: El sistema minimiza los inconvenientes del servicio solicitados, como la realizacion del pedido de manera consistente
+
+4)Usabilidad: La interfaz de usuario es sencillo y facil de usar, permitiendo a los usuarios realizar solicitudes y realizar pagos de manera intuitiva.
 
