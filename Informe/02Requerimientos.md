@@ -57,15 +57,15 @@
    
    4.-El cliente selecciona los servicios que desea pagar y luego escoger la opcion Pagar. Mostrará costo total de los servicios seleccionados
 
-   5.El cliente ingresa los datos de pago de su tarjeta
+   5.-El cliente ingresa los datos de pago de su tarjeta
 
-   6.El sistema verifica si los datos son correctos. El sistema notificará si los datos han sido correctos o no en caso que haya un dato erroneo.
+   6.-El sistema verifica si los datos son correctos. El sistema notificará si los datos han sido correctos o no en caso que haya un dato erroneo.
 
-   7.El cliente confirmará si el se realiza el pago. El sistema procesa el pago
+   7.-El cliente confirmará si el se realiza el pago. El sistema procesa el pago
 
-   8.El sistema genera un recibo para que el cliente vea los detalles como descripcion del servicio, fecha y costo de la transacción.
+   8.-El sistema genera un recibo para que el cliente vea los detalles como descripcion del servicio, fecha y costo de la transacción.
 
-   9. El sistem actualiza el estado del servicio como Pagado
+   9.-El sistem actualiza el estado del servicio como Pagado
    
    10.-El caso de uso termina.
 
@@ -89,8 +89,23 @@
    8.-El caso de uso termina.
 
    En caso que se quiera cancelar servicio cuando el estado está en curso, el cliente podrá llamar al número de la empresa para dar a un posible solución.
-   
 
+
+6) Actualizar estado de solicitud
+
+   1.-El empleado accede a su cuenta.
+
+   2.-El empleado entra a la seccion pedidos. Tendrá disponible una busquedor en la cual puede poner el identificador del servicio
+
+   3.-El empleado selecciona el pedido a actualizar estado. El sistema mostaraá detalles del servicio.
+
+   4.-El empleado cambia el estado del sevicio. Los estados disponibles a cambiar son "en curso" o "finalizado".
+
+   5.-El sistema actualiza el el estado del servicio.
+
+   6.-El caso de uso termina.
+
+   
    # Requerimientos de atributos de calidad
 
 
