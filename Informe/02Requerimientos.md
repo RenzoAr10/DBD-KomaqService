@@ -53,16 +53,24 @@
    
    2.-El cliente selecciona la seccion Recibo.
    
-   3.-El sistema mostrará un resumen de los servicios que ya han sidos completados y disponibles a pagar.
+   3.-El sistema mostrará un resumen de los servicios que ya han sidos completados y disponibles a pagar. Esto mostraria detalles como la descripcion del sericio, fecha y hora de la solicitud y el costo.
    
-   4.-El cliente selecciona la opcion Pagar para eventualmente colocar los datos de la tarjeta requeridos.
+   4.-El cliente selecciona los servicios que desea pagar y luego escoger la opcion Pagar. Mostrará costo total de los servicios seleccionados
+
+   5.El cliente ingresa los datos de pago de su tarjeta
+
+   6.El sistema verifica si los datos son correctos. El sistema notificará si los datos han sido correctos o no en caso que haya un dato erroneo.
+
+   7.El cliente confirmará si el se realiza el pago. El sistema procesa el pago
+
+   8.El sistema genera un recibo para que el cliente vea los detalles como descripcion del servicio, fecha y costo de la transacción.
+
+   9. El sistem actualiza el estado del servicio como Pagado
    
-   5.-El sistema solicita confirmacion del cliente para concluir el pago.
-   
-   6.-El caso de us termina.
+   10.-El caso de us termina.
 
 
-5) Enviar informe
+6) Enviar informe
 
    1.-El empleado del Area de Comecial accede a su cuenta.
    
@@ -74,7 +82,7 @@
    
    5.-El caso de uso termina.
 
-6) Actualizando el estado del servicio
+7) Actualizando el estado del servicio
 
    El técnico informa al empleado del Area de Logistica sobre el estado del servicio
 
@@ -88,7 +96,7 @@
    
    5.-El caso de uso termina.
 
-7) Actualizacion del estado del servicio al cliente
+8) Actualizacion del estado del servicio al cliente
 
    1.-El empleado AC accede a su cuenta.
    
