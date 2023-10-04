@@ -22,4 +22,5 @@
 
 [Vinculo al Modelo Conceptual](./Informe/05ModeloConceptual.md)
 
-
+[Entrevista](https://youtu.be/EyXzugSsWqU)
+Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
