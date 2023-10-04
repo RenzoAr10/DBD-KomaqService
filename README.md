@@ -12,5 +12,5 @@
 
 **Empresa Komaq Service**
 
-[Vinculo a la Descripcion de la Empresa](Informe/01DescripcionEmpresa.md)
+[Vinculo a la Descripcion de la Empresa](./Informe/01DescripcionEmpresa.md)
 
