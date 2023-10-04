@@ -14,3 +14,12 @@
 
 [Vinculo a la Descripcion de la Empresa](./Informe/01DescripcionEmpresa.md)
 
+[Vinculo a Requerimientos](./Informe/02Requerimientos.md)
+
+[Vinculo a Modulos](./Informe/03Modulos.md)
+
+[Vinculo a Prototipo](./Informe/04Prototipo.md)
+
+[Vinculo al Modelo Conceptual](./Informe/05Modelo Conceptual.md)
+
+
