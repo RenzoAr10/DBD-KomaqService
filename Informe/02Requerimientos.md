@@ -67,46 +67,29 @@
 
    9. El sistem actualiza el estado del servicio como Pagado
    
-   10.-El caso de us termina.
+   10.-El caso de uso termina.
 
 
-6) Enviar informe
+5) Cancelar Servicio
 
-   1.-El empleado del Area de Comecial accede a su cuenta.
-   
-   2.-El empleado AC entra a la seccion de Pedidos y escoge uno de los pedidos pendientes.
-   
-   3.-El empleado AC escribe detalles y define la fecha de finalizacion.
-   
-   4.-El sistema guarda el nuevo informe.
-   
-   5.-El caso de uso termina.
+   1.-El cliente accede a su cuenta.
 
-7) Actualizando el estado del servicio
+   2.-El cliente entra a la seccion de Pedidos
 
-   El técnico informa al empleado del Area de Logistica sobre el estado del servicio
+   3.-El sistema mostrará la opcion de cancelar servicio en caso que el estado de la solicitud este en "Pendiente".
 
-   1.-El empleado AL accede a su cuenta.
-   
-   2.-El empleado AL entra a la seccion de informes y escoge el informe a actualizar.
-   
-   3.-El empleado AL escribe detalles descritos por el tecnico.
-   
-   4.-El sistema actualiza el informe.
-   
-   5.-El caso de uso termina.
+   4.-El cliente selecciona la opcion Cancelar Servicio del cual quiere cancelar.
 
-8) Actualizacion del estado del servicio al cliente
+   5.-El sistema solicitará confirmación de la cancelación del servicio.
 
-   1.-El empleado AC accede a su cuenta.
+   6.-El notificará que el servicio ha sido cancelado
+
+   7.-El sistema actualizara el estado del sevicio a Cancelado y borrará el servicio del listado del cliente.
+
+   8.-El caso de uso termina.
+
+   En caso que se quiera cancelar servicio cuando el estado está en curso, el cliente podrá llamar al número de la empresa para dar a un posible solución.
    
-   2.-El empleado AC entra a la seccion de informes y escoge un informe que ha sido actualizado.
-   
-   3.-El empleado AC actualiza el estado del sevicio en base a la descripcion.
-   
-   4.-El sistema actualiza el servicio.
-   
-   5.-El caso de uso termina.
 
    # Requerimientos de atributos de calidad
 
