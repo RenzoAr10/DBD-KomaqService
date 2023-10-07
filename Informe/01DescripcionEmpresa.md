@@ -53,27 +53,27 @@ Para la movilidad se tienes 2 automóviles de uso exclusivo para la empresa y 3 
 
 El principal proceso de negocio es el brindar mantenimiento para una maquinaria
 
-* El cliente se contacta mediante el correo con la empresa
-
-* Se detalla lo que el cliente quiere cotizar(mantenimiento, reparacion para alguna maquina, repuesto o motor, el sistema hidraulico o el sistema electrico )
-
-* Pasa a ser revisado por el area comercial(evalua los precios con los proveedores, cotiza si se tiene en el stock)
-
-* Va de la mano con el area de logistica, para determinar el tiempo de finalizar el servicio 
-
-* Se manda hacer una orden de compra 
-
-* Se adjunta la factura para el cliente 
-
-* Se procede asignar a los tecnicos
-
-* Se realiza el mantenimiento
-  
-Una vez que se atiende el servicio se recaba la información y se elabora un informe técnico y vuelve ese informe técnico al encargado del área administrativa que contabiliza cuánto pago el cliente, cuánto generó en costo y cuánto quedaría de utilidad de ese servicio.
-
 ![Flujograma](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%201.jpg)
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/flujograma%202.jpg?raw=true)
+
+* **Recepcionar orden de servicio:**
+La empresa recibe una orden de servicio de parte del cliente o de un departamento interno. La orden de servicio generalmente incluye detalles sobre la maquinaria que necesita mantenimiento, la naturaleza del problema y la fecha de inicio deseada para el servicio.
+
+* **Revisión de la maquinaria:**
+Una vez que se recibe la orden de servicio, el siguiente paso es llevar a cabo una revisión exhaustiva de la maquinaria en cuestión. Esto implica evaluar el estado actual de la maquinaria, identificar los problemas o defectos que requieren atención y determinar qué tipo de servicio o reparación es necesario.
+
+* **¿Se tienen los repuestos necesarios?:**
+En este punto, se verifica si la empresa ya tiene en stock los repuestos necesarios para llevar a cabo el servicio de mantenimiento. Esto es importante porque algunos trabajos de mantenimiento pueden requerir piezas específicas para ser reemplazadas o reparadas.
+
+* **Si los repuestos son necesarios:**
+En caso de que se requieran repuestos y la empresa no los tenga disponibles, se procede a solicitarlos a los proveedores externos. Esto puede implicar el contacto con los proveedores, la generación de una orden de compra y la gestión de la entrega de los repuestos a tiempo para el servicio de mantenimiento.
+
+* **Si no se necesitan repuestos:**
+Si la revisión de la maquinaria determina que no se necesitan repuestos o que estos ya están disponibles en stock, entonces se procede a programar al personal de mantenimiento para llevar a cabo el servicio en la fecha acordada.
+
+* **Realizar el servicio:**
+Finalmente, el último paso implica la realización del servicio de mantenimiento propiamente dicho. Esto incluye la reparación, limpieza, ajustes o cualquier otra acción necesaria para dejar la maquinaria en un estado óptimo de funcionamiento.
 
 ## Propuestas de valor 
 En Komaq Service S.A.C. se trabaja siempre con la palabra ABC, al cliente se le ofrece la opción a, b y c, 1 en costos y 2 en calidad de repuesto, la calidad de servicio no cambia, el cliente siempre va a ver la relación directa entre su presupuesto y el servicio, entonces, no significa que le brinden un repuesto barato, pero se le da una opción de las tres que existen en el mercado y en base a ello, deciden; y lógicamente al margen del repuesto también está la opción del servicio, la inversion es al final del servicio.
