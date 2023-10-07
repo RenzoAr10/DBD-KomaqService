@@ -1,10 +1,9 @@
 # Modelo Conceptual
 
 
-![Erdplus](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/Chen.png)
+![Erdplus](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/M.conceptual.png)
 
-Para una mejor vista, Descargar el archivo e importar en ERDPlus.com :
-https://drive.google.com/file/d/1hwAiCnIAApnpRAWT4gVF8MRaeLtcVFos/view?usp=drive_link
+
 
 
 
