@@ -1,7 +1,7 @@
 # Modelo Conceptual
 
 
-![Erdplus](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/Entidad-Relacion.png)
+![Erdplus](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/CHEN%20(2).png)
 
 
 
