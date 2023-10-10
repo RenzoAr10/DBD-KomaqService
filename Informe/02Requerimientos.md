@@ -116,3 +116,13 @@
 
 4)Usabilidad: La interfaz de usuario es sencillo y facil de usar, permitiendo a los usuarios realizar solicitudes y realizar pagos de manera intuitiva.
 
+
+# RESTRICCIONES
+
+Plataforma: La app debe estar disponible para dispositivos móviles y computadoras.
+Tecnología: La app debe ser desarrollada utilizando tecnologías de código abierto.
+Costo: El costo de desarrollo y mantenimiento de la app debe ser razonable.
+Tecnología Utilizada:La aplicación debe desarrollarse utilizando tecnologías específicas, lo que puede incluir el uso de un lenguaje de programación o un marco de desarrollo particular.
+Tiempo de Desarrollo:El tiempo de desarrollo de la aplicación puede estar sujeto a restricciones, lo que podría afectar el cronograma del proyecto.
+Costo del Desarrollo:El presupuesto para el desarrollo de la aplicación podría ser limitado, lo que requerirá una gestión eficiente de los recursos disponibles.
+
