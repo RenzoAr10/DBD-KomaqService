@@ -4,7 +4,10 @@
 ![Erdplus](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/CHEN%20(2).png)
 
 
+# Modelo Conceptual2
 
+
+![mer2](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/1d4f545e-e0ba-484b-8c10-09ea2bc7e300)
 
 
 ## Diccionario de datos
