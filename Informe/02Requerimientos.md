@@ -186,6 +186,8 @@
 
       -Envia la orden de servicio.
 
+
+   
       ## Caso de Uso 4: Asignar Técnico a Orden de Servicio
    
    ### Actores: 
@@ -253,3 +255,120 @@
    -Crea una solicitud de repuestos.
 
    -Envía la solicitud a los proveedores.
+
+   
+ ## Caso de Uso 8: Recibir Cotizaciones de Proveedores
+   
+   ### Actor: 
+
+   -Personal de la Empresa
+
+   ### Pasos:
+
+   -El personal de la empresa abre la sección de comunicación con proveedores.
+
+   -Accede a las cotizaciones de repuestos enviadas por los proveedores.
+
+   -Compara las cotizaciones y selecciona la más adecuada.
+
+
+   
+   ## Caso de Uso 16: Generar Factura para el Cliente
+   
+   
+ ### Actor:
+
+  -Personal de la Empresa
+
+   ### Pasos:
+
+ -El personal de la empresa abre la sección de facturación y pagos.
+
+  -Selecciona una orden de servicio completada.
+
+ -Completa el formulario de la orden de servicio
+
+-Genera una factura con los detalles de los servicios y repuestos proporcionados al cliente.
+
+
+  ## Caso de Uso 9: Registrar Actividad de Mantenimiento
+   
+   ### Actor: 
+
+   -Técnico
+
+   ### Pasos:
+
+   -El técnico inicia sesión.
+
+   -Accede a la sección de registro de actividades de mantenimiento.
+
+   -Completa un formulario para registrar las actividades realizadas en una máquina.
+
+   -Genera un informe detallado de las actividades de mantenimiento realizadas en un período específico.
+
+
+
+ ## Caso de Uso 10: Ofrecer Propuestas ABC
+   
+   ### Actores: 
+
+   -Cliente
+
+   -Personal de la Empresa
+
+   ### Pasos:
+
+   -El cliente inicia sesión.
+
+   -Accede a la sección de propuestas de valor.
+
+   -Revisa las opciones de costos y calidad de repuestos para tomar decisiones informadas.
+
+
+   
+  ## Caso de Uso 11: Registrar Diagnóstico de Fallas
+   
+   ### Actor: 
+
+   -Técnico
+
+   ### Pasos:
+
+   -El técnico inicia sesión.
+
+   -Accede a la sección de diagnóstico de fallas.
+
+   -Registra detalles sobre el estado actual de la máquina y los problemas identificados.
+
+
+  ## Caso de Uso 12: Importar y Vender Repuestos
+   
+   ### Actor: 
+
+   -Personal de la Empresa
+
+   ### Pasos:
+
+   -El personal de la empresa inicia sesión.
+
+   -Accede al módulo de importación y venta de repuestos.
+
+   -Registra nuevos repuestos importados y gestiona las ventas.
+
+
+   
+   
+  ## Caso de Uso 13: Brindar Asistencia Remota
+   
+   ### Actor: 
+
+   -Técnico
+
+   ### Pasos:
+
+   -El técnico inicia sesión.
+
+   -Accede a la sección de asistencia remota.
+
+   -Brinda asistencia en línea a los clientes.
