@@ -12,15 +12,25 @@
 
 **Empresa Komaq Service**
 
-[Vinculo a la Descripcion de la Empresa](./Informe/01DescripcionEmpresa.md)
+# PC 01
 
-[Vinculo a Requerimientos](./Informe/02Requerimientos.md)
+[Descripcion de la Empresa](./Informe/01DescripcionEmpresa.md)
 
-[Vinculo a Modulos](./Informe/03Modulos.md)
+[Requerimientos](./Informe/02Requerimientos.md)
 
-[Vinculo a Prototipo](./Informe/04Prototipo.md)
+[Modulos](./Informe/03Modulos.md)
 
-[Vinculo al Modelo Conceptual](./Informe/05ModeloConceptual.md)
+[Prototipo](./Informe/04Prototipo.md)
+
+[Modelo Conceptual](./Informe/05ModeloConceptual.md)
 
 [Entrevista](https://youtu.be/EyXzugSsWqU)
 Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
+
+# PC 02
+
+[Modelo Conceptual(mejoras)](./Informe/05ModeloConceptual.md)
+
+[Modelamiento Lógico](./Informe/06ModeloRelacional.md)
+
+[Validación del Esquema utilizando las Formas Normales](./Informe/)
