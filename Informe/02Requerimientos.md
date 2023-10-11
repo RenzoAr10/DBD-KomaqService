@@ -168,5 +168,89 @@
 
       -La aplicación verifica las credenciales y permite el acceso.
 
-      -Módulo de Gestión de Órdenes de Servicio:
+   ## Caso de Uso 3: Crear Orden de Servicio
+   
+   ### Actores: 
+   
+    ### Actor:
 
+      -Cliente
+
+   ### Pasos:
+
+      -El cliente inicia sesión.
+
+      -Accede a la sección de creación de órdenes de servicio.
+
+      -Completa el formulario de la orden de servicio
+
+      -Envia la orden de servicio.
+
+      ## Caso de Uso 4: Asignar Técnico a Orden de Servicio
+   
+   ### Actores: 
+
+
+      -Técnico
+
+      -Personal de la Empresa
+
+   ### Pasos:
+
+      -El personal de la empresa abre una orden de servicio.
+
+      -Asigna un técnico disponible a la orden de servicio.
+   
+
+      ## Caso de Uso 5: Actualizar Estado de Orden de Servicio
+   
+   ### Actores: 
+
+
+      -Técnico
+
+      -Personal de la Empresa
+
+   ### Pasos:
+
+      -El técnico inicia sesión.
+
+      -Accede a las órdenes de servicio asignadas.
+
+      -Actualiza el estado de la orden de servicio (por ejemplo, en progreso, completada).
+
+
+   
+ ## Caso de Uso 6: Ver Inventario de Repuestos
+   
+   ### Actores: 
+
+
+      -Técnico
+
+      -Personal de la Empresa
+
+   ### Pasos:
+
+      -El usuario abre la aplicación.
+
+      -Accede a la sección de inventario de repuestos.
+
+      -Explora la lista de repuestos disponibles.
+
+
+ ## Caso de Uso 7: Solicitar Repuestos a Proveedores
+   
+   ### Actor: 
+
+      -Personal de la Empresa
+
+   ### Pasos:
+
+      -El personal de la empresa inicia sesión.
+
+      -Accede al módulo de comunicación con proveedores.
+
+      -Crea una solicitud de repuestos.
+
+      -Envía la solicitud a los proveedores.
