@@ -135,6 +135,12 @@
    # Casos de uso
 
    ## Caso de Uso 1: Registrarse como Cliente
+
+   ### Objetivo:
+
+   El objetivo de este caso de uso es permitir que un cliente potencial se registre en la aplicación móvil de Komaq Service para acceder a los servicios y funcionalidades disponibles.
+
+
    
     ### Actor:
 
@@ -151,7 +157,13 @@
       -Confirma su registro.
    
    ## Caso de Uso 2: Iniciar Sesión
-   
+
+   ### Objetivo:
+
+   El objetivo de este caso de uso es permitir que los usuarios inicien sesión en la aplicación móvil de Komaq Service para acceder a sus cuentas y utilizar las funcionalidades disponibles.
+
+
+
    ### Actores: 
 
       -Cliente
@@ -169,6 +181,12 @@
       -La aplicación verifica las credenciales y permite el acceso.
 
    ## Caso de Uso 3: Crear Orden de Servicio
+   
+   ### Objetivo:
+   
+   El objetivo de este caso de uso es permitir que un cliente cree una orden de servicio para solicitar mantenimiento o reparación de maquinaria pesada.
+
+
    
    ### Actores: 
    
@@ -189,6 +207,13 @@
 
    
       ## Caso de Uso 4: Asignar Técnico a Orden de Servicio
+
+   ### Objetivo:
+
+   El objetivo de este caso de uso es permitir que el personal de la empresa asigne un técnico disponible a una orden de servicio para que realice el mantenimiento requerido.
+
+
+
    
    ### Actores: 
 
@@ -205,7 +230,13 @@
    
 
       ## Caso de Uso 5: Actualizar Estado de Orden de Servicio
-   
+
+   ### Objetivo:
+
+   El objetivo de este caso de uso es permitir que el técnico actualice el estado de una orden de servicio para reflejar su progreso o completitud.
+
+
+
    ### Actores: 
 
 
@@ -224,7 +255,11 @@
 
    
  ## Caso de Uso 6: Ver Inventario de Repuestos
-   
+ 
+   ### Objetivo:
+
+El objetivo de este caso de uso es permitir que los usuarios consulten el inventario de repuestos disponibles en Komaq Service.
+
    ### Actores: 
 
    -Técnico
@@ -241,6 +276,10 @@
 
 
  ## Caso de Uso 7: Solicitar Repuestos a Proveedores
+
+ ###  Objetivo:
+
+El objetivo de este caso de uso es permitir que el personal de la empresa solicite repuestos necesarios a los proveedores externos.
    
    ### Actor: 
 
@@ -258,7 +297,10 @@
 
    
  ## Caso de Uso 8: Recibir Cotizaciones de Proveedores
-   
+
+   ### Objetivo:
+
+El objetivo de este caso de uso es permitir que el personal de la empresa acceda a las cotizaciones de repuestos enviadas por los proveedores y seleccione la más adecuada.
    ### Actor: 
 
    -Personal de la Empresa
@@ -274,7 +316,10 @@
 
    
    ## Caso de Uso 9: Generar Factura para el Cliente
-   
+
+   ### Objetivo:
+
+El objetivo de este caso de uso es permitir que el personal de la empresa genere una factura detallada para el cliente con los servicios y repuestos proporcionados.
    
  ### Actor:
 
@@ -292,6 +337,10 @@
 
 
   ## Caso de Uso 10: Registrar Actividad de Mantenimiento
+
+  ### Objetivo:
+
+El objetivo de este caso de uso es permitir que el técnico registre las actividades de mantenimiento realizadas en una máquina y genere un informe detallado.
    
    ### Actor: 
 
@@ -310,6 +359,10 @@
 
 
  ## Caso de Uso 11: Ofrecer Propuestas ABC
+
+ ### Objetivo:
+
+El objetivo de este caso de uso es permitir que el técnico registre las actividades de mantenimiento realizadas en una máquina y genere un informe detallado.
    
    ### Actores: 
 
@@ -328,6 +381,10 @@
 
    
   ## Caso de Uso 12: Registrar Diagnóstico de Fallas
+
+  ### Objetivo:
+
+El objetivo de este caso de uso es permitir que el técnico registre las actividades de mantenimiento realizadas en una máquina y genere un informe detallado.
    
    ### Actor: 
 
@@ -343,6 +400,10 @@
 
 
   ## Caso de Uso 13: Importar y Vender Repuestos
+
+  ### Objetivo:
+
+El objetivo de este caso de uso es permitir que el técnico registre las actividades de mantenimiento realizadas en una máquina y genere un informe detallado.
    
    ### Actor: 
 
