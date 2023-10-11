@@ -225,32 +225,31 @@
    
    ### Actores: 
 
+   -Técnico
 
-      -Técnico
-
-      -Personal de la Empresa
+   -Personal de la Empresa
 
    ### Pasos:
 
-      -El usuario abre la aplicación.
+   -El usuario abre la aplicación.
 
-      -Accede a la sección de inventario de repuestos.
+   -Accede a la sección de inventario de repuestos.
 
-      -Explora la lista de repuestos disponibles.
+   -Explora la lista de repuestos disponibles.
 
 
  ## Caso de Uso 7: Solicitar Repuestos a Proveedores
    
    ### Actor: 
 
-      -Personal de la Empresa
+   -Personal de la Empresa
 
    ### Pasos:
 
-      -El personal de la empresa inicia sesión.
+   -El personal de la empresa inicia sesión.
 
-      -Accede al módulo de comunicación con proveedores.
+   -Accede al módulo de comunicación con proveedores.
 
-      -Crea una solicitud de repuestos.
+   -Crea una solicitud de repuestos.
 
-      -Envía la solicitud a los proveedores.
+   -Envía la solicitud a los proveedores.
