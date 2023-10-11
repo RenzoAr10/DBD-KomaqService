@@ -7,7 +7,8 @@
 # Modelo Conceptual2
 
 
-![mer2](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/1d4f545e-e0ba-484b-8c10-09ea2bc7e300)
+![1](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/a2dcdde5-bb2a-4696-8f18-aee44c876da0)
+
 
 
 ## Diccionario de datos
