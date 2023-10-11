@@ -31,9 +31,6 @@ Cumplimiento de regulaciones de privacidad y seguridad junto con Komaq.
 # Módulo de Gestión de Órdenes de Servicio:
 
 Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
-Módulo de Comunicación con Clientes:
-
-Facilita la comunicación directa con los clientes, lo que es crucial para que los clientes soliciten asistencia, se mantengan informados sobre el estado de sus órdenes de servicio y mejora la satisfacción del cliente.
 
 ## Responsabilidades:
 
@@ -46,21 +43,8 @@ Actualizar el estado de las órdenes de servicio para reflejar el progreso.
 Gestionar la documentación y el historial de las órdenes de servicio.
 
 
-# Módulo de Gestión de Órdenes de Servicio:
 
-Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
-
-## Responsabilidades:
-
-Crear órdenes de servicio para un seguimiento eficiente.
-
-Asignar técnicos a las órdenes de servicio.
-
-Actualizar el estado de las órdenes de servicio para reflejar el progreso.
-
-Gestionar la documentación y el historial de las órdenes de servicio.
-
-#Módulo de Comunicación con Clientes:
+# Módulo de Comunicación con Clientes:
 
 Facilita la comunicación directa con los clientes, lo que es crucial para que los clientes soliciten asistencia, se mantengan informados sobre el estado de sus órdenes de servicio y mejora la satisfacción del cliente.
 
