@@ -136,11 +136,11 @@
 
    ## Caso de Uso 1: Registrarse como Cliente
    
-    -Actor:
+    ### Actor:
 
       -Cliente
    
-   -Pasos:
+    ### Pasos:
 
       -El cliente abre la aplicación.
 
@@ -152,7 +152,7 @@
    
    ## Caso de Uso 2: Iniciar Sesión
    
-   -Actores: 
+   ### Actores: 
 
       -Cliente
 
@@ -160,7 +160,7 @@
 
       -Personal de la Empresa
 
-   -Pasos:
+   ### Pasos:
 
       -El usuario abre la aplicación.
 
