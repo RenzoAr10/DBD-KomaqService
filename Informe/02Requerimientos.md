@@ -134,35 +134,39 @@
 
    # Casos de uso
 
-## Caso de Uso 1: Registrarse como Cliente
--Actor: Cliente
+   ## Caso de Uso 1: Registrarse como Cliente
+   
+    -Actor:
 
--Pasos:
+      -Cliente
+   
+   -Pasos:
 
--El cliente abre la aplicación.
+      -El cliente abre la aplicación.
 
--Selecciona la opción de registro.
+      -Selecciona la opción de registro.
 
--Completa el formulario de registro con su información personal.
+      -Completa el formulario de registro con su información personal.
 
--Confirma su registro.
+      -Confirma su registro.
+   
+   ## Caso de Uso 2: Iniciar Sesión
+   
+   -Actores: 
 
-## Caso de Uso 2: Iniciar Sesión
--Actores: Cliente, Técnico, Personal de la Empresa
+      -Cliente
 
--Cliente
+      -Técnico
 
--Técnico
+      -Personal de la Empresa
 
--Personal de la Empresa
+   -Pasos:
 
--Pasos:
+      -El usuario abre la aplicación.
 
--El usuario abre la aplicación.
+      -Ingresa su correo electrónico y contraseña.
 
--Ingresa su correo electrónico y contraseña.
+      -La aplicación verifica las credenciales y permite el acceso.
 
--La aplicación verifica las credenciales y permite el acceso.
-
--Módulo de Gestión de Órdenes de Servicio:
+      -Módulo de Gestión de Órdenes de Servicio:
 
