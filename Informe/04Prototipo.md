@@ -57,38 +57,38 @@ El empleado de la empresa KOMAQ podrá visualizar un calendario con todas las fe
 
 ## Catalogo maquinas 
 El cliente podrá visualizar el catalogoo de maquinas dsiponibles para brindar el servicio
-![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoMaquinasCliente.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoMaquinasCliente.jpeg)
 
 ## Catalogo problemas Cliente
 
 El cliente podrá visualizar los problemas relacionados a los servicios que brinda la empresa para luego indicar cual es el que requiere
 
-![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoProblemasCliente.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoProblemasCliente.jpeg)
 
 ## Catalogo Servicio Cliente
 
 El cliente podrá visualizar lsitados todos los servicios con los cuales cuenta la empresa
 
-![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoServicioCliente.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoServicioCliente.jpeg)
 
 ## Control de inventario
 
 El empleado podrá visualizar y registrar nuevos ellementos al inventario , así mismo podrá visualizar la cantidad de objetos disponibles de cada uno de ellos
 
-![Texto Alternativo](/Documentacion%20de%20Soporte/ControlDeInventarioEmpelado.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/ControlDeInventarioEmpelado.jpeg)
 
 ## Control de usuario 
 
 El empleado podrá administrar las cuentas activas en el aplicativo , así mismo podrá quitar o añadir más
-![Texto Alternativo](/Documentacion%20de%20Soporte/ControlDeUsuarioEmpleado.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/ControlDeUsuarioEmpleado.jpeg)
 
 ## Contizacion Empleado
 
 Se le realizará una cotizacion a un cliente cuando solicite el servicio 
 
-![Texto Alternativo](/Documentacion%20de%20Soporte/CotizacionEmpleado.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/CotizacionEmpleado.jpeg)
 
 ## Evaluacion de la cotizacion
 El cliente podrá evaluar la cotizacion , rechazandola o aceptandola 
-![Texto Alternativo](/Documentacion%20de%20Soporte/EvaluacionCliente.png)
+![Texto Alternativo](/Documentacion%20de%20Soporte/EvaluacionCliente.jpeg)
 
