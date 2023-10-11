@@ -1,31 +1,28 @@
+Módulo de Gestión de Órdenes de Servicio:
+
+Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
+Módulo de Comunicación con Clientes:
+
+Facilita la comunicación directa con los clientes, lo que es crucial para que los clientes soliciten asistencia, se mantengan informados sobre el estado de sus órdenes de servicio y mejora la satisfacción del cliente.
+Módulo de Comunicación con Proveedores:
+
+Gestiona la comunicación con los proveedores de repuestos, lo que garantiza que la empresa tenga acceso a las piezas necesarias para el mantenimiento de la maquinaria pesada.
+Módulo de Reporte de Actividades:
+
+Documenta las actividades de mantenimiento realizadas por los técnicos, lo que es fundamental para llevar un registro de las acciones tomadas y para garantizar la calidad de los servicios.
+Módulo de Facturación y Pagos:
+
+Está relacionado con la facturación de servicios y permite a los clientes realizar pagos de manera conveniente, lo que es esencial para el flujo de ingresos de la empresa.
+Módulo de Informes de Gestión:
+
+Genera informes detallados sobre el rendimiento de la empresa, lo que brinda información valiosa para tomar decisiones estratégicas basadas en datos y mejorar la eficiencia operativa.
+
+
+
+
 # Módulos:
 
-## Módulo de Interaccion con el usuario
-### Funcion: permitir a los clientes y empleados interactuar con la empresa a través de la aplicación.
-### Responsabilidades: 
-#### ° El cliente al ser nuevo no cuenta con una cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
-#### ° Un empleado al ser nuevo y no tener cuenta para iniciar sesion entonces este podrá registrarse en el sistema.
-#### ° Un empleado al ser nuevo en algun cargo (admin) o al cambiarse de area de trabajo en la empresa entonces este podrá registrarse en el sistema con un nuevo cargo o en una nueva area.
-#### ° El cliente o empleado podra loguarse al sistema con su usuario y contraseña.
-#### ° El usuario al no poder loguearse por olvido de su nombre de usuario o contraseña,este tiene la opción de recordar datos en la plataforma para el próximo inicio de sesión.
-#### ° El cliente, como usuario,podra registrarse para solicitar algun servicio de  Komaq
-#### ° Los campos solicitados son todos obligatorios exceptuando la foto de perfil
-#### ° El cliente al loguearse podrá visualizar los datos personales con los cuales fueron registrados la cuenta
-#### ° Si el cliente desea actualizar alguno de sus datos,este deberá contactarse con el area de soporte para poder realizar el cambio
-#### ° El cliente podrá visualizar su historial de todos los servicios solicitados, detallando información al seleccionar alguna celda de la tabla
-#### ° El cliente al realizar una selección de pedido podra ver el estado (Pendiente , en curso , Rechazado , Completado) del pedido el cual como se mencionó , podrá cambiar conforme el servicio siga su curso
-#### ° El cliente  puede ver pero no editar los siguiente campos mostrados
-#### ° El cliente puede solicitar un servicio de los cuales ofrece la empresa por medio de su plataforma web.
-#### ° En los datos del usuario se menciona al contratante.
-#### ° El contratante será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. 
-#### ° El contratante no necesariamente es el mismo de usuario de la cuenta
-#### ° El usuario como contratante, por lo general, será el administrador o jefe de proyecto de la empresa que requiere los servicios.
-#### ° El contratante será la persona que estará en constante comunicación con KOMAQ para validar e informar el progreso del servicio.
-#### ° El empleado, como usuario, puede ver las solicitudes de todos los clientes, pudiendo filtrar estas mismas por , Cliente (contratante) , el jefe de proyecto (usuario de la cuenta) , Tipo de actividad del servicio brindada
-#### ° El empleado puede ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes
-#### ° El empleado puede visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
-#### °  Todos los usuarios deben registrarse y autenticarse en la plataforma para acceder a las funcionalidades relacionadas con la gestión de pedidos y solicitudes.
-#### °  Los usuarios deben gerantizar, conjuntamente con Komaq, garantizar la seguridad cumpliendo con las regulaciones de privacidad aplicables.
+
 
 
 ## Módulo de Gestion de pedidos y solicitudes
@@ -81,31 +78,129 @@
 ####  ° Los administradores  pueden supervisar las actividades de ventas, incluyendo la generación de presupuestos y la firma de contratos.
 
 
-Módulo de Registro de Usuarios:
+# Módulo de Registro de Usuarios:
 
 Este módulo permitirá a los usuarios registrarse en la aplicación. Los usuarios podrían ser clientes, técnicos, o personal de la empresa. Deberá recopilar información básica como nombre, correo electrónico y número de teléfono. Esto es esencial para tener un sistema de autenticación y para rastrear quién realiza qué acciones en la aplicación.
-Módulo de Gestión de Órdenes de Servicio:
 
-En este módulo, se gestionarán las órdenes de servicio. Los clientes podrán crear nuevas órdenes de servicio a través de la aplicación. Los técnicos y el personal de la empresa podrán programar fechas de servicio, asignar técnicos a las órdenes y actualizar el estado de las órdenes a medida que avanzan. Los clientes podrán hacer un seguimiento del progreso de sus órdenes.
-Módulo de Inventario de Repuestos:
+## Responsabilidades:
 
-Este módulo mantendrá un registro del inventario de repuestos disponibles en la empresa. Los técnicos y el personal de la empresa podrán verificar la disponibilidad de repuestos antes de programar un servicio. Si un repuesto no está disponible, podrán solicitarlo a través del módulo correspondiente.
-Módulo de Comunicación con Proveedores:
+Registro de nuevos clientes, empleados o cambios de área/cargo.
 
-Para solicitar repuestos que no estén en inventario, este módulo permitirá la comunicación con proveedores externos. Se podrán generar órdenes de compra, enviar solicitudes a proveedores y realizar un seguimiento de las entregas de repuestos.
-Módulo de Registro de Actividades de Mantenimiento:
+Inicio de sesión para clientes y empleados.
 
-Este módulo permitirá a los técnicos registrar todas las actividades de mantenimiento realizadas en las máquinas. Esto es crucial para mantener un historial de servicio y documentar las acciones específicas llevadas a cabo.
-Módulo de Propuestas de Valor ABC:
+Recordar datos de inicio de sesión.
 
-En este módulo, se presentarán opciones a los clientes en términos de costos y calidad de repuestos. Los clientes podrán tomar decisiones informadas sobre qué repuestos utilizar y cuánto desean invertir en el servicio.
-Módulo de Diagnóstico de Fallas:
+Registro de solicitudes de servicio.
 
-Para evaluar y registrar los problemas con las máquinas, este módulo ayudará a los técnicos a realizar diagnósticos precisos de las fallas en la maquinaria. Pueden incluir detalles sobre el estado actual de la máquina y los problemas identificados.
-Módulo de Importación y Venta de Repuestos:
+Visualización y actualización de datos personales.
 
-Aquí se gestionará la importación y venta de repuestos de maquinaria pesada. Los técnicos y el personal de ventas podrán solicitar repuestos y realizar un seguimiento de las ventas de repuestos a clientes.
-Módulo de Asistencia Remota y Soporte Técnico:
+Historial de servicios y estado de pedidos para clientes.
 
-Para brindar asistencia remota y soporte técnico en el campo, este módulo facilitará la comunicación entre los técnicos y los clientes. Los técnicos podrán brindar orientación y solucionar problemas a través de la aplicación.
+El contratante, usualmente un administrador, se encarga de comunicarse y recibir asistencia.
 
+Empleados pueden ver solicitudes, detalles y cambiar estados.
+
+Calendario con fechas de pedidos.
+
+Registro y autenticación de usuarios requerido para acceder a funciones de gestión.
+
+Cumplimiento de regulaciones de privacidad y seguridad junto con Komaq.
+
+
+# Módulo de Gestión de Órdenes de Servicio:
+
+Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
+Módulo de Comunicación con Clientes:
+
+Facilita la comunicación directa con los clientes, lo que es crucial para que los clientes soliciten asistencia, se mantengan informados sobre el estado de sus órdenes de servicio y mejora la satisfacción del cliente.
+
+## Responsabilidades:
+
+Crear órdenes de servicio para un seguimiento eficiente.
+
+Asignar técnicos a las órdenes de servicio.
+
+Actualizar el estado de las órdenes de servicio para reflejar el progreso.
+
+Gestionar la documentación y el historial de las órdenes de servicio.
+
+
+# Módulo de Gestión de Órdenes de Servicio:
+
+Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
+
+##Responsabilidades:
+
+Crear órdenes de servicio para un seguimiento eficiente.
+
+Asignar técnicos a las órdenes de servicio.
+
+Actualizar el estado de las órdenes de servicio para reflejar el progreso.
+
+Gestionar la documentación y el historial de las órdenes de servicio.
+
+#Módulo de Comunicación con Clientes:
+
+Facilita la comunicación directa con los clientes, lo que es crucial para que los clientes soliciten asistencia, se mantengan informados sobre el estado de sus órdenes de servicio y mejora la satisfacción del cliente.
+
+## Responsabilidades:
+
+Facilitar la comunicación bidireccional entre la empresa y los clientes.
+
+Proporcionar un canal para que los clientes soliciten asistencia.
+
+Enviar actualizaciones sobre el estado de las órdenes de servicio a los clientes.
+
+Mejorar la satisfacción del cliente al mantenerlos informados.
+
+# Módulo de Comunicación con Proveedores:
+
+Gestiona la comunicación con los proveedores de repuestos, lo que garantiza que la empresa tenga acceso a las piezas necesarias para el mantenimiento de la maquinaria pesada.
+
+## Responsabilidades:
+
+Gestionar la comunicación con proveedores de repuestos.
+
+Solicitar repuestos necesarios y garantizar su disponibilidad.
+
+Coordinar la entrega de repuestos a la empresa para mantener la maquinaria.
+
+Mantener un flujo de suministros eficiente.
+
+# Módulo de Reporte de Actividades:
+
+Documenta las actividades de mantenimiento realizadas por los técnicos, lo que es fundamental para llevar un registro de las acciones tomadas y para garantizar la calidad de los servicios.
+
+## Responsabilidades:
+
+Documentar las actividades de mantenimiento realizadas por los técnicos.
+
+Registrar acciones y detalles sobre el mantenimiento de la maquinaria pesada.
+
+Facilitar el seguimiento de las actividades y garantizar la calidad de los servicios proporcionados.
+
+# Módulo de Facturación y Pagos:
+
+Está relacionado con la facturación de servicios y permite a los clientes realizar pagos de manera conveniente, lo que es esencial para el flujo de ingresos de la empresa.
+
+## Responsabilidades:
+
+Generar facturas detalladas para los servicios y repuestos proporcionados.
+
+Permitir que los clientes realicen pagos de manera conveniente.
+
+Registrar y gestionar los pagos para el flujo de ingresos de la empresa.
+
+Facilitar una contabilidad eficiente.
+
+# Módulo de Informes de Gestión:
+
+Genera informes detallados sobre el rendimiento de la empresa, lo que brinda información valiosa para tomar decisiones estratégicas basadas en datos y mejorar la eficiencia operativa.
+
+##Responsabilidades:
+
+Generar informes detallados sobre el rendimiento de la empresa.
+
+Proporcionar información valiosa para la toma de decisiones estratégicas.
+
+Ayudar a mejorar la eficiencia operativa y el cumplimiento de objetivos.
