@@ -10,3 +10,5 @@ https://www.youtube.com/watch?v=OhET9Hj09YY
 
 ## PC02
 
+Mejoras Modelo Conceptual | Modelo Logico:
+https://youtu.be/t0dpcqgY2Rs
