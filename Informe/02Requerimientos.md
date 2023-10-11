@@ -119,7 +119,7 @@
 
 
 
- # RESTRICCIONES
+    # Restricciones
  
    1.-Plataforma: La app debe estar disponible para dispositivos móviles y computadoras.
 
