@@ -1,6 +1,6 @@
 # Formas Nomales
 
-imagen 01FN1
+!(https://github.com/RenzoAr10/DBD-KomaqService/blob/fc51cc9baa238c6c95be1642194b5a5c71fa585a/Documentacion%20de%20Soporte/01FN1.png)
 
 Previamente nuestro sistema no presentaba atributos multivaluados.
 Se podría decir que el cliente tiene varios servicios, pero dicho "Servicio" tiene sus propios atributos por lo cual no sería adecuado tomarlo en cuenta en FN1
@@ -8,6 +8,8 @@ Se podría decir que el cliente tiene varios servicios, pero dicho "Servicio" ti
 imagen 02FN1
 
 Ahora se da la disposicion al cliente que puede disponer de varios telefonos al momento de crear su cuenta
+
+Ejemplo:
 
 imagen 03FN1
 imagen 04FN1
