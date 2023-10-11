@@ -132,11 +132,13 @@
    5.-Tiempo de Desarrollo:   El tiempo de desarrollo de la aplicación puede estar sujeto a restricciones, lo que podría afectar el cronograma del proyecto.
 
 
-   ## Casos de uso
+   # Casos de uso
 
-# Caso de Uso 1: Registrarse como Cliente
--Actores: Cliente
+## Caso de Uso 1: Registrarse como Cliente
+-Actor: Cliente
+
 -Pasos:
+
 -El cliente abre la aplicación.
 
 -Selecciona la opción de registro.
@@ -145,9 +147,17 @@
 
 -Confirma su registro.
 
-#Caso de Uso 2: Iniciar Sesión
+## Caso de Uso 2: Iniciar Sesión
 -Actores: Cliente, Técnico, Personal de la Empresa
+
+-Cliente
+
+-Técnico
+
+-Personal de la Empresa
+
 -Pasos:
+
 -El usuario abre la aplicación.
 
 -Ingresa su correo electrónico y contraseña.
