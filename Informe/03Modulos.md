@@ -50,7 +50,7 @@ Gestionar la documentación y el historial de las órdenes de servicio.
 
 Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
 
-##Responsabilidades:
+## Responsabilidades:
 
 Crear órdenes de servicio para un seguimiento eficiente.
 
@@ -118,7 +118,7 @@ Facilitar una contabilidad eficiente.
 
 Genera informes detallados sobre el rendimiento de la empresa, lo que brinda información valiosa para tomar decisiones estratégicas basadas en datos y mejorar la eficiencia operativa.
 
-##Responsabilidades:
+## Responsabilidades:
 
 Generar informes detallados sobre el rendimiento de la empresa.
 
