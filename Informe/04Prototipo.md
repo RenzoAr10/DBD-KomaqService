@@ -56,40 +56,40 @@ El personal de la empresa podrá ver los datos de cada pedido, al darle click a 
 El empleado de la empresa KOMAQ podrá visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
 ![Texto Alternativo](/Documentacion%20de%20Soporte/PedidosCalendar%20-%20Administrador.png)
 
-## Catalogo maquinas 
+## Catalogo maquinas - Empleado
 El cliente podrá visualizar el catalogoo de maquinas dsiponibles para brindar el servicio
 ![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoMaquinasCliente.jpeg)
 
-## Catalogo problemas Cliente
+## Catalogo problemas - Cliente
 
 El cliente podrá visualizar los problemas relacionados a los servicios que brinda la empresa para luego indicar cual es el que requiere
 
 ![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoProblemasCliente.jpeg)
 
-## Catalogo Servicio Cliente
+## Catalogo Servicio - Cliente
 
 El cliente podrá visualizar lsitados todos los servicios con los cuales cuenta la empresa
 
 ![Texto Alternativo](/Documentacion%20de%20Soporte/CatalogoServicioCliente.jpeg)
 
-## Control de inventario
+## Control de inventario - Empleado
 
 El empleado podrá visualizar y registrar nuevos ellementos al inventario , así mismo podrá visualizar la cantidad de objetos disponibles de cada uno de ellos
 
 ![Texto Alternativo](/Documentacion%20de%20Soporte/ControlDeInventarioEmpelado.jpeg)
 
-## Control de usuario 
+## Control de usuario - Empleado
 
 El empleado podrá administrar las cuentas activas en el aplicativo , así mismo podrá quitar o añadir más
 ![Texto Alternativo](/Documentacion%20de%20Soporte/ControlDeUsuarioEmpleado.jpeg)
 
-## Contizacion Empleado
+## Cotizacion Empleado
 
 Se le realizará una cotizacion a un cliente cuando solicite el servicio 
 
 ![Texto Alternativo](/Documentacion%20de%20Soporte/CotizacionEmpleado.jpeg)
 
-## Evaluacion de la cotizacion
+## Evaluacion de la cotizacion - Cliente
 El cliente podrá evaluar la cotizacion , rechazandola o aceptandola 
 ![Texto Alternativo](/Documentacion%20de%20Soporte/EvaluacionCliente.jpeg)
 
