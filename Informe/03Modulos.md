@@ -109,3 +109,6 @@ Generar informes detallados sobre el rendimiento de la empresa.
 Proporcionar información valiosa para la toma de decisiones estratégicas.
 
 Ayudar a mejorar la eficiencia operativa y el cumplimiento de objetivos.
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e6d73b53-4bd3-43c1-ba5a-d1041de034b6)
+
