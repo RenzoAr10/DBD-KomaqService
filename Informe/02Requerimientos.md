@@ -152,8 +152,8 @@ Costo del Desarrollo:El presupuesto para el desarrollo de la aplicación podría
 #### °  Todos los usuarios deben registrarse y autenticarse en la plataforma para acceder a las funcionalidades relacionadas con la gestión de pedidos y solicitudes.
 #### °  Los usuarios deben gerantizar, conjuntamente con Komaq, garantizar la seguridad cumpliendo con las regulaciones de privacidad aplicables.
 
-####
-####
+####...........
+####...........
 #### °  Los empleados evaluaran las solicitudes, cambiando el estado de esta, la cual puede tomar 4 estados(Pendiente , en curso , Rechazado , Completado)
 #### °  Los clientes pueden iniciar nuevas solicitudes o pedidos de servicios o productos a través de la plataforma.
 #### °   Los clientes pueden realizar un seguimiento del estado de sus solicitudes o pedidos y recibir notificaciones cuando cambia su estado.
@@ -169,9 +169,8 @@ Costo del Desarrollo:El presupuesto para el desarrollo de la aplicación podría
 ####  ° Los administradores pueden asignar solicitudes o pedidos a empleados o contratantes específicos, según la disponibilidad y la capacidad.
 ####  ° Los administradores pueden intervenir en caso de problemas o disputas en el proceso de gestión de solicitudes.
 
-
-####
-####
+####...........
+####...........
 ####  ° Los clientes pueden solicitar servicios de mantenimiento preventivo o correctivo a través de la plataforma web.
 ####  ° Los clientes pueden realizar un seguimiento del estado de sus solicitudes de servicio y recibir actualizaciones sobre el progreso.
 ####  ° Los clientes pueden  utilizar la plataforma para realizar consultas técnicas y recibir orientación sobre problemas relacionados con la maquinaria pesada.
@@ -186,9 +185,8 @@ Costo del Desarrollo:El presupuesto para el desarrollo de la aplicación podría
 ####  ° Los empleados técnicos pueden hacer una actualizacion del inventario de repuestos y materiales utilizados durante la ejecución de servicios.
 
 
-
-####
-####
+####...........
+####...........
 ####  ° Los clientes pueden solicitar cotizaciones para servicios de mantenimiento, reparación y capacitación a través de la plataforma.
 ####  ° Los clientes pueden revisar y aprobar los presupuestos proporcionados por la empresa a través de la plataforma web.
 ####  ° Los clientes pueden acceder a los contratos de servicios celebrados con la empresa y verificar los términos y condiciones a través de la plataforma.
