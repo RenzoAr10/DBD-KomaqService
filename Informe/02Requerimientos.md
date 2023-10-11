@@ -273,7 +273,7 @@
 
 
    
-   ## Caso de Uso 16: Generar Factura para el Cliente
+   ## Caso de Uso 9: Generar Factura para el Cliente
    
    
  ### Actor:
@@ -291,7 +291,7 @@
 -Genera una factura con los detalles de los servicios y repuestos proporcionados al cliente.
 
 
-  ## Caso de Uso 9: Registrar Actividad de Mantenimiento
+  ## Caso de Uso 10: Registrar Actividad de Mantenimiento
    
    ### Actor: 
 
@@ -309,7 +309,7 @@
 
 
 
- ## Caso de Uso 10: Ofrecer Propuestas ABC
+ ## Caso de Uso 11: Ofrecer Propuestas ABC
    
    ### Actores: 
 
@@ -327,7 +327,7 @@
 
 
    
-  ## Caso de Uso 11: Registrar Diagnóstico de Fallas
+  ## Caso de Uso 12: Registrar Diagnóstico de Fallas
    
    ### Actor: 
 
@@ -342,7 +342,7 @@
    -Registra detalles sobre el estado actual de la máquina y los problemas identificados.
 
 
-  ## Caso de Uso 12: Importar y Vender Repuestos
+  ## Caso de Uso 13: Importar y Vender Repuestos
    
    ### Actor: 
 
@@ -359,7 +359,7 @@
 
    
    
-  ## Caso de Uso 13: Brindar Asistencia Remota
+  ## Caso de Uso 14: Brindar Asistencia Remota
    
    ### Actor: 
 
