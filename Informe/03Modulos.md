@@ -80,8 +80,32 @@
 ####  ° Los administradores pueden agregar, editar o eliminar usuarios en el sistema, incluyendo personal de ventas y clientes.
 ####  ° Los administradores  pueden supervisar las actividades de ventas, incluyendo la generación de presupuestos y la firma de contratos.
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/efb2246a-bc4d-4850-857e-cacc98422623)
 
+Módulo de Registro de Usuarios:
 
+Este módulo permitirá a los usuarios registrarse en la aplicación. Los usuarios podrían ser clientes, técnicos, o personal de la empresa. Deberá recopilar información básica como nombre, correo electrónico y número de teléfono. Esto es esencial para tener un sistema de autenticación y para rastrear quién realiza qué acciones en la aplicación.
+Módulo de Gestión de Órdenes de Servicio:
 
+En este módulo, se gestionarán las órdenes de servicio. Los clientes podrán crear nuevas órdenes de servicio a través de la aplicación. Los técnicos y el personal de la empresa podrán programar fechas de servicio, asignar técnicos a las órdenes y actualizar el estado de las órdenes a medida que avanzan. Los clientes podrán hacer un seguimiento del progreso de sus órdenes.
+Módulo de Inventario de Repuestos:
+
+Este módulo mantendrá un registro del inventario de repuestos disponibles en la empresa. Los técnicos y el personal de la empresa podrán verificar la disponibilidad de repuestos antes de programar un servicio. Si un repuesto no está disponible, podrán solicitarlo a través del módulo correspondiente.
+Módulo de Comunicación con Proveedores:
+
+Para solicitar repuestos que no estén en inventario, este módulo permitirá la comunicación con proveedores externos. Se podrán generar órdenes de compra, enviar solicitudes a proveedores y realizar un seguimiento de las entregas de repuestos.
+Módulo de Registro de Actividades de Mantenimiento:
+
+Este módulo permitirá a los técnicos registrar todas las actividades de mantenimiento realizadas en las máquinas. Esto es crucial para mantener un historial de servicio y documentar las acciones específicas llevadas a cabo.
+Módulo de Propuestas de Valor ABC:
+
+En este módulo, se presentarán opciones a los clientes en términos de costos y calidad de repuestos. Los clientes podrán tomar decisiones informadas sobre qué repuestos utilizar y cuánto desean invertir en el servicio.
+Módulo de Diagnóstico de Fallas:
+
+Para evaluar y registrar los problemas con las máquinas, este módulo ayudará a los técnicos a realizar diagnósticos precisos de las fallas en la maquinaria. Pueden incluir detalles sobre el estado actual de la máquina y los problemas identificados.
+Módulo de Importación y Venta de Repuestos:
+
+Aquí se gestionará la importación y venta de repuestos de maquinaria pesada. Los técnicos y el personal de ventas podrán solicitar repuestos y realizar un seguimiento de las ventas de repuestos a clientes.
+Módulo de Asistencia Remota y Soporte Técnico:
+
+Para brindar asistencia remota y soporte técnico en el campo, este módulo facilitará la comunicación entre los técnicos y los clientes. Los técnicos podrán brindar orientación y solucionar problemas a través de la aplicación.
 
