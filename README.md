@@ -12,7 +12,7 @@
 
 **Empresa Komaq Service**
 
-# PC01
+# PC 01
 
 [Descripcion de la Empresa](./Informe/01DescripcionEmpresa.md)
 
@@ -27,7 +27,7 @@
 [Entrevista](https://youtu.be/EyXzugSsWqU)
 Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 
-# PC02
+# PC 02
 
 [Modelo Conceptual(mejoras)](./Informe/05ModeloConceptual.md)
 
