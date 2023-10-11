@@ -20,7 +20,7 @@ El cliente al iniciar sesión podrá visualizar los datos personales con los cua
 El cliente podrá solicitar un servicio de los cuales ofrece la empresa, la empresa evaluará la solicitud, cambiando el estado de esta, la cual puede tomar 4 estados (Pendiente , en curso , Rechazado , Completado) , en los datos solicitados , se menciona al contratante , el cual será la persona encargada de comunicarse y recibir la asistencia directo de los servicios. 
 Este contratante, no necesariamente es el mismo de usuario de la cuenta, que el usuario de la cuenta por lo general será el administrador o jefe de proyecto de la empresa que requiere los servicios, el contratante será la persona que estará en constante comunicación con KOMAQ para validar e informar el progreso del servicio.
 
-![Texto Alternativo](/Documentacion%20de%20Soporte/SolicitarServicioCliente.jpeg)
+![Texto Alternativo](/Documentacion%20de%20Soporte/SolicitarServicioCliente.png)
 
 
 ## Lista de Servicio solicitados:
@@ -48,9 +48,9 @@ El empleado podrá ver las solicitudes de todos los clientes, pudiendo filtrar e
 
 ## Visualizar datos y/o modificar estado:
 El personal de la empresa podrá ver los datos de cada pedido, al darle click a la celda de la tabla , aquí se mostrarán más detalles sobre la solicitud de servicio , así mismo podrá cambiar el estado de cada una de la solicitudes 
-![Texto Alternativo](/Documentacion%20de%20Soporte/detallesEmpleado1.jpeg)
+![Texto Alternativo](/Documentacion%20de%20Soporte/detallesEmpleado1.png)
 
-![Texto Alternativo](/Documentacion%20de%20Soporte/detallesEmpleado2.jpeg)
+![Texto Alternativo](/Documentacion%20de%20Soporte/detallesEmpleado2.png)
 
 ## Calendario de pedidos 
 El empleado de la empresa KOMAQ podrá visualizar un calendario con todas las fechas de los pedidos realizados, esto con la finalidad de mejorar la planificación del desarrollo de los procesos de fabricación, mantenimiento y reparación que brinda la empresa
