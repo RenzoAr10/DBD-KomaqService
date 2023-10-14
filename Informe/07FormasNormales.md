@@ -6,5 +6,5 @@
 
 ![FN2001v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/39b58900-d2ed-4cb0-9cc1-35067b8dd162)
 
-![FN3001](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/eb03d307-9bcb-4daa-9232-e2459a50d0a3)
+![FN3001](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/7c7d95f4-4d50-4851-81c8-d2c684e507db)
 
