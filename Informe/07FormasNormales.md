@@ -2,23 +2,7 @@
 
 ![FN0000](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/40ab47d6-3d66-4509-bb06-29be6133f949)
 
-
-![01FN1](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/14687ae8-0f28-4206-b932-5315747c55e8)
-
-Previamente nuestro sistema no presentaba atributos multivaluados.
-Se podría decir que el cliente tiene varios servicios, pero dicho "Servicio" tiene sus propios atributos por lo cual no sería adecuado tomarlo en cuenta en FN1
-
-![02FN1](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/6f827a25-ae4b-47af-afb9-11777d9288e2)
-
-Ahora se da la disposicion al cliente que puede disponer de varios telefonos al momento de crear su cuenta
-
-Ejemplo:
-
-![03FN1](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/0306af90-6afc-4fd1-8a4c-8a76df31490a)
-
-![04FN1](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/3c3c4d37-f0fc-4e3f-b978-d020ac3dfc93)
-
-![05FN1](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/bf75d8e1-3f07-4b0c-9777-b33847ac4799)
+![FN1001](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/c1f51774-bb9a-4820-a106-7d67cdcb9e4b)
 
 ![06FN2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/86885297-d1f0-44b0-80dc-ddf93b1cf87d)
 
