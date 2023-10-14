@@ -4,7 +4,8 @@
 
 ![FN1001](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/c1f51774-bb9a-4820-a106-7d67cdcb9e4b)
 
-![06FN2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/86885297-d1f0-44b0-80dc-ddf93b1cf87d)
+![FN2001](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/ea0dd940-e17f-4145-8e11-174e8280534a)
+
 
 FN3
 
