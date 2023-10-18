@@ -12,7 +12,7 @@
 
    5.-El sistema notifica al usuario que la cuenta ha sido creada con éxito
    
-   5.-El caso de uso termina.
+   6.-El caso de uso termina.
 
 
    3.-El sistema notifica al usuario en caso que haya algun error al llenar los datos, ya sea por falta completar, datos duplicados o error de conectividad.
