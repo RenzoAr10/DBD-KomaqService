@@ -4,7 +4,7 @@
 ![Erdplus](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/CHEN%20(2).png)
 
 
-# Modelo Conceptual2
+# Modelo Conceptual 2
 
 
 ![1](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/erdplus003.png)
