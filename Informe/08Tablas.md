@@ -18,6 +18,7 @@ CREATE TABLE Usuario (
     idUsuario INT PRIMARY KEY,
     usuario VARCHAR(50),
     contrasena VARCHAR(255)
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
 
