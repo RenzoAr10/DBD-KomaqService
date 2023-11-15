@@ -86,9 +86,10 @@ SELECT nombre, DNI FROM Clientes;
 DELETE FROM Clientes WHERE id_usuario = 'id_usuario';
 DELETE FROM Usuario WHERE id_usuario = 'id_usuario';
 
-INSERT INTO Usuario (nombre, telefono, email, apellidopaterno, apellidomaterno, usuario, contraseña, direccion, DNI)
-VALUES ('NombreEjemplo', '123456789', 'correo@example.com', 'ApellidoPaternoEjemplo', 'ApellidoMaternoEjemplo', 'UsuarioEjemplo', 'ContraseñaEjemplo', 'DireccionEjemplo', '12345678');
-
+INSERT INTO Cliente (nombre, telefono, email, apellidopaterno, apellidomaterno, direccion, DNI)
+VALUES ('NombreEjemplo', '123456789', 'correo@example.com', 'ApellidoPaternoEjemplo', 'ApellidoMaternoEjemplo', 'DireccionEjemplo', '12345678');
+INSERT INTO Usuario (nombre_usuario, contraseña)
+VALUES ('UsuarioEjemplo', 'ContraseñaEjemplo')
 ```
 
 
