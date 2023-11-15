@@ -27,3 +27,14 @@ CREATE TABLE revisiones_maquina (
     comentarios TEXT,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
+
+--Tabla de Servicios Solicitados: Para registrar las solicitudes de servicio hechas por los usuarios.
+
+CREATE TABLE servicios (
+    id_servicio INT PRIMARY KEY,
+    id_usuario INT,
+    fecha_solicitud DATE,
+    estado VARCHAR(50),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+    -- Cada servicio solicitado está vinculado a un usuario.
+);
