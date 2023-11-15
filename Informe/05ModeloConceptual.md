@@ -7,7 +7,7 @@
 # Modelo Conceptual2
 
 
-![1](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/erdplus002.png)
+![1](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/erdplus003.png)
 
 
 
