@@ -3,10 +3,21 @@
 
 --Tabla de Usuarios: Para almacenar la información de los usuarios que acceden al sistema.
 
-CREATE TABLE usuarios (
-    id_usuario INT PRIMARY KEY,
-    nombre VARCHAR(255),
-    correo_electronico VARCHAR(255),
+CREATE TABLE Cliente (
+    idCliente INT PRIMARY KEY,
+    email VARCHAR(255),
+    direccion VARCHAR(255),
+    telefono VARCHAR(15),
+    nombre VARCHAR(50),
+    apellido_paterno VARCHAR(50),
+    apellido_materno VARCHAR(50),
+    dni VARCHAR(15)
+);
+
+CREATE TABLE Usuario (
+    idUsuario INT PRIMARY KEY,
+    usuario VARCHAR(50),
+    contrasena VARCHAR(255)
 );
 
 
