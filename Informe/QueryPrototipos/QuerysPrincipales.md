@@ -91,3 +91,16 @@ VALUES ('NombreEjemplo', '123456789', 'correo@example.com', 'ApellidoPaternoEjem
 ```
 
 
+**Editar Solicitud*
+
+![2S](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/0a8d579f-9ddc-4159-96b2-2f48d38873b6)
+
+ ```sql
+SELECT nombre, DNI FROM Clientes;
+DELETE FROM Clientes WHERE usuario = 'Usuario_Cliente';
+
+INSERT INTO Usuario (nombre, telefono, email, apellidopaterno, apellidomaterno, usuario, contraseña, direccion, DNI)
+VALUES ('NombreEjemplo', '123456789', 'correo@example.com', 'ApellidoPaternoEjemplo', 'ApellidoMaternoEjemplo', 'UsuarioEjemplo', 'ContraseñaEjemplo', 'DireccionEjemplo', '12345678');
+
+```
+
