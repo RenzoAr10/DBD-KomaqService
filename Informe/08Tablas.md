@@ -17,6 +17,17 @@ CREATE TABLE problemas (
     atender_problema BOOLEAN
 );
 
+--Tabla de Pedidos: Si hay pedidos que los usuarios pueden realizar, una tabla para estos sería necesaria.
+
+CREATE TABLE pedidos (
+    id_pedido INT PRIMARY KEY,
+    id_usuario INT,
+    detalles_pedido TEXT,
+    fecha_pedido DATE,
+    estado_pedido VARCHAR(50),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
 
 --Tabla de Revisión de Máquinas: Para mantener un historial de todas las revisiones realizadas en las máquinas.
 
@@ -37,4 +48,15 @@ CREATE TABLE servicios (
     estado VARCHAR(50),
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
     -- Cada servicio solicitado está vinculado a un usuario.
+);
+
+
+--Tabla de Reportes: Si el sistema genera reportes, podría haber una tabla para almacenarlos.
+
+CREATE TABLE reportes (
+    id_reporte INT PRIMARY KEY,
+    id_usuario INT,
+    fecha_reporte DATE,
+    contenido_reporte TEXT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
