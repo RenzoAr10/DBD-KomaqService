@@ -1,3 +1,5 @@
+# INTERFAZ USUARIO
+
 **Pagina Incio**
 
 ![1](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/paginainicio.png)
@@ -63,7 +65,8 @@ JOIN maquina m ON rm.Id_maquina = m.Id_maquina;
  ```
 
 **Solicitar Servicio**
-![1]((https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/RevisionesSolicitadas.png)
+
+![1](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/SolicitarServicio.png?raw=true)
 
 ```sql
 INSERT INTO servicio (nombreServicio, direccion, idproblema)
