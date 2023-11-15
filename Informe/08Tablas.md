@@ -1,3 +1,5 @@
+--TABLAS
+
 --Tabla de Usuarios: Para almacenar la información de los usuarios que acceden al sistema.
 
 CREATE TABLE usuarios (
@@ -60,3 +62,8 @@ CREATE TABLE reportes (
     contenido_reporte TEXT,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
+
+
+
+
+--SENTENCIAS SQL
