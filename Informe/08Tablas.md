@@ -16,3 +16,14 @@ CREATE TABLE problemas (
     gravedad VARCHAR(50),
     atender_problema BOOLEAN
 );
+
+
+--Tabla de Revisión de Máquinas: Para mantener un historial de todas las revisiones realizadas en las máquinas.
+
+CREATE TABLE revisiones_maquina (
+    id_revision INT PRIMARY KEY,
+    id_usuario INT,
+    fecha_revision DATE,
+    comentarios TEXT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
