@@ -75,4 +75,18 @@ VALUES ('Nombre_Servicio', 'Direccion_Servicio', id_problema);
 ```
 
 
+**Borrar Cliente**
+
+![borrarclientes](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/fb52fa61-d2b5-489e-a65b-64f55ac29bea)
+
+
+ ```sql
+SELECT nombre, DNI FROM Clientes;
+DELETE FROM Clientes WHERE usuario = 'Usuario_Cliente';
+
+INSERT INTO Usuario (nombre, telefono, email, apellidopaterno, apellidomaterno, usuario, contraseña, direccion, DNI)
+VALUES ('NombreEjemplo', '123456789', 'correo@example.com', 'ApellidoPaternoEjemplo', 'ApellidoMaternoEjemplo', 'UsuarioEjemplo', 'ContraseñaEjemplo', 'DireccionEjemplo', '12345678');
+
+```
+
 
