@@ -1,3 +1,4 @@
+ ```sql
 --TABLAS
 
 --Tabla de Usuarios: Para almacenar la información de los usuarios que acceden al sistema.
