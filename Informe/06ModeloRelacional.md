@@ -6,4 +6,7 @@
 
 
 
+# Modelo Relacional 2
+
+![j](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/c053407c-cff3-4cf5-ac5b-50753913d1a2)
 
