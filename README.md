@@ -35,3 +35,5 @@ Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 [Modelamiento Lógico](./Informe/06ModeloRelacional.md)
 
 [Validación del Esquema utilizando las Formas Normales](./Informe/07FormasNormales.md)
+
+# Avance  02
