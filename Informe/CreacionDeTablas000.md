@@ -192,6 +192,15 @@ INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
 ('PROB005', 'Sobrecalentamiento del motor', 'H60FT', 'MAQ005');
 
 
+--TABLA SERVICIO
+INSERT INTO Servicio (id_servicio, nombre_servicio, fecha_inicio, fecha_fin, costo, cantidad_servicios, subtotal_servicios, tecnico_asignado, id_orden_compra, id_factura) VALUES
+('SERV001', 'Mantenimiento Preventivo', '2023-04-20', '2023-04-21', 500, 1, 500, 'Hector Rojas', 'OC001', 'FAC001'),
+('SERV002', 'Reparación del Sistema Hidráulico', '2023-04-22', '2023-04-23', 1200, 2, 2400, 'Jefferson Cotrina', 'OC002', 'FAC002'),
+('SERV003', 'Cambio de Neumáticos', '2023-04-24', '2023-04-25', 300, 4, 1200, 'Gabriel Campos', 'OC003', 'FAC003'),
+('SERV004', 'Servicio de Transmisión', '2023-04-26', '2023-04-27', 800, 1, 800, 'Lucia Ramirez', 'OC004', 'FAC004'),
+('SERV005', 'Inspección Técnica', '2023-04-28', '2023-04-29', 200, 3, 600, 'Carlos Gonzales', 'OC005', 'FAC005');
+
+
 --TABLA FACTURA
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC001', 'Tarjeta de Crédito', '2023-11-17', 1000);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC002', 'Efectivo', '2023-11-18', 500);
