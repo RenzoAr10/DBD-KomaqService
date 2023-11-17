@@ -207,6 +207,14 @@ INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES 
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC003', 'Transferencia Bancaria', '2023-11-19', 750);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC004', 'Pago Móvil', '2023-11-20', 1250);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC005', 'Cheque', '2023-11-21', 3000);
+
+--TABLA CONSUMIBLE
+INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, costo, id_servicio) VALUES
+('CONS001', 'Aceite Hidráulico', '2023-04-20', 10, 50, 'SERV001'),
+('CONS002', 'Filtro de Aire', '2023-04-22', 5, 30, 'SERV002'),
+('CONS003', 'Neumáticos', '2023-04-24', 4, 300, 'SERV003'),
+('CONS004', 'Aceite de Transmisión', '2023-04-26', 20, 40, 'SERV004'),
+('CONS005', 'Batería', '2023-04-28', 2, 100, 'SERV005');
 ```
 
 
