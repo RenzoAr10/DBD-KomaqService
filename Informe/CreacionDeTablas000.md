@@ -144,6 +144,13 @@ CREATE TABLE AccionRecomendada (
  ```
 ## INSERCION DE VALORES
  ```
+--TABLA CLIENTE
+INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion) VALUES
+('CL001', 'Empresa', 'Andina', '', 20123456789, '12345678', 987654321, 'contacto@andina.com', 'Av. Industrial 123'),
+('CL002', 'Servicios', 'Industriales', 'Garcia', 20123456780, '87654321', 987650123, 'info@servind.com', 'Calle Comercio 456'),
+('CL003', 'Construcciones', 'Rojas', 'S.A.', 20123456781, '23456789', 987651234, 'ventas@rojascons.com', 'Av. Los Constructores 789'),
+('CL004', 'Agro', 'Campo', 'Lopez', 20123456782, '34567890', 987652345, 'soporte@agrocampo.com', 'Av. Agricultura 012'),
+('CL005', 'Textiles', 'Morales', 'EIRL', 20123456783, '45678901', 987653456, 'admin@textmor.com', 'Jr. Algodón 345');
 
 --TABLA MAQUINA
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'USR001');
