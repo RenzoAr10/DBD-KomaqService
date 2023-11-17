@@ -160,6 +160,14 @@ INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente,
 ('US004', 'gcampos', 'password4', 'CL004', 'OC004'),
 ('US005', 'lramirez', 'password5', 'CL005', 'OC005');
 
+--TABLA EMPLEADO
+INSERT INTO Empleado (id_empleado, nombre, apellido_paterno, apellido_materno, dni, telefono, email, especializacion, cargo, id_jefe) VALUES
+('EMP001', 'Hector', 'Rojas', '', '12345678', 987654321, 'hrojas@komq.com', 'Mecánico', 'Técnico Senior', NULL),
+('EMP002', 'Jefferson', 'Cotrina', '', '87654321', 987650123, 'jcotrina@komq.com', 'Mecánico', 'Técnico Junior', 'EMP001'),
+('EMP003', 'Gabriel', 'Campos', '', '23456789', 987651234, 'gcampos@komq.com', 'Logística', 'Gerente de Operaciones', NULL),
+('EMP004', 'Lucia', 'Ramirez', '', '34567890', 987652345, 'lramirez@komq.com', 'Administración', 'Asistente de Gerencia', 'EMP003'),
+('EMP005', 'Carlos', 'Gonzales', '', '45678901', 987653456, 'cgonzales@komq.com', 'Mecánico', 'Especialista de Campo', 'EMP001');
+
 --TABLA MAQUINA
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'USR001');
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ002', 'Cargador Frontal Cat', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 'USR002');
