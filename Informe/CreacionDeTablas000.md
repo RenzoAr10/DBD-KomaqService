@@ -13,6 +13,11 @@ CREATE TABLE Cliente (
 	direccion VARCHAR(255)
 );
 
+CREATE TABLE OrdenCompra (
+	id_orden_compra VARCHAR(10) PRIMARY KEY,
+	fecha_orden VARCHAR(100)
+);
+
 CREATE TABLE Usuario (
 	id_usuario VARCHAR(10) PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
@@ -37,6 +42,29 @@ CREATE TABLE Empleado (
     FOREIGN KEY (id_jefe) REFERENCES Empleado(id_empleado)
 );
 
+
+CREATE TABLE Factura (
+	id_factura VARCHAR(10) PRIMARY KEY,
+	forma_pago VARCHAR(100),
+	fecha_emision VARCHAR(100),
+	costo_total INT
+);
+
+CREATE TABLE Servicio (
+	id_servicio VARCHAR(10) PRIMARY KEY,
+	nombre_servicio VARCHAR(100),
+	fecha_inicio DATE,
+	fecha_fin DATE,
+	costo INT,
+	cantidad_servicios INT,
+	subtotal_servicios INT,
+	tecnico_asignado VARCHAR(100),
+	id_orden_compra VARCHAR(10),
+	id_factura VARCHAR(10),
+	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra),
+	FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
+);
+
 CREATE TABLE NomUsuario (
 	id_nomusuario VARCHAR(10) PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
@@ -59,10 +87,6 @@ CREATE TABLE Maquina (
 	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
-CREATE TABLE OrdenCompra (
-	id_orden_compra VARCHAR(10) PRIMARY KEY,
-	fecha_orden VARCHAR(100)
-);
 
 CREATE TABLE Problemas (
 	id_problema VARCHAR(10) PRIMARY KEY,
@@ -70,29 +94,6 @@ CREATE TABLE Problemas (
 	modelo VARCHAR(100),
 	id_maquina VARCHAR(10),
 	FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
-);
--- Modelo 2 veces?
-
-CREATE TABLE Servicio (
-	id_servicio VARCHAR(10) PRIMARY KEY,
-	nombre_servicio VARCHAR(100),
-	fecha_inicio DATE,
-	fecha_fin DATE,
-	costo INT,
-	cantidad_servicios INT,
-	subtotal_servicios INT,
-	tecnico_asignado VARCHAR(100),
-	id_orden_compra VARCHAR(10),
-	id_factura VARCHAR(10),
-	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra),
-	FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
-);
-
-CREATE TABLE Factura (
-	id_factura VARCHAR(10) PRIMARY KEY,
-	forma_pago VARCHAR(100),
-	fecha_emision VARCHAR(100),
-	costo_total INT
 );
 
 CREATE TABLE Consumible (
