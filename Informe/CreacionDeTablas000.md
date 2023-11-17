@@ -183,6 +183,15 @@ INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
 ('OC004', '2023-04-23'),
 ('OC005', '2023-04-24');
 
+--TABLA PROBLEMAS
+INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
+('PROB001', 'Fallo del sistema hidráulico', 'MT-X 1030', 'MAQ001'),
+('PROB002', 'Desgaste de neumáticos', 'CAT 980M', 'MAQ002'),
+('PROB003', 'Problemas de arranque en frío', 'ZX350LC-6', 'MAQ003'),
+('PROB004', 'Fallo en la transmisión', '3CX', 'MAQ004'),
+('PROB005', 'Sobrecalentamiento del motor', 'H60FT', 'MAQ005');
+
+
 --TABLA FACTURA
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC001', 'Tarjeta de Crédito', '2023-11-17', 1000);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC002', 'Efectivo', '2023-11-18', 500);
