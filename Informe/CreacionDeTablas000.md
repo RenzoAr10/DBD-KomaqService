@@ -175,6 +175,14 @@ INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, ser
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ004', 'Montacargas Hyster', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 'USR004');
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ005', 'Retroexcavadora JCB', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 'USR005');
 
+--TABLA ORDEN DE COMPRA
+INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
+('OC001', '2023-04-20'),
+('OC002', '2023-04-21'),
+('OC003', '2023-04-22'),
+('OC004', '2023-04-23'),
+('OC005', '2023-04-24');
+
 --TABLA FACTURA
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC001', 'Tarjeta de Crédito', '2023-11-17', 1000);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC002', 'Efectivo', '2023-11-18', 500);
