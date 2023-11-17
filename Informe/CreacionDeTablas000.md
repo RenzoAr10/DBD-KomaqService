@@ -215,6 +215,38 @@ INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, c
 ('CONS003', 'Neumáticos', '2023-04-24', 4, 300, 'SERV003'),
 ('CONS004', 'Aceite de Transmisión', '2023-04-26', 20, 40, 'SERV004'),
 ('CONS005', 'Batería', '2023-04-28', 2, 100, 'SERV005');
+
+--TABLA REPUESTO
+INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura) VALUES
+('REP001', 15, 100, 1, 100, 'SERV001', 'FAC001'),
+('REP002', 10, 250, 2, 500, 'SERV002', 'FAC002'),
+('REP003', 20, 150, 4, 600, 'SERV003', 'FAC003'),
+('REP004', 5, 300, 1, 300, 'SERV004', 'FAC004'),
+('REP005', 8, 200, 3, 600, 'SERV005', 'FAC005');
+
+--TABLA PROVEEDOR
+INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
+('PROV001', 'Proveedora A', 123456789, 123, 'contacto@proveedora.com'),
+('PROV002', 'Proveedora B', 987654321, 456, 'ventas@proveedora.com'),
+('PROV003', 'Proveedora C', 123123123, 789, 'soporte@proveedora.com'),
+('PROV004', 'Proveedora D', 321321321, 012, 'info@proveedora.com'),
+('PROV005', 'Proveedora E', 654654654, 345, 'admin@proveedora.com');
+
+--TABLA PROVEEDORREPUESTO
+INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
+('PROV001', 'Proveedora A', 123456789, 123, 'contacto@proveedora.com'),
+('PROV002', 'Proveedora B', 987654321, 456, 'ventas@proveedora.com'),
+('PROV003', 'Proveedora C', 123123123, 789, 'soporte@proveedora.com'),
+('PROV004', 'Proveedora D', 321321321, 012, 'info@proveedora.com'),
+('PROV005', 'Proveedora E', 654654654, 345, 'admin@proveedora.com');
+
+--TABLA ACCION RECOMENDADA
+INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra) VALUES
+('ACC001', 'Ajuste', 50, 'OC001'),
+('ACC002', 'Revisión', 0, 'OC002'),
+('ACC003', 'Sustitución', 150, 'OC003'),
+('ACC004', 'Reparación', 300, 'OC004'),
+('ACC005', 'Mantenimiento', 200, 'OC005');
 ```
 
 
