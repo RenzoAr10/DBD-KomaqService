@@ -152,6 +152,14 @@ INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC
 ('CL004', 'Agro', 'Campo', 'Lopez', 20123456782, '34567890', 987652345, 'soporte@agrocampo.com', 'Av. Agricultura 012'),
 ('CL005', 'Textiles', 'Morales', 'EIRL', 20123456783, '45678901', 987653456, 'admin@textmor.com', 'Jr. Algodón 345');
 
+--TABLA USUARIO
+INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente, id_orden_compra) VALUES
+('US001', 'jcustodio', 'password1', 'CL001', 'OC001'),
+('US002', 'hrojas', 'password2', 'CL002', 'OC002'),
+('US003', 'jcotrina', 'password3', 'CL003', 'OC003'),
+('US004', 'gcampos', 'password4', 'CL004', 'OC004'),
+('US005', 'lramirez', 'password5', 'CL005', 'OC005');
+
 --TABLA MAQUINA
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'USR001');
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ002', 'Cargador Frontal Cat', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 'USR002');
