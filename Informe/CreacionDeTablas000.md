@@ -148,6 +148,7 @@ INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, ser
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ002', 'Cargador Frontal Cat', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 'USR002');
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ003', 'Excavadora Komatsu', 'PC350LC-8', 'Diésel', 'Komatsu SAA6D114E-3', 'KOMEX1234', 'USR003');
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ004', 'Montacargas Hyster', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 'USR004');
- ```
+INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ005', 'Retroexcavadora JCB', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 'USR005');
+```
 
 
