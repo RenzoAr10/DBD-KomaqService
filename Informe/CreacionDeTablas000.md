@@ -144,7 +144,7 @@ CREATE TABLE AccionRecomendada (
 
  ```
 ## INSERCION DE VALORES
- ```
+ ```sql
 -- TABLA CLIENTE
 INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion) VALUES
 ('CL001', 'Empresa', 'Andina', '', '20123456789', '12345678', '987654321', 'contacto@andina.com', 'Av. Industrial 123'),
@@ -240,12 +240,28 @@ INSERT INTO ProveedorRepuesto (id_proveedor, id_repuesto, codigo_repuesto, descr
 ('PROV002', 'RES005', '5678901234', 'Turbocompresor Cummins QSK19', 'Cummins', 4000.00);
 
 -- TABLA ACCION RECOMENDADA
-INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra) VALUES
-('ACC001', 'Ajuste', 50, 'OC001'),
-('ACC002', 'Revisión', 0, 'OC002'),
-('ACC003', 'Sustitución', 150, 'OC003'),
-('ACC004', 'Reparación', 300, 'OC004'),
-('ACC005', 'Mantenimiento', 200, 'OC005');
+INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra)
+VALUES
+   ('ACC001', 'Lavado de cada componente', 600, 'OC003'),
+   ('ACC002', 'Reemplazo y Armado de piñón de ataque', 1200, 'OC003'),
+   ('ACC003', 'Montaje de eje propulsor', 800, 'OC004'),
+   ('ACC004', 'Armado del housing de pistón de freno Lh y Rh', 700, 'OC004'),
+   ('ACC005', 'Reemplazo de resortes y pernos de pistón de servicio', 550, 'OC005'),
+   ('ACC006', 'Reemplazo de tapa de bocamasa', 900, 'OC005'),
+   ('ACC007', 'Montaje de fundas', 600, 'OC006'),
+   ('ACC008', 'Reemplazo de bocina de bocamasa', 550, 'OC006'),
+   ('ACC009', 'Reemplazo de reten, rodajes y pistas de bocamasa (Mandos finales)', 1000, 'OC007'),
+   ('ACC010', 'Reemplazo de pernos de tapa de bocamasa', 700, 'OC007');
+   ('ACC011', 'Armado de diferencial', 1100, 'OC003'),
+   ('ACC012', 'Se midió juego de Backlash', 600, 'OC003'),
+   ('ACC013', 'Montaje de tapa de cubos reductores', 800, 'OC004'),
+   ('ACC014', 'Reemplazo de todos los o-ring', 500, 'OC004'),
+   ('ACC015', 'Metalización de eje propulsor', 700, 'OC004'),
+   ('ACC016', 'Reemplazo de bocinas de tapas de bocamasa', 550, 'OC005'),
+   ('ACC017', 'Reemplazo de 4 arandelas de los espárragos', 600, 'OC005'),
+   ('ACC018', 'Reemplazo de respiradero', 650, 'OC005'),
+   ('ACC019', 'Montaje de housing de freno Lh y Rh', 750, 'OC006'),
+   ('ACC020', 'Se verificó pisada de los dientes de piñón de ataque y la corona', 900, 'OC006');
 
 ```
 
