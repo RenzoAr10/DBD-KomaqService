@@ -145,15 +145,15 @@ CREATE TABLE AccionRecomendada (
  ```
 ## INSERCION DE VALORES
  ```
---TABLA CLIENTE
+-- TABLA CLIENTE
 INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion) VALUES
-('CL001', 'Empresa', 'Andina', '', 20123456789, '12345678', 987654321, 'contacto@andina.com', 'Av. Industrial 123'),
-('CL002', 'Servicios', 'Industriales', 'Garcia', 20123456780, '87654321', 987650123, 'info@servind.com', 'Calle Comercio 456'),
-('CL003', 'Construcciones', 'Rojas', 'S.A.', 20123456781, '23456789', 987651234, 'ventas@rojascons.com', 'Av. Los Constructores 789'),
-('CL004', 'Agro', 'Campo', 'Lopez', 20123456782, '34567890', 987652345, 'soporte@agrocampo.com', 'Av. Agricultura 012'),
-('CL005', 'Textiles', 'Morales', 'EIRL', 20123456783, '45678901', 987653456, 'admin@textmor.com', 'Jr. Algodón 345');
+('CL001', 'Empresa', 'Andina', '', '20123456789', '12345678', '987654321', 'contacto@andina.com', 'Av. Industrial 123'),
+('CL002', 'Servicios', 'Industriales', 'Garcia', '20123456780', '87654321', '987650123', 'info@servind.com', 'Calle Comercio 456'),
+('CL003', 'Construcciones', 'Rojas', 'S.A.', '20123456781', '23456789', '987651234', 'ventas@rojascons.com', 'Av. Los Constructores 789'),
+('CL004', 'Agro', 'Campo', 'Lopez', '20123456782', '34567890', '987652345', 'soporte@agrocampo.com', 'Av. Agricultura 012'),
+('CL005', 'Textiles', 'Morales', 'EIRL', '20123456783', '45678901', '987653456', 'admin@textmor.com', 'Jr. Algodón 345');
 
---TABLA USUARIO
+-- TABLA USUARIO
 INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente, id_orden_compra) VALUES
 ('US001', 'jcustodio', 'password1', 'CL001', 'OC001'),
 ('US002', 'hrojas', 'password2', 'CL002', 'OC002'),
@@ -161,22 +161,22 @@ INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente,
 ('US004', 'gcampos', 'password4', 'CL004', 'OC004'),
 ('US005', 'lramirez', 'password5', 'CL005', 'OC005');
 
---TABLA EMPLEADO
+-- TABLA EMPLEADO
 INSERT INTO Empleado (id_empleado, nombre, apellido_paterno, apellido_materno, dni, telefono, email, especializacion, cargo, id_jefe) VALUES
-('EMP001', 'Hector', 'Rojas', '', '12345678', 987654321, 'hrojas@komq.com', 'Mecánico', 'Técnico Senior', NULL),
-('EMP002', 'Jefferson', 'Cotrina', '', '87654321', 987650123, 'jcotrina@komq.com', 'Mecánico', 'Técnico Junior', 'EMP001'),
-('EMP003', 'Gabriel', 'Campos', '', '23456789', 987651234, 'gcampos@komq.com', 'Logística', 'Gerente de Operaciones', NULL),
-('EMP004', 'Lucia', 'Ramirez', '', '34567890', 987652345, 'lramirez@komq.com', 'Administración', 'Asistente de Gerencia', 'EMP003'),
-('EMP005', 'Carlos', 'Gonzales', '', '45678901', 987653456, 'cgonzales@komq.com', 'Mecánico', 'Especialista de Campo', 'EMP001');
+('EMP001', 'Hector', 'Rojas', '', '12345678', '987654321', 'hrojas@komq.com', 'Mecánico', 'Técnico Senior', NULL),
+('EMP002', 'Jefferson', 'Cotrina', '', '87654321', '987650123', 'jcotrina@komq.com', 'Mecánico', 'Técnico Junior', 'EMP001'),
+('EMP003', 'Gabriel', 'Campos', '', '23456789', '987651234', 'gcampos@komq.com', 'Logística', 'Gerente de Operaciones', NULL),
+('EMP004', 'Lucia', 'Ramirez', '', '34567890', '987652345', 'lramirez@komq.com', 'Administración', 'Asistente de Gerencia', 'EMP003'),
+('EMP005', 'Carlos', 'Gonzales', '', '45678901', '987653456', 'cgonzales@komq.com', 'Mecánico', 'Especialista de Campo', 'EMP001');
 
---TABLA MAQUINA
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'USR001');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ002', 'Cargador Frontal Cat', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 'USR002');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ003', 'Excavadora Komatsu', 'PC350LC-8', 'Diésel', 'Komatsu SAA6D114E-3', 'KOMEX1234', 'USR003');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ004', 'Montacargas Hyster', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 'USR004');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ005', 'Retroexcavadora JCB', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 'USR005');
+-- TABLA MAQUINA
+INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'US001');
+INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ002', 'Cargador Frontal Cat', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 'US002');
+INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ003', 'Excavadora Komatsu', 'PC350LC-8', 'Diésel', 'Komatsu SAA6D114E-3', 'KOMEX1234', 'US003');
+INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ004', 'Montacargas Hyster', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 'US004');
+INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ005', 'Retroexcavadora JCB', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 'US005');
 
---TABLA ORDEN DE COMPRA
+-- TABLA ORDEN DE COMPRA
 INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
 ('OC001', '2023-04-20'),
 ('OC002', '2023-04-21'),
@@ -184,7 +184,7 @@ INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
 ('OC004', '2023-04-23'),
 ('OC005', '2023-04-24');
 
---TABLA PROBLEMAS
+-- TABLA PROBLEMAS
 INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
 ('PROB001', 'Fallo del sistema hidráulico', 'MT-X 1030', 'MAQ001'),
 ('PROB002', 'Desgaste de neumáticos', 'CAT 980M', 'MAQ002'),
@@ -192,8 +192,7 @@ INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
 ('PROB004', 'Fallo en la transmisión', '3CX', 'MAQ004'),
 ('PROB005', 'Sobrecalentamiento del motor', 'H60FT', 'MAQ005');
 
-
---TABLA SERVICIO
+-- TABLA SERVICIO
 INSERT INTO Servicio (id_servicio, nombre_servicio, fecha_inicio, fecha_fin, costo, cantidad_servicios, subtotal_servicios, tecnico_asignado, id_orden_compra, id_factura) VALUES
 ('SERV001', 'Mantenimiento Preventivo', '2023-04-20', '2023-04-21', 500, 1, 500, 'Hector Rojas', 'OC001', 'FAC001'),
 ('SERV002', 'Reparación del Sistema Hidráulico', '2023-04-22', '2023-04-23', 1200, 2, 2400, 'Jefferson Cotrina', 'OC002', 'FAC002'),
@@ -201,15 +200,14 @@ INSERT INTO Servicio (id_servicio, nombre_servicio, fecha_inicio, fecha_fin, cos
 ('SERV004', 'Servicio de Transmisión', '2023-04-26', '2023-04-27', 800, 1, 800, 'Lucia Ramirez', 'OC004', 'FAC004'),
 ('SERV005', 'Inspección Técnica', '2023-04-28', '2023-04-29', 200, 3, 600, 'Carlos Gonzales', 'OC005', 'FAC005');
 
-
---TABLA FACTURA
+-- TABLA FACTURA
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC001', 'Tarjeta de Crédito', '2023-11-17', 1000);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC002', 'Efectivo', '2023-11-18', 500);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC003', 'Transferencia Bancaria', '2023-11-19', 750);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC004', 'Pago Móvil', '2023-11-20', 1250);
 INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC005', 'Cheque', '2023-11-21', 3000);
 
---TABLA CONSUMIBLE
+-- TABLA CONSUMIBLE
 INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, costo, id_servicio) VALUES
 ('CONS001', 'Aceite Hidráulico', '2023-04-20', 10, 50, 'SERV001'),
 ('CONS002', 'Filtro de Aire', '2023-04-22', 5, 30, 'SERV002'),
@@ -217,7 +215,7 @@ INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, c
 ('CONS004', 'Aceite de Transmisión', '2023-04-26', 20, 40, 'SERV004'),
 ('CONS005', 'Batería', '2023-04-28', 2, 100, 'SERV005');
 
---TABLA REPUESTO
+-- TABLA REPUESTO
 INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura) VALUES
 ('REP001', 15, 100, 1, 100, 'SERV001', 'FAC001'),
 ('REP002', 10, 250, 2, 500, 'SERV002', 'FAC002'),
@@ -225,16 +223,15 @@ INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, i
 ('REP004', 5, 300, 1, 300, 'SERV004', 'FAC004'),
 ('REP005', 8, 200, 3, 600, 'SERV005', 'FAC005');
 
---TABLA PROVEEDOR
+-- TABLA PROVEEDOR
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
-('PROV001', 'Ferreyros', 01 712 3000, 'Av. Arequipa 1067, Lima, Perú', 'contacto@ferreyros.com'),
-('PROV002', 'Repuestos Maquinaria Pesada - Mining Corp.', 999 123 456, 'Av. Los Próceres 123, San Juan de Lurigancho, Perú', 'ventas@miningcorp.com'),
-('PROV003', 'GC SERVICE & PARTS SAC', 999 687 090, 'Av. Universitaria 123, San Martín de Porres, Perú', 'ventas@gcserparts.com'),
-('PROV004', 'M.LL.V. Ventas y Servicios Empresariales', (01) 523 7420, 'Av. Los Olivos 123, Los Olivos, Perú', 'ventas@mllv.com'),
-('PROV005', 'Técnica Repuestos', 987 654 321, 'Av. Panamericana Norte 123, Callao, Perú', 'ventas@tecnicarepuestos.com');
+('PROV001', 'Ferreyros', '01 712 3000', 'Av. Arequipa 1067, Lima, Perú', 'contacto@ferreyros.com'),
+('PROV002', 'Repuestos Maquinaria Pesada - Mining Corp.', '999 123 456', 'Av. Los Próceres 123, San Juan de Lurigancho, Perú', 'ventas@miningcorp.com'),
+('PROV003', 'GC SERVICE & PARTS SAC', '999 687 090', 'Av. Universitaria 123, San Martín de Porres, Perú', 'ventas@gcserparts.com'),
+('PROV004', 'M.LL.V. Ventas y Servicios Empresariales', '(01) 523 7420', 'Av. Los Olivos 123, Los Olivos, Perú', 'ventas@mllv.com'),
+('PROV005', 'Técnica Repuestos', '987 654 321', 'Av. Panamericana Norte 123, Callao, Perú', 'ventas@tecnicarepuestos.com');
 
-
---TABLA PROVEEDORREPUESTO
+-- TABLA PROVEEDORREPUESTO
 INSERT INTO ProveedorRepuesto (id_proveedor, id_repuesto, codigo_repuesto, descripcion_repuesto, marca_repuesto, precio_repuesto) VALUES
 ('PROV001', 'RES001', '1234567890', 'Bomba hidráulica Caterpillar 3306', 'Caterpillar', 5000.00),
 ('PROV001', 'RES002', '2345678901', 'Filtro de aceite John Deere 780', 'John Deere', 100.00),
@@ -242,14 +239,14 @@ INSERT INTO ProveedorRepuesto (id_proveedor, id_repuesto, codigo_repuesto, descr
 ('PROV002', 'RES004', '4567890123', 'Cigüeñal Volvo EC220', 'Volvo', 3000.00),
 ('PROV002', 'RES005', '5678901234', 'Turbocompresor Cummins QSK19', 'Cummins', 4000.00);
 
-
---TABLA ACCION RECOMENDADA
+-- TABLA ACCION RECOMENDADA
 INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra) VALUES
 ('ACC001', 'Ajuste', 50, 'OC001'),
 ('ACC002', 'Revisión', 0, 'OC002'),
 ('ACC003', 'Sustitución', 150, 'OC003'),
 ('ACC004', 'Reparación', 300, 'OC004'),
 ('ACC005', 'Mantenimiento', 200, 'OC005');
+
 ```
 
 
