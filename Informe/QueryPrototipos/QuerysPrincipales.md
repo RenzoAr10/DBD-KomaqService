@@ -104,3 +104,17 @@ UPDATE revisions SET status = 'Finalizado' WHERE revision_id = 'REV-001';
 
 ```
 
+# Módulo de Comunicación con Proveedores
+![4](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/616c0aae-cef2-4f1e-a400-a784d9a21096)
+![5](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/5fa26fcc-61d6-46eb-a956-f1a436b08f35)
+![6](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e01181ab-70d8-4c20-aec3-13ae1e6d561a)
+
+
+#Módulo de Reporte de Servicios
+![1](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/07f05f0c-11f3-49b3-a928-06edcd0f163c)
+![2](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/06145328-d418-4a01-b0da-78e57b59089d)
+![3](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/f804b50c-ffdf-4fc0-a7a2-bacd793b7783)
+
+
+
+
