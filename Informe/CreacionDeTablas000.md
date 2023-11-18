@@ -227,19 +227,21 @@ INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, i
 
 --TABLA PROVEEDOR
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
-('PROV001', 'Proveedora A', 123456789, 123, 'contacto@proveedora.com'),
-('PROV002', 'Proveedora B', 987654321, 456, 'ventas@proveedora.com'),
-('PROV003', 'Proveedora C', 123123123, 789, 'soporte@proveedora.com'),
-('PROV004', 'Proveedora D', 321321321, 012, 'info@proveedora.com'),
-('PROV005', 'Proveedora E', 654654654, 345, 'admin@proveedora.com');
+('PROV001', 'Ferreyros', 01 712 3000, 'Av. Arequipa 1067, Lima, Perú', 'contacto@ferreyros.com'),
+('PROV002', 'Repuestos Maquinaria Pesada - Mining Corp.', 999 123 456, 'Av. Los Próceres 123, San Juan de Lurigancho, Perú', 'ventas@miningcorp.com'),
+('PROV003', 'GC SERVICE & PARTS SAC', 999 687 090, 'Av. Universitaria 123, San Martín de Porres, Perú', 'ventas@gcserparts.com'),
+('PROV004', 'M.LL.V. Ventas y Servicios Empresariales', (01) 523 7420, 'Av. Los Olivos 123, Los Olivos, Perú', 'ventas@mllv.com'),
+('PROV005', 'Técnica Repuestos', 987 654 321, 'Av. Panamericana Norte 123, Callao, Perú', 'ventas@tecnicarepuestos.com');
+
 
 --TABLA PROVEEDORREPUESTO
-INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
-('PROV001', 'Proveedora A', 123456789, 123, 'contacto@proveedora.com'),
-('PROV002', 'Proveedora B', 987654321, 456, 'ventas@proveedora.com'),
-('PROV003', 'Proveedora C', 123123123, 789, 'soporte@proveedora.com'),
-('PROV004', 'Proveedora D', 321321321, 012, 'info@proveedora.com'),
-('PROV005', 'Proveedora E', 654654654, 345, 'admin@proveedora.com');
+INSERT INTO ProveedorRepuesto (id_proveedor, id_repuesto, codigo_repuesto, descripcion_repuesto, marca_repuesto, precio_repuesto) VALUES
+('PROV001', 'RES001', '1234567890', 'Bomba hidráulica Caterpillar 3306', 'Caterpillar', 5000.00),
+('PROV001', 'RES002', '2345678901', 'Filtro de aceite John Deere 780', 'John Deere', 100.00),
+('PROV001', 'RES003', '3456789012', 'Rodamiento de rueda Komatsu D375', 'Komatsu', 2000.00),
+('PROV002', 'RES004', '4567890123', 'Cigüeñal Volvo EC220', 'Volvo', 3000.00),
+('PROV002', 'RES005', '5678901234', 'Turbocompresor Cummins QSK19', 'Cummins', 4000.00);
+
 
 --TABLA ACCION RECOMENDADA
 INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra) VALUES
