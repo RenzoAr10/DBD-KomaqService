@@ -60,7 +60,7 @@ Mejorar la satisfacción del cliente al mantenerlos informados.
 
 # Módulo de Comunicación con Proveedores:
 
-Gestiona la comunicación con los proveedores de repuestos, lo que garantiza que la empresa tenga acceso a las piezas necesarias para el mantenimiento de la maquinaria pesada.
+Gestiona Y  optimiza  la cadena de suministro de repuestos para maquinaria pesada, asegurando la disponibilidad constante y la entrega eficiente de piezas necesarias para el mantenimiento y operación óptima de la maquinaria.
 
 ## Responsabilidades:
 
