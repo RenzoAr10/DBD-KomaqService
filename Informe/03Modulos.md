@@ -77,17 +77,21 @@ Asegurar que todos los repuestos cumplan con los estándares de calidad requerid
 
 Evaluar el rendimiento de los proveedores y la eficiencia del proceso de suministro, generando informes que ayuden en la toma de decisiones estratégicas.
 
-# Módulo de Reporte de Servicios:  (Modificar)
+# Módulo de Reporte de Servicios: 
 
-Documenta las actividades de mantenimiento realizadas por los técnicos, lo que es fundamental para llevar un registro de las acciones tomadas y para garantizar la calidad de los servicios.
+Se encarga de facilitar una documentación detallada y eficiente de todas las actividades de mantenimiento realizadas en la maquinaria pesada, proporcionando una base de datos exhaustiva para el seguimiento de calidad y la gestión eficaz de los servicios.
 
 ## Responsabilidades:
 
-Documentar las actividades de mantenimiento realizadas por los técnicos.
+Registrar meticulosamente todas las actividades de mantenimiento realizadas, incluyendo procedimientos, piezas usadas y tiempo invertido.
 
-Registrar acciones y detalles sobre el mantenimiento de la maquinaria pesada.
+Mantener un registro actualizado de las tareas ejecutadas por cada técnico, asegurando la precisión y detalle de la información.
 
-Facilitar el seguimiento de las actividades y garantizar la calidad de los servicios proporcionados.
+Crear y gestionar un historial completo para cada equipo o maquinaria, permitiendo un seguimiento efectivo a lo largo del tiempo.
+
+Implementar y supervisar estándares de calidad en los servicios de mantenimiento, asegurando la satisfacción del cliente y la integridad del equipo.
+
+Preparar informes detallados sobre las operaciones de mantenimiento, proporcionando insights para la toma de decisiones y la mejora continua.
 
 # Módulo de Facturación y Pagos:
 
