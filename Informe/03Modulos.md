@@ -64,13 +64,18 @@ Gestiona Y  optimiza  la cadena de suministro de repuestos para maquinaria pesad
 
 ## Responsabilidades:
 
-Gestionar la comunicación con proveedores de repuestos.
 
-Solicitar repuestos necesarios y garantizar su disponibilidad.
+Realizar y gestionar pedidos precisos de repuestos, asegurando que las especificaciones y cantidades sean correctas y estén alineadas con las necesidades de la empresa.
 
-Coordinar la entrega de repuestos a la empresa para mantener la maquinaria.
+Establecer y mantener relaciones sólidas con proveedores confiables, negociando términos favorables y asegurando la calidad y fiabilidad en la entrega de repuestos.
 
-Mantener un flujo de suministros eficiente.
+Organizar eficientemente la logística para la entrega de repuestos, incluyendo el seguimiento de envíos y la gestión de cualquier incidencia logística.
+
+Supervisar el inventario de repuestos para evitar escasez o excesos, y realizar ajustes basados en análisis de tendencias y patrones de uso.
+
+Asegurar que todos los repuestos cumplan con los estándares de calidad requeridos y adherirse a las regulaciones y normativas pertinentes.
+
+Evaluar el rendimiento de los proveedores y la eficiencia del proceso de suministro, generando informes que ayuden en la toma de decisiones estratégicas.
 
 # Módulo de Reporte de Servicios:  (Modificar)
 
