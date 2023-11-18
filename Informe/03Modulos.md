@@ -28,7 +28,7 @@ Registro y autenticación de usuarios requerido para acceder a funciones de gest
 Cumplimiento de regulaciones de privacidad y seguridad junto con Komaq.
 
 
-# Módulo de Gestión de Órdenes de Servicio:
+# Módulo de Gestión de Órdenes de Compra: (Modificar)
 
 Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
 
@@ -72,7 +72,7 @@ Coordinar la entrega de repuestos a la empresa para mantener la maquinaria.
 
 Mantener un flujo de suministros eficiente.
 
-# Módulo de Reporte de Actividades:
+# Módulo de Reporte de Servicios:  (Modificar)
 
 Documenta las actividades de mantenimiento realizadas por los técnicos, lo que es fundamental para llevar un registro de las acciones tomadas y para garantizar la calidad de los servicios.
 
