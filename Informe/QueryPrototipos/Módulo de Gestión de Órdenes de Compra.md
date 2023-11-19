@@ -1,6 +1,6 @@
 
+![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/733e2830-1eb9-4a05-bcc1-695bee6e5817)
 
-![GestiónOC](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/99420c2c-1f13-4b9c-95b2-94d81f112f95)
 
 ```sql
 
