@@ -59,13 +59,17 @@ VALUES
     ('Ferreyros', 'REP_03'),
     ('Ferreyros', 'REP_04');
 ``` 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/b91c2359-c20a-4eec-8ae1-c1684520cd30)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/922d21db-4e60-4fb7-ba81-0775f3d442ce)
+
 
 
 ``` sql
 -- SELECT de datos de proveedores
 SELECT nombre_empresa, telefono_prov, direccion_prov, email
-FROM Proveedor;
+FROM Proveedor
+WHERE NombreProveedor = %nombrex%
+AND
+ Desempeño = %Bueno%;
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/8017fa7a-5640-40f2-af0f-612a6d0a59dc)
 
