@@ -4,7 +4,7 @@
 CREATE TABLE Cliente (
 	id_cliente VARCHAR(10) PRIMARY KEY,
 	nombre VARCHAR(50),
-    apellido_paterno VARCHAR(50),
+	apellido_paterno VARCHAR(50),
 	apellido_materno VARCHAR(50),
 	RUC INTEGER,
 	dni VARCHAR(15),
@@ -16,13 +16,14 @@ CREATE TABLE Cliente (
 
 CREATE TABLE OrdenCompra (
 	id_orden_compra VARCHAR(10) PRIMARY KEY,
-	fecha_orden VARCHAR(100)
+	estado_oc VARCHAR(100),
+	fecha_oc VARCHAR(100)
 );
 
 CREATE TABLE Usuario (
 	id_usuario VARCHAR(10) PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
-    contrasena_usuario VARCHAR(50),
+	contrasena_usuario VARCHAR(50),
 	id_cliente VARCHAR(10),
 	id_orden_compra VARCHAR(10),
 	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
@@ -32,7 +33,7 @@ CREATE TABLE Usuario (
 CREATE TABLE Empleado (
 	id_empleado VARCHAR(10) PRIMARY KEY,
 	nombre VARCHAR(50),
-    apellido_paterno VARCHAR(50),
+	apellido_paterno VARCHAR(50),
 	apellido_materno VARCHAR(50),
 	dni VARCHAR(15),
 	telefono INTEGER,
@@ -122,7 +123,7 @@ CREATE TABLE Repuesto (
    
 CREATE TABLE Proveedor (
 	id_proveedor VARCHAR(10) PRIMARY KEY,
-	nombre_empresa VARCHAR(50),
+	nombre_empresa VARCHAR(100),
 	telefono_prov INTEGER,
 	direccion_prov VARCHAR(100),
 	email VARCHAR(50)
