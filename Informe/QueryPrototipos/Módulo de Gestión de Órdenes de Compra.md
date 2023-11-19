@@ -4,11 +4,18 @@
 
 ```sql
 
-SELECT oc.id_orden_compra, oc.estado_oc, oc.fecha_orden, f.costo_total
-FROM OrdenCompra oc
-INNER JOIN Cliente c ON oc.id_cliente = c.id_cliente
-INNER JOIN Servicio s ON oc.id_servicio = s.id_servicio,
-INNER JOIN Factura f ON f.id_factura = s.id_factura,
-WHERE c.id_cliente = 'CL001';
-
+SELECT
+    oc.id_orden_compra,
+    oc.fecha_orden,
+    oc.estado,
+    s.cantidad_servicios,
+    c.nombre || ' ' || c.apellido_paterno || ' ' || c.apellido_materno || ' ' || c.nombre AS nombre_cliente,
+    p.nombre_empresa,
+    f.costo_total
+FROM
+    OrdenCompra oc
+    INNER JOIN Servicio s ON oc.id_servicio = s.id_servicio
+    INNER JOIN Cliente c ON oc.id_cliente = c.id_cliente
+    INNER JOIN Proveedor p ON s.id_proveedor = p.id_proveedor
+    INNER JOIN Factura f ON s.id_fatura = f.id_factura;
 ```
