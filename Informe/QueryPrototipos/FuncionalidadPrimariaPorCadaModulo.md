@@ -15,3 +15,9 @@ Facilita la identificación y autenticación de cada usuario al acceder a servic
 Recoge información crítica como nombres, direcciones de correo electrónico y números de teléfono, que son fundamentales para la comunicación efectiva y la prestación de servicios de soporte técnico y atención al cliente.
 Sirve como punto de entrada para la interacción con otras funciones de la aplicación, como el seguimiento del estado del servicio y el acceso a historiales de servicio, lo cual es crucial para una experiencia de usuario coherente y personalizada.
 Asegurarel cumplimiento de las regulaciones de privacidad y seguridad de datos para proteger la información sensible de los usuarios.
+
+# Módulo de Comunicación con Proveedores:
+El módulo se enfoca en la gestión eficiente de la cadena de suministro de repuestos para maquinaria pesada, asegurando la disponibilidad constante y la entrega eficiente de piezas esenciales. Sus responsabilidades incluyen la realización de pedidos precisos, el establecimiento de relaciones sólidas con proveedores confiables, la optimización de la logística de entrega, la supervisión del inventario de repuestos, y garantizar que todos cumplan con los estándares de calidad y regulaciones pertinentes.
+
+# Módulo de Reporte de Servicios:
+Este módulo facilita la documentación detallada de todas las actividades de mantenimiento en la maquinaria pesada, proporcionando un historial exhaustivo para el seguimiento de calidad y la gestión efectiva de los servicios. Su funcionalidad principal abarca el registro meticuloso de todas las actividades de mantenimiento, el mantenimiento actualizado de un registro detallado por técnico, la creación y gestión de un historial completo para cada equipo, y la implementación de estándares de calidad en los servicios de mantenimiento.
