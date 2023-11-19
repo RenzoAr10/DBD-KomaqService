@@ -95,7 +95,6 @@ R03004: Los clientes tendrán la opción de proporcionar feedback sobre los serv
 
 R03005: El sistema debe requerir que los clientes califiquen el servicio recibido utilizando el sistema de calificación proporcionado, y este debe ser accesible a través de la página de feedback del cliente.
 
-
 # Módulo de Comunicación con Proveedores:
 
 Gestiona Y  optimiza  la cadena de suministro de repuestos para maquinaria pesada, asegurando la disponibilidad constante y la entrega eficiente de piezas necesarias para el mantenimiento y operación óptima de la maquinaria.
@@ -115,15 +114,11 @@ Asegurar que todos los repuestos cumplan con los estándares de calidad requerid
 
 Evaluar el rendimiento de los proveedores y la eficiencia del proceso de suministro, generando informes que ayuden en la toma de decisiones estratégicas.
 
-R04001: Los usuarios autorizados deben poder acceder y revisar la lista completa de proveedores a través de la Página Principal del Módulo, con la capacidad de realizar búsquedas específicas y recibir notificaciones relacionadas con cambios o actualizaciones en el estado de los proveedores.
+R04001: Los usuarios autorizados deben poder acceder y revisar la lista completa de proveedores, con la capacidad de realizar búsquedas específicas.
 
 R04002: Los usuarios con permisos de edición deben poder actualizar los detalles de los proveedores, incluyendo contactos y evaluaciones de desempeño, y dichas actualizaciones deben reflejarse inmediatamente en el sistema para todos los usuarios relevantes.
 
 R04003: Las solicitudes de pedido de repuestos solo pueden ser creadas por usuarios con roles de compras y deben incluir toda la información requerida como tipo de repuesto, cantidad y fecha de solicitud antes de ser enviadas a los proveedores.
-
-R04004: El seguimiento de logística y entregas debe ser actualizado en tiempo real, y los usuarios necesarios deben recibir alertas automáticas en caso de retrasos o cambios en la fecha estimada de llegada de los pedidos.
-
-R04005: Los informes de gestión de suministros deben ser generados mensualmente por el sistema, y los usuarios deben poder personalizar estos informes según fecha, proveedor y tipo de repuesto para análisis específicos y toma de decisiones informadas.
 
 # Módulo de Reporte de Servicios: 
 
@@ -143,13 +138,12 @@ Preparar informes detallados sobre las operaciones de mantenimiento, proporciona
 
 R05001: Los usuarios deben poder visualizar una lista consolidada de las últimas actividades de mantenimiento desde la página principal del módulo, y esta vista debe ser actualizada en tiempo real tras cada nueva entrada de registro.
 
-R05002: El formulario de registro de mantenimiento debe ser completado en su totalidad antes de que se permita su envío, y debe incluir la validación de campos para asegurar que todos los datos necesarios sean recogidos (fecha, técnico, maquinaria, servicio, piezas).
+R05002: El formulario de registro de mantenimiento debe ser completado en su totalidad antes de que se permita su envío, y debe incluir la validación de campos para asegurar que todos los datos necesarios sean recogidos 
 
 R05003: Solo los usuarios con los permisos adecuados, como los técnicos de mantenimiento o los administradores, pueden agregar o editar entradas en el historial de mantenimiento de la maquinaria.
 
-R05004: Los informes generados en la sección 'Análisis y Reportes' deben reflejar datos precisos y actuales, y deben ser accesibles basándose en el nivel de permisos del usuario, garantizando que la información sensible sea manejada de manera segura.
+R05004: Se debe permiter detallar el progreso de cada servicio brindado , evaluando el estado de cada actividad asociada.
 
-R05005: Cada entrada en el historial de mantenimiento debe ser rastreable hasta un registro de mantenimiento específico, permitiendo auditorías detalladas y seguimiento de la calidad del servicio a lo largo del tiempo.
 
 # Módulo de Facturación y Pagos:
 
