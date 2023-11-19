@@ -38,6 +38,10 @@ Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 
 # Avance  03
 
-[Tablas](./Informe/08Tablas.md)
+[Sentencias SQL por cada prototipo](Informe/QueryPrototipos/QuerysPrincipales.md)
 
-[Querys Importantes](./Informe/QueryPrototipos/QuerysPrincipales.md)
+[Creacion de tablas y Carga de datos](Informe/CreacionDeTablas000.md)
+
+[Funcionalidad Primaria Elegida](Informe/QueryPrototipos/FuncionalidadPrimariaPorCadaModulo.md)
+
+[Stack Tecnológico elegido para su aplicación](Documentacion de Soporte/ArquitecturaSoftware.png)
