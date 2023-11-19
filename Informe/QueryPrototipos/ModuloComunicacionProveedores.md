@@ -1,5 +1,6 @@
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/135069f3-7f7b-45f3-973a-82722d41c453)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/e1d8cac3-55c0-4329-8394-87224fc2010f)
+
 
  ```sql
 SELECT
@@ -11,7 +12,8 @@ SELECT
 FROM
     Repuesto;
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/9bf7bac5-5858-419e-a93a-13bc3cf79668)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/548a7b07-1ae4-4668-b896-11a4760b2093)
+
 ``` sql
 --Los campos del Proveedor se completan automaticamente en el ComboBox , al seleccionar un proveedor_x 
 SELECT
