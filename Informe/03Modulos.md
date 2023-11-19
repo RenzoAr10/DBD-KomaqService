@@ -38,7 +38,7 @@ Creación de Órdenes de Compra
 
 Visualización y actualización de órdenes
 
-Seguimiento de estado de la orden de compra para el cliente
+Seguimiento de estado de la orden de compra para el usuario
 
 Asociación con proveedores
 
