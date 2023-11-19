@@ -1,8 +1,6 @@
-R03001
+R03001 R03002 R03003
 
-R03002
-
-R03003
+PR03001
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/df96d4f8-bcfe-4c7a-b1ee-f30b68563a14)
 ```sql
@@ -13,6 +11,8 @@ VALUES ('SERV001', 'Reparación de motor', '2023-04-15', 'Juan Pérez', 'OC123',
 
 R03004
 
+PR03002
+
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/545fba8f-899a-4344-b45a-1f2de1e94130)
 ```sql
 SELECT id_solicitud, estado_revision, fecha_revision, detalles
@@ -21,6 +21,8 @@ WHERE usuario_id = 'id_del_cliente';
 ```
 
 R03005
+
+PR03003
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/54ca6118-eee3-4200-8678-fc18cbb19b30)
 ```sql
