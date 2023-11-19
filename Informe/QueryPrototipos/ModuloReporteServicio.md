@@ -1,4 +1,5 @@
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7ad6fe16-19cc-4224-a347-29cd9d0e5a5d)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/6b03ba47-295c-4780-b4d3-baae4c427932)
+
 
 ```sql
 SELECT IdEmpelado, nombreEmpleado 
