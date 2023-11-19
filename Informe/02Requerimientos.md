@@ -18,11 +18,11 @@
    3.-El sistema notifica al usuario en caso que haya algun error al llenar los datos, ya sea por falta completar, datos duplicados o error de conectividad.
 
 
-2) Solicitar servicio
+2) Solicitar orden de compra
    
    1.-El cliente accede a su cuenta.
    
-   2.-El cliente selecciona la seccion Solicitar Servicio.
+   2.-El cliente selecciona la seccion Solicitar Orden de compra.
    
    3.-El cliente especifica el tipo de servicio que requiere
 
@@ -34,9 +34,9 @@
 
    7.El sistema mostrará un resumen de la solicitud y el cliente confirmará la solicitud.
 
-   8.El sistema guarda el nuevo servicio
+   8.El sistema guarda la nueva orden de compra
 
-   9.El sistema notifica al cliente que el servicio ha sido realizado con exito.
+   9.El sistema notifica al cliente que los servicios han sido realizados con exito.
 
    10.El cliente puede hacer seguimiento del estado de su servicio en la seccion Pedidos 
    
@@ -47,7 +47,7 @@
    4.-El sistema notificará al cliente en caso que falten datos primordiales
 
 
-4) Pagar servicio
+4) Pagar Orden de compra
    
    1.-El cliente accede a su cuenta.
    
@@ -70,7 +70,7 @@
    10.-El caso de uso termina.
 
 
-5) Cancelar Servicio
+5) Cancelar Factura
 
    1.-El cliente accede a su cuenta.
 
