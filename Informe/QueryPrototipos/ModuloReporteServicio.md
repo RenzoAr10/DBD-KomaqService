@@ -23,6 +23,7 @@ SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario
 FROM Servicio as S
 INNER JOIN OrdenCompra as cp ON s. IdOrdenCompra= cp. IdOrdenCompra
 INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
+-- Al seleccionar un Servicio se abre una ventana Deatallando más aspectos de este, basado en su IdServicio
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d01fe164-f115-43e5-943e-d4bdfea671c4)
 ```sql
