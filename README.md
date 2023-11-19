@@ -44,4 +44,4 @@ Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 
 [Funcionalidad Primaria Elegida](Informe/QueryPrototipos/FuncionalidadPrimariaPorCadaModulo.md)
 
-[Stack Tecnológico elegido para su aplicación](Documentacion de Soporte/ArquitecturaSoftware.png)
+[Stack Tecnológico elegido para su aplicación](DocumentaciondeSoporte/ArquitecturaSoftware.png)
