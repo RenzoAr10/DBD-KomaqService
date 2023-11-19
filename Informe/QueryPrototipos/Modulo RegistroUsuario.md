@@ -8,7 +8,7 @@ WHERE nombreUsuario = @user1 AND contrasenaUsuario = @pass1;
 ```sql
 --Al presionar el boton Registrar
 INSERT INTO Usuario (nombreUsuario, contraseñaUsuario , IdCliente)
-VALUES (‘hrojas’, ‘password2’ , ‘'CL002’)
+VALUES (‘hrojas’, ‘password2’ , ‘CL002’)
 INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion, NombreEmpresa)
 VALUES
   ('CL002', 'Ana', 'Rodriguez', 'Lopez', 19876543210, '71234567', 912345678, 'ana.rodriguez@email.com', 'Jr. Las Flores 456, Arequipa', 'Compañia minera poderosa s.a.'),
