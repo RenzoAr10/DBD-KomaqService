@@ -1,4 +1,5 @@
 
+![pedidos](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/b8a823bc-40d5-411e-99d7-ffeced3308bf)
 
 
 ```sql
