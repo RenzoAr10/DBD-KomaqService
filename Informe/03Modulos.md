@@ -40,7 +40,7 @@ R01005: La aplicación debe cumplir con todas las regulaciones de privacidad y s
 
 # Módulo de Gestión de Órdenes de Compra:
 
-Se encarga de la gestión de órdenes de compra dentro de la aplicación que implica la creacioón, asignación y actualización de la misma. Facilita la interacción entre clientes, proveedores, y personal interno encargado de las compras.
+Se encarga de la gestión de órdenes de compra dentro de la aplicación que implica la creación, asignación y actualización de la misma. Facilita la interacción entre clientes, proveedores, y personal interno encargado de las compras.
 
 ## Responsabilidades:
 
