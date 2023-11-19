@@ -1,5 +1,6 @@
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4b5d0f3d-4d46-4d39-982b-4de55a675fff)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7fe07380-3b13-4a8a-94cf-4c05973d3767)
+
 
 
 
@@ -13,6 +14,17 @@ SELECT
     precioUnitario
 FROM
     Repuesto;
+--Al presionar al boton buscar , obteniene los valores del CB y el placeholder para filtrar la busqueda
+SELECT
+    id_repuesto,
+    nombreRepuesto,
+    stock,
+    cantidad,
+    precioUnitario
+FROM
+    Repuesto;
+WHERE NombreRespuesto = %NombreRepuesto_x%
+AND CantidadRespuesto <= Cantidad_x 
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/fb83823e-1ba9-428b-98fe-a6a144c2d9b8)
 
