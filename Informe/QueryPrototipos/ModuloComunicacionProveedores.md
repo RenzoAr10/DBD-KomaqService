@@ -14,7 +14,8 @@ SELECT
 FROM
     Repuesto;
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/a3c50380-10e4-4ee8-ab06-73895b5b3f97)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/fb83823e-1ba9-428b-98fe-a6a144c2d9b8)
+
 
 
 ``` sql
@@ -46,14 +47,16 @@ VALUES
     ('Ferreyros', 'REP_03'),
     ('Ferreyros', 'REP_04');
 ``` 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/873735a7-731a-43fb-aa1f-273208825c53)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/b91c2359-c20a-4eec-8ae1-c1684520cd30)
+
 
 ``` sql
 -- SELECT de datos de proveedores
 SELECT nombre_empresa, telefono_prov, direccion_prov, email
 FROM Proveedor;
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/1c1dd496-d33d-4892-b023-36c75736c943)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/8017fa7a-5640-40f2-af0f-612a6d0a59dc)
+
 
 ```sql
 -- Insertar nuevo proveedor
