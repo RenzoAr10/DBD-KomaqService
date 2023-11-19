@@ -121,10 +121,10 @@ CREATE TABLE Repuesto (
    
 CREATE TABLE Proveedor (
 	id_proveedor VARCHAR(10) PRIMARY KEY,
-	nombre_empresa VARCHAR(10),
+	nombre_empresa VARCHAR(50),
 	telefono_prov INTEGER,
 	direccion_prov VARCHAR(100),
-	email VARCHAR(10)
+	email VARCHAR(50)
 );
 
 CREATE TABLE Proveedor_Repuesto (
@@ -137,7 +137,7 @@ CREATE TABLE Proveedor_Repuesto (
 
 CREATE TABLE AccionRecomendada (
     id_accion VARCHAR(10) PRIMARY KEY,
-	nombre_accion VARCHAR(10),
+	nombre_accion VARCHAR(70),
 	costo_asociado DECIMAL(8,2),
 	id_orden_compra VARCHAR(10),
 	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
@@ -240,36 +240,36 @@ INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_pr
 ('PROV005', 'Técnica Repuestos', '987 654 321', 'Av. Panamericana Norte 123, Callao, Perú', 'ventas@tecnicarepuestos.com');
 
 -- TABLA PROVEEDORREPUESTO
-INSERT INTO ProveedorRepuesto (id_proveedor, id_repuesto, codigo_repuesto, descripcion_repuesto, marca_repuesto, precio_repuesto) VALUES
-('PROV001', 'RES001', '1234567890', 'Bomba hidráulica Caterpillar 3306', 'Caterpillar', 5000.00),
-('PROV001', 'RES002', '2345678901', 'Filtro de aceite John Deere 780', 'John Deere', 100.00),
-('PROV001', 'RES003', '3456789012', 'Rodamiento de rueda Komatsu D375', 'Komatsu', 2000.00),
-('PROV002', 'RES004', '4567890123', 'Cigüeñal Volvo EC220', 'Volvo', 3000.00),
-('PROV002', 'RES005', '5678901234', 'Turbocompresor Cummins QSK19', 'Cummins', 4000.00);
+INSERT INTO Proveedor_Repuesto (id_proveedor, id_repuesto ) VALUES
+('PROV001', 'REP001'),
+('PROV001', 'REP002'),
+('PROV001', 'REP003'),
+('PROV002', 'REP004'),
+('PROV003', 'REP004');
 
 -- TABLA ACCION RECOMENDADA
 INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra)
 VALUES
-   ('ACC001', 'Lavado de cada componente', 600, 'OC003'),
-   ('ACC002', 'Reemplazo y Armado de piñón de ataque', 1200, 'OC003'),
-   ('ACC003', 'Montaje de eje propulsor', 800, 'OC004'),
-   ('ACC004', 'Armado del housing de pistón de freno Lh y Rh', 700, 'OC004'),
-   ('ACC005', 'Reemplazo de resortes y pernos de pistón de servicio', 550, 'OC005'),
-   ('ACC006', 'Reemplazo de tapa de bocamasa', 900, 'OC005'),
-   ('ACC007', 'Montaje de fundas', 600, 'OC006'),
-   ('ACC008', 'Reemplazo de bocina de bocamasa', 550, 'OC006'),
-   ('ACC009', 'Reemplazo de reten, rodajes y pistas de bocamasa (Mandos finales)', 1000, 'OC007'),
-   ('ACC010', 'Reemplazo de pernos de tapa de bocamasa', 700, 'OC007'),
-   ('ACC011', 'Armado de diferencial', 1100, 'OC003'),
-   ('ACC012', 'Se midió juego de Backlash', 600, 'OC003'),
-   ('ACC013', 'Montaje de tapa de cubos reductores', 800, 'OC004'),
-   ('ACC014', 'Reemplazo de todos los o-ring', 500, 'OC004'),
-   ('ACC015', 'Metalización de eje propulsor', 700, 'OC004'),
-   ('ACC016', 'Reemplazo de bocinas de tapas de bocamasa', 550, 'OC005'),
-   ('ACC017', 'Reemplazo de 4 arandelas de los espárragos', 600, 'OC005'),
-   ('ACC018', 'Reemplazo de respiradero', 650, 'OC005'),
-   ('ACC019', 'Montaje de housing de freno Lh y Rh', 750, 'OC006'),
-   ('ACC020', 'Se verificó pisada de los dientes de piñón de ataque y la corona', 900, 'OC006');
+  ('ACC001', 'Lavado de cada componente', 600, 'OC003'),
+  ('ACC002', 'Reemplazo y Armado de piñón de ataque', 1200, 'OC003'),
+  ('ACC003', 'Montaje de eje propulsor', 800, 'OC004'),
+  ('ACC004', 'Armado del housing de pistón de freno Lh y Rh', 700, 'OC004'),
+  ('ACC005', 'Reemplazo de resortes y pernos de pistón de servicio', 550, 'OC005'),
+  ('ACC006', 'Reemplazo de tapa de bocamasa', 900, 'OC005'),
+  ('ACC007', 'Montaje de fundas', 600, 'OC002'),
+  ('ACC008', 'Reemplazo de bocina de bocamasa', 550, 'OC002'),
+  ('ACC009', 'Reemplazo de reten, rodajes y pistas de bocamasa (Mandos finales)', 1000, 'OC005'),
+  ('ACC010', 'Reemplazo de pernos de tapa de bocamasa', 700, 'OC001'),
+  ('ACC011', 'Armado de diferencial', 1100, 'OC003'),
+  ('ACC012', 'Se midió juego de Backlash', 600, 'OC003'),
+  ('ACC013', 'Montaje de tapa de cubos reductores', 800, 'OC004'),
+  ('ACC014', 'Reemplazo de todos los o-ring', 500, 'OC004'),
+  ('ACC015', 'Metalización de eje propulsor', 700, 'OC004'),
+  ('ACC016', 'Reemplazo de bocinas de tapas de bocamasa', 550, 'OC005'),
+  ('ACC017', 'Reemplazo de 4 arandelas de los espárragos', 600, 'OC005'),
+  ('ACC018', 'Reemplazo de respiradero', 650, 'OC005'),
+  ('ACC019', 'Montaje de housing de freno Lh y Rh', 750, 'OC004'),
+  ('ACC020', 'Se verificó pisada de los dientes de piñón de ataque y la corona', 900, 'OC004');
 
 ```
 
