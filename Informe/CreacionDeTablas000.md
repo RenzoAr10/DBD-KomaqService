@@ -188,7 +188,7 @@ INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, ser
 
 -- TABLA ORDEN DE COMPRA
 INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
-('OC001', 'En proceso', '2023-04-20'),
+('OC001', 'Finalizado', '2023-04-20'),
 ('OC002', 'En proceso', '2023-04-21'),
 ('OC003', 'En proceso', '2023-04-22'),
 ('OC004', 'Finalizado', '2023-04-23'),
