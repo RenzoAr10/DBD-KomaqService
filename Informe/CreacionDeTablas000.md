@@ -115,6 +115,7 @@ CREATE TABLE Repuesto (
 	subtotal_repuesto INT,
 	id_servicio VARCHAR(10),
 	id_factura VARCHAR(10),
+        nombrerepuesto VARCHAR(50),
 	FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio),
 	FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
 );
@@ -224,12 +225,12 @@ INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, c
 ('CONS005', 'Batería', '2023-04-28', 2, 100, 'SERV005');
 
 -- TABLA REPUESTO
-INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura) VALUES
-('REP001', 15, 100, 1, 100, 'SERV001', 'FAC001'),
-('REP002', 10, 250, 2, 500, 'SERV002', 'FAC002'),
-('REP003', 20, 150, 4, 600, 'SERV003', 'FAC003'),
-('REP004', 5, 300, 1, 300, 'SERV004', 'FAC004'),
-('REP005', 8, 200, 3, 600, 'SERV005', 'FAC005');
+INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura,nombrerepuesto) VALUES
+('REP001', 15, 100, 1, 100, 'SERV001', 'FAC001','Llave de arranque'),
+('REP002', 10, 250, 2, 500, 'SERV002', 'FAC002','Llave maestra'),
+('REP003', 20, 150, 4, 600, 'SERV003', 'FAC003','Cilendro hidraulico de inclinacion'),
+('REP004', 5, 300, 1, 300, 'SERV004', 'FAC004','Motor hidraulico de traslacion original'),
+('REP005', 8, 200, 3, 600, 'SERV005', 'FAC005','Turbocompresor'	);
 
 -- TABLA PROVEEDOR
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
