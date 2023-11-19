@@ -22,3 +22,10 @@ Este módulo tiene como funcionalidad primaria gestionar eficazmente la cadena d
 
 # Módulo de Reporte de Servicios:
 La funcionalidad primaria de este módulo es documentar meticulosamente las actividades de mantenimiento en la maquinaria pesada, proporcionando un historial exhaustivo. Además, busca mantener actualizado el registro de tareas por técnico, implementar estándares de calidad y generar informes detallados para la toma de decisiones. Los usuarios pueden visualizar en tiempo real las últimas actividades de mantenimiento, completar formularios de registro y solo aquellos con permisos pueden agregar o editar entradas en el historial.
+
+# Módulo de Comunicación con Clientes
+
+La funcionalidad primaria  es establecer una plataforma de comunicación centralizada y multifuncional que conecta a los clientes con la empresa, mejorando el flujo de información y la asistencia. Este módulo es crítico para ofrecer un canal directo y eficiente para que los clientes expresen sus necesidades de servicio y soporte, así como para realizar consultas técnicas o de otro tipo.
+Proveer un mecanismo de seguimiento en el cual los clientes pueden monitorear el progreso y estado actual de sus órdenes de servicio, asegurando una visibilidad completa y aumentando la transparencia.
+Recopila valoraciones y opiniones de los clientes después de cada servicio prestado, lo cual es vital para evaluar la calidad del servicio y para impulsar mejoras continuas en la prestación de servicios.
+Por ultimo mantiene una comunicación proactiva y regular con los clientes mediante notificaciones y actualizaciones, contribuyendo significativamente a la satisfacción del cliente y a la fidelización a largo plazo.
