@@ -19,17 +19,22 @@ VALUES ('REP002', '17', ' SERV001')
 VALUES ('REP004', '21', 'SERV001')
 
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/92390fd5-0967-4eb8-a3c0-aae638fe608f)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/a7e137f9-0211-472e-8cad-efb7f5fdc91a)
+
 
 
 --Se reliza un busqueda con los campos en los cuales estan completados , por ello se usa %% al darle al boton BUSCAR
 ```sql
-SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario
+SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario 
 FROM Servicio as S
 INNER JOIN OrdenCompra as cp ON s. IdOrdenCompra= cp. IdOrdenCompra
 INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
 WHERE nombreServicio = nombrex AND OrdenCompra =%OC00x% AND NombreCliente=%nombreclientex%;
+-- Se genera el porcentaje de activades compeltadas , para esto los estados de cada actidades son definidos , es decir solo hay una lista disponible de estados  lo caules son EN CURSO y FINALIZADO
+((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra= 'OC001' and Estado='Finalizado') as CantidadActividadesFinalizadas) / ((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra= 'OC001' ) as CantidadActividades) as PorcentajeCompletado;
 -- Al seleccionar un Servicio se abre una ventana Deatallando más aspectos de este, basado en su IdServicio
+
+
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c06eecc7-7289-4dd5-be15-d99f328dcf76)
 
