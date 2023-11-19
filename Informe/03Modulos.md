@@ -28,20 +28,25 @@ Registro y autenticación de usuarios requerido para acceder a funciones de gest
 Cumplimiento de regulaciones de privacidad y seguridad junto con Komaq.
 
 
-# Módulo de Gestión de Órdenes de Compra: (Modificar)
+# Módulo de Gestión de Órdenes de Compra:
 
-Permite la administración completa de las órdenes de servicio, incluyendo la creación, asignación y actualización. Es esencial para llevar un seguimiento detallado de las solicitudes de mantenimiento.
+Se encarga de la gestión de órdenes de compra dentro de la aplicación que implica la creacioón, asignación y actualización de la misma. Facilita la interacción entre clientes, proveedores, y personal interno encargado de las compras.
 
 ## Responsabilidades:
 
-Crear órdenes de servicio para un seguimiento eficiente.
+Creación de Órdenes de Compra
 
-Asignar técnicos a las órdenes de servicio.
+Visualización y actualización de órdenes
 
-Actualizar el estado de las órdenes de servicio para reflejar el progreso.
+Seguimiento de estado de la orden de compra para el cliente
 
-Gestionar la documentación y el historial de las órdenes de servicio.
+Asociación con proveedores
 
+Asociación con facturas
+
+Notificaciones y recordatorios al usuario sobre fechas límite, cambios en las órdenes y otros eventos importantes
+
+Registro de historial de las Ordenes de compras, incluyendo cambios realizados
 
 
 # Módulo de Comunicación con Clientes:
