@@ -1,6 +1,7 @@
+```sql
 -- SELECT
     id_repuesto,
-    nombreRepuesto
+    nombreRepuesto,
     stock,
     cantidad,
     precioUnitario
