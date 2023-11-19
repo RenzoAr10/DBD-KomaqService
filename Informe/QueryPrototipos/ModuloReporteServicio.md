@@ -1,4 +1,5 @@
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/6b03ba47-295c-4780-b4d3-baae4c427932)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/1eb93670-40b8-4d35-a902-30d46bf98abb)
+
 
 
 ```sql
@@ -18,7 +19,8 @@ VALUES ('REP002', '17', ' SERV001')
 VALUES ('REP004', '21', 'SERV001')
 
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c16fc45e-5645-48c1-9b7a-8c8962f86b73)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d36bbd55-cecf-4c1f-8a53-3561521b83d2)
+
 
 ```sql
 SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario
@@ -27,7 +29,8 @@ INNER JOIN OrdenCompra as cp ON s. IdOrdenCompra= cp. IdOrdenCompra
 INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
 -- Al seleccionar un Servicio se abre una ventana Deatallando más aspectos de este, basado en su IdServicio
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d01fe164-f115-43e5-943e-d4bdfea671c4)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/fd5e8281-d0e9-4eac-974f-0d893b4c4c93)
+
 ```sql
 SELECT NombreServicio , FechaIncio , FechaFin , Costo, TecnicoAsignado , NombreConsumible, NombreRespuesto
 From Servicio
