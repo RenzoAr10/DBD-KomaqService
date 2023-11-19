@@ -1,7 +1,7 @@
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/135069f3-7f7b-45f3-973a-82722d41c453)
 
-```sql
+ ```sql
 SELECT
     id_repuesto,
     nombreRepuesto,
@@ -10,9 +10,9 @@ SELECT
     precioUnitario
 FROM
     Repuesto;
-
+```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/9bf7bac5-5858-419e-a93a-13bc3cf79668)
-
+``` sql
 SELECT
     id_proveedor,
     nombre_empresa,
@@ -47,4 +47,4 @@ FROM Proveedor;
 -- Insertar nuevo proveedor
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email)
 VALUES ('PROV_05', 'Nuevo Proveedor', 123456789, 'Calle Principal 123', 'nuevo@proveedor.com');
-
+```
