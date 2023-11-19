@@ -1,5 +1,6 @@
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/e1d8cac3-55c0-4329-8394-87224fc2010f)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/563c62ea-995a-48e9-abab-163c23d2fb55)
+
 
 
  ```sql
@@ -12,7 +13,8 @@ SELECT
 FROM
     Repuesto;
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/548a7b07-1ae4-4668-b896-11a4760b2093)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/a3c50380-10e4-4ee8-ab06-73895b5b3f97)
+
 
 ``` sql
 --Los campos del Proveedor se completan automaticamente en el ComboBox , al seleccionar un proveedor_x 
@@ -43,13 +45,15 @@ VALUES
     ('Ferreyros', 'REP_03'),
     ('Ferreyros', 'REP_04');
 ``` 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/5141125b-2878-411d-8714-dced1c9c1c77)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/873735a7-731a-43fb-aa1f-273208825c53)
+
 ``` sql
 -- SELECT de datos de proveedores
 SELECT nombre_empresa, telefono_prov, direccion_prov, email
 FROM Proveedor;
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/43800193-9646-4eea-a574-4d4ea075a977)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/1c1dd496-d33d-4892-b023-36c75736c943)
+
 ```sql
 -- Insertar nuevo proveedor
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email)
