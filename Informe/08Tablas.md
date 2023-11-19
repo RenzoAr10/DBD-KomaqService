@@ -78,5 +78,15 @@ CREATE TABLE reportes (
 
 
 
-
+ ```sql
 --SENTENCIAS SQL
+
+
+CREATE TABLE Solicitudes (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Empleado VARCHAR(255),
+    Proveedor VARCHAR(255),
+    Fecha DATE,
+    Detalles TEXT
+);
+ ```
