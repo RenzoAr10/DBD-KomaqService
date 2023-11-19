@@ -1,19 +1,22 @@
--- SELECT Repuesto
+-- SELECT
     id_repuesto,
     nombreRepuesto
     stock,
     cantidad,
     precioUnitario
-FROM Repuesto;
+FROM
+    Repuesto;
 
--- SELECT Proveedor
+-- SELECT
     id_proveedor,
     nombre_empresa,
     telefono_prov,
     direccion_prov,
     email
-FROM Proveedor
-WHERE Id_proveedor = Id_proveedor_x;
+FROM
+    Proveedor
+WHERE 
+    Id_proveedor = Id_proveedor_x;
 
 -- Insertar repuestos
 INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura)
