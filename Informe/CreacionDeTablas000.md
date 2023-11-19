@@ -191,8 +191,8 @@ INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
 ('OC001', 'En proceso', '2023-04-20'),
 ('OC002', 'En proceso', '2023-04-21'),
 ('OC003', 'En proceso', '2023-04-22'),
-('OC004', 'En proceso', '2023-04-23'),
-('OC005', 'En proceso', '2023-04-24');
+('OC004', 'Finalizado', '2023-04-23'),
+('OC005', 'Finalizado', '2023-04-24');
 
 -- TABLA PROBLEMAS
 INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
