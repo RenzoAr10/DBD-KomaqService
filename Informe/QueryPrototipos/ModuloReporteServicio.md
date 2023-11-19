@@ -22,12 +22,13 @@ VALUES ('REP004', '21', 'SERV001')
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/92390fd5-0967-4eb8-a3c0-aae638fe608f)
 
 
-
+--Se reliza un busqueda con los campos en los cuales estan completados , por ello se usa %% 
 ```sql
 SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario
 FROM Servicio as S
 INNER JOIN OrdenCompra as cp ON s. IdOrdenCompra= cp. IdOrdenCompra
 INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
+WHERE nombreServicio = nombrex AND OrdenCompra =%OC00x% AND NombreCliente=%nombreclientex%;
 -- Al seleccionar un Servicio se abre una ventana Deatallando más aspectos de este, basado en su IdServicio
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/fd5e8281-d0e9-4eac-974f-0d893b4c4c93)
