@@ -1,4 +1,5 @@
-**R07001  R07002   R07002  **
+**R07001  R07002   R07002**
+
 **PRO7001**
 
 ![](https://raw.githubusercontent.com/RenzoAr10/DBD-KomaqService/0796b76f2f0a29e50fef25f8a30936ef6848abc4/Documentacion%20de%20Soporte/querys/FacturacionYPagos/GectionDeVentas.png)
