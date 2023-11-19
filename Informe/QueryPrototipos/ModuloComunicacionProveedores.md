@@ -75,3 +75,10 @@ FROM Proveedor;
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email)
 VALUES ('PROV_05', 'Nuevo Proveedor', 123456789, 'Calle Principal 123', 'nuevo@proveedor.com');
 ```
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/77c40c54-0b01-4feb-bc58-cd63dcd4063f)
+```sql
+-- Acutalizar datos proveedor
+UPDATE SET nombre_empresa='FERREYROS' , telefono_prov = '987541364', direccion_prov ='Calle Principal 1341', email='fconstructora@gmail.com' , EstadoPRoveedor='Excelente'
+WHERE idProveedor = 'PROV_05';
+```
+
