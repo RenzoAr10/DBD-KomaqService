@@ -33,7 +33,7 @@ INNER JOIN OrdenCompra as cp ON s. IdOrdenCompra= cp. IdOrdenCompra
 INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
 WHERE nombreServicio = nombrex AND OrdenCompra =%OC00x% AND NombreCliente=%nombreclientex%;
 -- Se genera el porcentaje de activades compeltadas , para esto los estados de cada actidades son definidos , es decir solo hay una lista disponible de estados  lo caules son INCOMPLETA y COMPLETADO
-((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra= 'OC001' and Estado='COMPELTADO') as CantidadActividadesFinalizadas) / ((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra= 'OC001' ) as CantidadActividades) as PorcentajeCompletado;
+((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra= 'OC001' and Estado='COMPLETADO') as CantidadActividadesFinalizadas) / ((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra= 'OC001' ) as CantidadActividades) as PorcentajeCompletado;
 -- Al seleccionar un Servicio se abre una ventana Deatallando más aspectos de este, basado en su IdServicio
 
 
