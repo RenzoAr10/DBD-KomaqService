@@ -18,4 +18,9 @@ FROM
     INNER JOIN Cliente c ON oc.id_cliente = c.id_cliente
     INNER JOIN Proveedor p ON s.id_proveedor = p.id_proveedor
     INNER JOIN Factura f ON s.id_fatura = f.id_factura;
+
+
+UPDATE OrdenCompra
+SET estado = 'Finalizado'
+WHERE estado = 'En proceso' AND id_orden_compra = 'OC002';
 ```
