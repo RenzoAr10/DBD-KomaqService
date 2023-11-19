@@ -128,7 +128,13 @@ INSERT INTO Servicio (Servicio, Fecha, Tecnico, Maquina, Descripcion, Repuestos)
 VALUES ('Nombre del Servicio', '2023-09-21', 'Nombre del Técnico', 'ID o Tipo de la Máquina', 'Descripción del trabajo realizado', 'Lista de repuestos utilizados');
 ```
 ![2](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/06145328-d418-4a01-b0da-78e57b59089d)
+ ```sql
+
+```
 ![3](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/f804b50c-ffdf-4fc0-a7a2-bacd793b7783)
+ ```sql
+
+```
 
 
 
