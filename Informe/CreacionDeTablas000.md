@@ -3,7 +3,6 @@
  ```sql
 CREATE TABLE Cliente (
 	id_cliente VARCHAR(10) PRIMARY KEY,
-        NombreEmpresa VARCHAR(50),
 	nombre VARCHAR(50),
     apellido_paterno VARCHAR(50),
 	apellido_materno VARCHAR(50),
@@ -11,7 +10,8 @@ CREATE TABLE Cliente (
 	dni VARCHAR(15),
 	telefono INTEGER,
 	email VARCHAR(100),
-	direccion VARCHAR(255)
+	direccion VARCHAR(255),
+        NombreEmpresa VARCHAR(50)
 );
 
 CREATE TABLE OrdenCompra (
@@ -56,8 +56,8 @@ CREATE TABLE Servicio (
 	nombre_servicio VARCHAR(100),
 	fecha_inicio DATE,
 	fecha_fin DATE,
-	costo DECIMAL(8,2)INT,
-	cantidad_servicios INT,
+	costo DECIMAL(8,2),
+	cantidad_servicios,
 	subtotal_servicios DECIMAL(8,2),
 	tecnico_asignado VARCHAR(100),
 	id_orden_compra VARCHAR(10),
@@ -147,18 +147,19 @@ CREATE TABLE AccionRecomendada (
 ## INSERCION DE VALORES
  ```sql
 -- TABLA CLIENTE
-INSERT INTO Cliente (id_cliente, NombreEmpresa, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion)
+INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion, NombreEmpresa)
 VALUES
-   ('CL001', 'Mminera las bambas s.a.', 'Juan', 'Gomez', 'Perez', 12345678901, '70123456', 975977906, 'juan.gomez@email.com', 'Av. Principal 123, Lima'),
-   ('CL002', 'Compañia minera poderosa s.a.', 'Ana', 'Rodriguez', 'Lopez', 19876543210, '71234567', 976543210, 'ana.rodriguez@email.com', 'Jr. Las Flores 456, Arequipa'),
-   ('CL003', 'Minera yanacocha s.r.l.', 'Carlos', 'Diaz', 'Cordova', 17654321098, '72345678', 987654321, 'carlos.diaz@email.com', 'Calle Central 789, Trujillo'),
-   ('CL004', 'Volcan compañía minera s.a.a.', 'María', 'Lopez', 'Gutierrez', 15432109876, '73456789', 998877665, 'maria.lopez@email.com', 'Av. Progreso 234, Chiclayo'),
-   ('CL005', 'Compañia minera ares s.a.c.', 'Pedro', 'Martinez', 'Santos', 12309876543, '74567890', 987654321, 'pedro.martinez@email.com', 'Av. Independencia 567, Huancayo'),
-   ('CL006', 'Nexa resources peru', 'Luisa', 'Garcia', 'Flores', 10987654321, '75678901', 965432109, 'luisa.garcia@email.com', 'Jr. Amazonas 890, Iquitos'),
-   ('CL007', 'Shougang hierro peru s.a.a.', 'Roberto', 'Sanchez', 'Torres', 19876543210, '76789012', 944556677, 'roberto.sanchez@email.com', 'Av. Primavera 123, Piura'),
-   ('CL008', 'Anglo american quellaveco s.a.', 'Laura', 'Ramirez', 'Mendoza', 15432109876, '77890123', 933221100, 'laura.ramirez@email.com', 'Calle Pizarro 456, Cusco'),
-   ('CL009', 'Marcobre s.a.c.', 'Javier', 'Hernandez', 'Luna', 12309876543, '78901234', 922334455, 'javier.hernandez@email.com', 'Jr. Mariscal 789, Ayacucho'),
-   ('CL010', 'Minera chinalco peru s.a.', 'Carmen', 'Jimenez', 'Cruz', 10987654321, '79012345', 911223344, 'carmen.jimenez@email.com', 'Av. del Sol 012, Tacna');
+   ('CL001', 'Juan', 'Gomez', 'Perez', 12345678901, '70123456', 975977906, 'juan.gomez@email.com', 'Av. Principal 123, Lima', 'Mminera las bambas s.a.'),
+   ('CL002', 'Ana', 'Rodriguez', 'Lopez', 19876543210, '71234567', 912345678, 'ana.rodriguez@email.com', 'Jr. Las Flores 456, Arequipa', 'Compañia minera poderosa s.a.'),
+   ('CL003', 'Carlos', 'Diaz', 'Cordova', 17654321098, '72345678', 934567890, 'carlos.diaz@email.com', 'Calle Central 789, Trujillo', 'Minera yanacocha s.r.l.'),
+   ('CL004', 'Laura', 'Ramirez', 'Mendoza', 19987654321, '73456789', 945678901, 'laura.ramirez@email.com', 'Av. Independencia 012, Chiclayo', 'Volcan compañía minera s.a.a.'),
+   ('CL005', 'Pedro', 'Martinez', 'Santos', 11234567890, '74567890', 956789012, 'pedro.martinez@email.com', 'Jr. Amazonas 345, Huancayo', 'Compañia minera ares s.a.c.'),
+   ('CL006', 'Luisa', 'Garcia', 'Flores', 19876543210, '75678901', 967890123, 'luisa.garcia@email.com', 'Av. El Sol 678, Iquitos', 'Nexa resources peru'),
+   ('CL007', 'Roberto', 'Sanchez', 'Torres', 12345678901, '76789012', 978901234, 'roberto.sanchez@email.com', 'Calle Primavera 901, Piura', 'Shougang hierro peru s.a.a.'),
+   ('CL008', 'Elena', 'Fernandez', 'Luna', 11234567890, '77890123', 989012345, 'elena.fernandez@email.com', 'Jr. Los Pinos 234, Cusco', 'Anglo american quellaveco s.a.'),
+   ('CL009', 'Javier', 'Hernandez', 'Luna', 11234567890, '78901234', 990123456, 'javier.hernandez@email.com', 'Av. Las Palmeras 567, Ayacucho', 'Marcobre s.a.c.'),
+   ('CL010', 'Carmen', 'Jimenez', 'Cruz', 12345678901, '79012345', 911234567, 'carmen.jimenez@email.com', 'Calle Victoria 890, Tacna', 'Minera chinalco peru s.a.');
+
 
 -- TABLA USUARIO
 INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente, id_orden_compra) VALUES
