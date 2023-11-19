@@ -1,12 +1,16 @@
-**R00**
+**R06001**
 
-**PRO0**
+**PRO6001**
 
 ![](https://raw.githubusercontent.com/RenzoAr10/DBD-KomaqService/e71deff2e181024cac1d58c5e07b5a90572862f1/Documentacion%20de%20Soporte/querys/FacturacionYPagos/facturasgeneradas.png)
 
  ```sql
 SELECT id_factura , forma_pago , fecha_emision FROM factura
  ```
+**R06001**
+
+**PRO6002**
+
 Al presionar el el IDFACTURA, se ira a otra pestaña, mostrando los datos de esa IDFACTURA
 
 ![](https://raw.githubusercontent.com/RenzoAr10/DBD-KomaqService/e71deff2e181024cac1d58c5e07b5a90572862f1/Documentacion%20de%20Soporte/querys/FacturacionYPagos/vistaFactura.png)
@@ -88,9 +92,9 @@ FROM (
 
 # EMPLEADO
 
-**R**
+**R06003**   **R06004** 
 
-**PRO**
+**PRO6003**
 
 ![](https://raw.githubusercontent.com/RenzoAr10/DBD-KomaqService/60a1d4fd0b998af08f7f97751724bb9ff8d63eda/Documentacion%20de%20Soporte/querys/FacturacionYPagos/REPORTE%20DE%20VENTAS.png)
 
