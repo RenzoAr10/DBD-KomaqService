@@ -31,12 +31,14 @@ INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
 WHERE nombreServicio = nombrex AND OrdenCompra =%OC00x% AND NombreCliente=%nombreclientex%;
 -- Al seleccionar un Servicio se abre una ventana Deatallando más aspectos de este, basado en su IdServicio
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/9ca5e4e3-b9f8-4095-b2a0-44bce271c49d)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c06eecc7-7289-4dd5-be15-d99f328dcf76)
+
 
 
 ```sql
 SELECT NombreServicio , FechaIncio , FechaFin , Costo, TecnicoAsignado, EstadoServicio , NombreConsumible, NombreRespuesto
 From Servicio
 SELECT NombreRespuesto FROM Respuesto WHERE idServicio = SER001;
-SELECT NombreConsumible FROM Cosnumible WHERE idServicio = SER001; 
+SELECT NombreConsumible FROM Cosnumible WHERE idServicio = SER001;
+SELECT IdAccionRecomendad FROM AccionRecomendad WHERE idOrdenCompra= OCP001;
 ```
