@@ -12,3 +12,7 @@ https://www.youtube.com/watch?v=OhET9Hj09YY
 
 Mejoras Modelo Conceptual | Modelo Logico:
 https://youtu.be/t0dpcqgY2Rs
+
+## PC03
+
+https://youtu.be/3YDRLGOW-Oo
