@@ -48,6 +48,16 @@ Notificaciones y recordatorios al usuario sobre fechas límite, cambios en las �
 
 Registro de historial de las Ordenes de compras, incluyendo cambios realizados
 
+R02001: Los usuarios autorizados deben poder acceder y revisar la lista completa de órdenes de compra a través de la Página Principal del Módulo, con la capacidad de realizar búsquedas específicas y recibir notificaciones relacionadas con cambios o actualizaciones en el estado de las órdenes.
+
+R02002: Los usuarios con permisos de edición deben poder actualizar los detalles de las órdenes de compra, incluyendo fechas de entrega y cantidades, y dichas actualizaciones deben reflejarse inmediatamente en el sistema para todos los usuarios relevantes.
+
+R02003: Las órdenes de compra solo pueden ser creadas por usuarios autorizados con roles específicos, y deben incluir información detallada sobre los bienes o servicios requeridos antes de ser enviadas a los proveedores.
+
+R02004: El sistema debe proporcionar actualizaciones automáticas sobre el estado de las entregas, y los usuarios designados deben recibir alertas en caso de retrasos o cambios en la fecha estimada de llegada de los bienes.
+
+R02005: Informes de gestión de compras deben ser generados mensualmente por el sistema, permitiendo a los usuarios personalizar estos informes según fecha, proveedor y tipo de bien o servicio para análisis específicos y toma de decisiones informadas.
+
 
 # Módulo de Comunicación con Clientes:
 
