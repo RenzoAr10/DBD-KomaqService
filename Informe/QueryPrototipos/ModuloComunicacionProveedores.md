@@ -1,5 +1,6 @@
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/563c62ea-995a-48e9-abab-163c23d2fb55)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4b5d0f3d-4d46-4d39-982b-4de55a675fff)
+
 
 
 
