@@ -17,7 +17,8 @@ VALUES ('REP002', '17', ' SERV001')
 VALUES ('REP004', '21', 'SERV001')
 
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d56be3ea-d7d9-46ff-9029-a8ae692d6434)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c16fc45e-5645-48c1-9b7a-8c8962f86b73)
+
 ```sql
 SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario
 FROM Servicio as S
