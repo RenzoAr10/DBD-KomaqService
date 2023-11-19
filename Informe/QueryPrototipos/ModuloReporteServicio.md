@@ -19,7 +19,8 @@ VALUES ('REP002', '17', ' SERV001')
 VALUES ('REP004', '21', 'SERV001')
 
 ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d36bbd55-cecf-4c1f-8a53-3561521b83d2)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/92390fd5-0967-4eb8-a3c0-aae638fe608f)
+
 
 
 ```sql
