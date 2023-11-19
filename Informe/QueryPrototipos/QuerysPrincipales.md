@@ -107,7 +107,9 @@ UPDATE revisions SET status = 'Finalizado' WHERE revision_id = 'REV-001';
 # Módulo de Comunicación con Proveedores
 ![4](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/616c0aae-cef2-4f1e-a400-a784d9a21096)
 ![5](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/5fa26fcc-61d6-46eb-a956-f1a436b08f35)
-![6](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e01181ab-70d8-4c20-aec3-13ae1e6d561a)
+
+INSERT INTO Solicitudes (Empleado, Proveedor, Fecha, Detalles)
+VALUES ('EmpleadoNombre', 'ProveedorNombre', '2023-01-01', 'Detalles de la solicitud');![6](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e01181ab-70d8-4c20-aec3-13ae1e6d561a)
 
 
 # Módulo de Reporte de Servicios
