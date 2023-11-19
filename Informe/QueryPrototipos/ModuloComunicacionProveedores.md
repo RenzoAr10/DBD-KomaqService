@@ -39,11 +39,15 @@ VALUES
     ('Ferreyros', 'REP_02'),
     ('Ferreyros', 'REP_03'),
     ('Ferreyros', 'REP_04');
-
+``` 
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/5141125b-2878-411d-8714-dced1c9c1c77)
+``` sql
 -- SELECT de datos de proveedores
 SELECT nombre_empresa, telefono_prov, direccion_prov, email
 FROM Proveedor;
-
+```
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/43800193-9646-4eea-a574-4d4ea075a977)
+```sql
 -- Insertar nuevo proveedor
 INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email)
 VALUES ('PROV_05', 'Nuevo Proveedor', 123456789, 'Calle Principal 123', 'nuevo@proveedor.com');
