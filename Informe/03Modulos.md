@@ -42,7 +42,7 @@ Seguimiento de estado de la orden de compra para el cliente
 
 Asociación con proveedores
 
-Asociación con facturas
+Asociación con facturas para la facilitación de la contabilidad y el seguimiento financiero
 
 Notificaciones y recordatorios al usuario sobre fechas límite, cambios en las órdenes y otros eventos importantes
 
