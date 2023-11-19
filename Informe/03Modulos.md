@@ -65,6 +65,16 @@ Recoger y analizar el feedback del cliente para mejorar la calidad del servicio.
 
 Garantizar la operatividad y la actualización constante del sistema para mejorar la experiencia del cliente.
 
+R03001: Cada cliente debe ser saludado en la página de bienvenida con una orientación clara sobre cómo utilizar el módulo y cómo puede beneficiarse de las diferentes opciones disponibles.
+
+R03002: Los clientes deben completar todos los campos requeridos en el formulario de solicitud de asistencia, incluyendo una descripción detallada del problema, el modelo de la maquinaria afectada y el tipo de asistencia necesaria, antes de poder enviar la solicitud.
+
+R03003: Después de enviar una solicitud, el cliente debe poder rastrear el estado de su servicio en tiempo real, con la obligación por parte del sistema de proporcionar actualizaciones proactivas y comunicaciones de seguimiento pertinentes.
+
+R03004: Los clientes tendrán la opción de proporcionar feedback sobre los servicios recibidos a través de un formulario dedicado, y este feedback debe ser registrado en el sistema para futuras evaluaciones y mejoras de servicio.
+
+R03005: El sistema debe requerir que los clientes califiquen el servicio recibido utilizando el sistema de calificación proporcionado, y este debe ser accesible a través de la página de feedback del cliente.
+
 
 # Módulo de Comunicación con Proveedores:
 
