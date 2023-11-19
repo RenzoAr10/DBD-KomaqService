@@ -49,7 +49,9 @@ CREATE TABLE Factura (
 	id_factura VARCHAR(10) PRIMARY KEY,
 	forma_pago VARCHAR(100),
 	fecha_emision VARCHAR(100),
-	costo_total DECIMAL(8,2)
+	costo_total DECIMAL(8,2),
+        id_usuario VARCHAR(10),
+        FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
 CREATE TABLE Servicio (
