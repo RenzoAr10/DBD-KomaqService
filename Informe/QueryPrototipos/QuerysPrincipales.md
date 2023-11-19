@@ -110,8 +110,9 @@ UPDATE revisions SET status = 'Finalizado' WHERE revision_id = 'REV-001';
 
  ```sql
 INSERT INTO Solicitudes (Empleado, Proveedor, Fecha, Detalles)
-VALUES ('EmpleadoNombre', 'ProveedorNombre', '2023-01-01', 'Detalles de la solicitud');![6](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e01181ab-70d8-4c20-aec3-13ae1e6d561a)
+VALUES ('EmpleadoNombre', 'ProveedorNombre', '2023-01-01', 'Detalles de la solicitud');
 ```
+![6](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e01181ab-70d8-4c20-aec3-13ae1e6d561a)
 
 # Módulo de Reporte de Servicios
 ![1](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/07f05f0c-11f3-49b3-a928-06edcd0f163c)
