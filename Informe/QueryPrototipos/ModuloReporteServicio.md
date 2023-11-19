@@ -1,6 +1,6 @@
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7ad6fe16-19cc-4224-a347-29cd9d0e5a5d)
 
-''' sql
+'''sql
 SELECT IdEmpelado, nombreEmpleado 
 FROM empleado;
 SELECT IdRepuesto , NombreRepuesto
