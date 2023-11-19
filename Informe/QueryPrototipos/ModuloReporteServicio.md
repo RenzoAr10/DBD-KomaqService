@@ -1,6 +1,6 @@
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7ad6fe16-19cc-4224-a347-29cd9d0e5a5d)
 
-'''sql
+```sql
 SELECT IdEmpelado, nombreEmpleado 
 FROM empleado;
 SELECT IdRepuesto , NombreRepuesto
@@ -16,18 +16,18 @@ INSERT INTO Respuesto ( NombreRespuesto, CantidadUtilizada, IdServicio)
 VALUES ('REP002', '17', ' SERV001')
 VALUES ('REP004', '21', 'SERV001')
 
-'''
+```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d56be3ea-d7d9-46ff-9029-a8ae692d6434)
-'''sql
+```sql
 SELECT idServicio , NombreServicio , IdOrdenCompra, NombreUsuario
 FROM Servicio as S
 INNER JOIN OrdenCompra as cp ON s. IdOrdenCompra= cp. IdOrdenCompra
 INNER JOIN NombreUsuario as un ON s.nombreUsuario= un.nombreUsusario;
-'''
+```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d01fe164-f115-43e5-943e-d4bdfea671c4)
-'''sql
+```sql
 SELECT NombreServicio , FechaIncio , FechaFin , Costo, TecnicoAsignado , NombreConsumible, NombreRespuesto
 From Servicio
 SELECT NombreRespuesto FROM Respuesto WHERE idServicio = SER001;
 SELECT NombreConsumible FROM Cosnumible WHERE idServicio = SER001; 
-'''
+```
