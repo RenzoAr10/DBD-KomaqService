@@ -21,9 +21,10 @@ WHERE nombreUsuario = @user2 AND contrasenaUsuario = @pass2;
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/e5f3c62f-ca80-4b80-a9f0-df9146ad3783)
 ```sql
+--Al presionar el botón REGISTRAR
 INSERT INTO Usuario (nombreUsuario, contraseñaUsuario , IdEmpleado)
 VALUES (‘jcustodio’ , ‘password1’, ‘EMP001’)
---Al presionar el botón REGISTRAR
+
 INSERT INTO Empleado (id_empleado, nombre, apellido_paterno, apellido_materno, dni, telefono, email, especializacion, cargo, id_jefe) VALUES
 ('EMP001', 'Hector', 'Rojas', 'Cotrina', '12345678', '987654321', 'hrojas@komq.com', 'Mecánico', 'Técnico Senior', NULL),
 ```
