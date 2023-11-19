@@ -77,6 +77,16 @@ Asegurar que todos los repuestos cumplan con los estándares de calidad requerid
 
 Evaluar el rendimiento de los proveedores y la eficiencia del proceso de suministro, generando informes que ayuden en la toma de decisiones estratégicas.
 
+R05001: Los usuarios autorizados deben poder acceder y revisar la lista completa de proveedores a través de la Página Principal del Módulo, con la capacidad de realizar búsquedas específicas y recibir notificaciones relacionadas con cambios o actualizaciones en el estado de los proveedores.
+
+R05002: Los usuarios con permisos de edición deben poder actualizar los detalles de los proveedores, incluyendo contactos y evaluaciones de desempeño, y dichas actualizaciones deben reflejarse inmediatamente en el sistema para todos los usuarios relevantes.
+
+R05003: Las solicitudes de pedido de repuestos solo pueden ser creadas por usuarios con roles de compras y deben incluir toda la información requerida como tipo de repuesto, cantidad y fecha de solicitud antes de ser enviadas a los proveedores.
+
+R05004: El seguimiento de logística y entregas debe ser actualizado en tiempo real, y los usuarios necesarios deben recibir alertas automáticas en caso de retrasos o cambios en la fecha estimada de llegada de los pedidos.
+
+R05005: Los informes de gestión de suministros deben ser generados mensualmente por el sistema, y los usuarios deben poder personalizar estos informes según fecha, proveedor y tipo de repuesto para análisis específicos y toma de decisiones informadas.
+
 # Módulo de Reporte de Servicios: 
 
 Se encarga de facilitar una documentación detallada y eficiente de todas las actividades de mantenimiento realizadas en la maquinaria pesada, proporcionando una base de datos exhaustiva para el seguimiento de calidad y la gestión eficaz de los servicios.
