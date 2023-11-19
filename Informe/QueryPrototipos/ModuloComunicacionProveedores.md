@@ -13,6 +13,7 @@ FROM
 ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/9bf7bac5-5858-419e-a93a-13bc3cf79668)
 ``` sql
+--Los campos del Proveedor se completan automaticamente en el ComboBox , al seleccionar un proveedor_x 
 SELECT
     id_proveedor,
     nombre_empresa,
