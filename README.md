@@ -44,4 +44,4 @@ Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 
 [Funcionalidad Primaria Elegida](Informe/QueryPrototipos/FuncionalidadPrimariaPorCadaModulo.md)
 
-[Stack Tecnológico elegido para su aplicación](DocumentaciondeSoporte/ArquitecturaSoftware.png)
+[Stack Tecnológico elegido para su aplicación](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/ArquitecturaSoftware.png)
