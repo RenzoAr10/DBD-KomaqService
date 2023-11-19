@@ -1,3 +1,6 @@
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/135069f3-7f7b-45f3-973a-82722d41c453)
+
 ```sql
 SELECT
     id_repuesto,
