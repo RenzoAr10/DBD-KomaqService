@@ -58,7 +58,7 @@ CREATE TABLE Servicio (
 	fecha_inicio DATE,
 	fecha_fin DATE,
 	costo DECIMAL(8,2),
-	cantidad_servicios,
+	cantidad_servicios INT,
 	subtotal_servicios DECIMAL(8,2),
 	tecnico_asignado VARCHAR(100),
 	id_orden_compra VARCHAR(10),
@@ -188,11 +188,11 @@ INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, ser
 
 -- TABLA ORDEN DE COMPRA
 INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
-('OC001', '2023-04-20'),
-('OC002', '2023-04-21'),
-('OC003', '2023-04-22'),
-('OC004', '2023-04-23'),
-('OC005', '2023-04-24');
+('OC001', 'En proceso', '2023-04-20'),
+('OC002', 'En proceso', '2023-04-21'),
+('OC003', 'En proceso', '2023-04-22'),
+('OC004', 'En proceso', '2023-04-23'),
+('OC005', 'En proceso', '2023-04-24');
 
 -- TABLA PROBLEMAS
 INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
