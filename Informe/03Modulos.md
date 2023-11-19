@@ -51,17 +51,20 @@ Registro de historial de las Ordenes de compras, incluyendo cambios realizados
 
 # Módulo de Comunicación con Clientes:
 
-Facilita la comunicación directa con los clientes, lo que es crucial para que los clientes soliciten asistencia, se mantengan informados sobre el estado de sus órdenes de servicio y mejora la satisfacción del cliente.
+Permite establecer un puente de comunicación efectivo y eficiente entre KOMAQ y sus clientes, garantizando una gestión transparente y proactiva de las consultas, asistencia técnica y seguimiento de órdenes de servicio para fomentar la confianza y satisfacción del cliente.
 
 ## Responsabilidades:
 
-Facilitar la comunicación bidireccional entre la empresa y los clientes.
+Mantener una comunicación clara y continua con los clientes, proporcionando respuestas oportunas y asistencia relevante.
 
-Proporcionar un canal para que los clientes soliciten asistencia.
+Asegurar que los clientes puedan solicitar y recibir asistencia técnica de manera eficiente.
 
-Enviar actualizaciones sobre el estado de las órdenes de servicio a los clientes.
+Proveer actualizaciones regulares y precisas sobre el estado de las órdenes de servicio a los clientes.
 
-Mejorar la satisfacción del cliente al mantenerlos informados.
+Recoger y analizar el feedback del cliente para mejorar la calidad del servicio.
+
+Garantizar la operatividad y la actualización constante del sistema para mejorar la experiencia del cliente.
+
 
 # Módulo de Comunicación con Proveedores:
 
