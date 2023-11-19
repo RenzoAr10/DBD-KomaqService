@@ -17,16 +17,6 @@ Visualización y actualización de datos personales.
 
 Historial de servicios y estado de pedidos para clientes.
 
-R01001: Todos los usuarios deben registrar su nombre completo, correo electrónico y número de teléfono para crear una cuenta, garantizando así que la aplicación pueda realizar un seguimiento de las acciones de cada usuario y mantener un sistema de autenticación sólido.
-
-R01002: Los usuarios deben tener la capacidad de iniciar y cerrar sesión en sus cuentas, con la opción de recordar los datos de inicio de sesión en dispositivos de confianza para facilitar accesos futuros sin comprometer la seguridad.
-
-R01003: Los usuarios tienen la responsabilidad de mantener actualizados sus datos personales y de contacto dentro de la aplicación, lo cual es crucial para la comunicación efectiva y la gestión de servicios.
-
-R01004: Los clientes deben tener acceso a un historial detallado de sus servicios y el estado actual de sus pedidos, lo que permite un seguimiento transparente y mejora la experiencia del cliente.
-
-R01005: La aplicación debe cumplir con todas las regulaciones de privacidad y seguridad aplicables, asegurando que los datos de los usuarios estén protegidos y que solo el personal autorizado pueda acceder a funciones de gestión específicas.
-
 El contratante, usualmente un administrador, se encarga de comunicarse y recibir asistencia.
 
 Empleados pueden ver solicitudes, detalles y cambiar estados.
@@ -36,6 +26,16 @@ Calendario con fechas de pedidos.
 Registro y autenticación de usuarios requerido para acceder a funciones de gestión.
 
 Cumplimiento de regulaciones de privacidad y seguridad junto con Komaq.
+
+R01001: Todos los usuarios deben registrar su nombre completo, correo electrónico y número de teléfono para crear una cuenta, garantizando así que la aplicación pueda realizar un seguimiento de las acciones de cada usuario y mantener un sistema de autenticación sólido.
+
+R01002: Los usuarios deben tener la capacidad de iniciar y cerrar sesión en sus cuentas, con la opción de recordar los datos de inicio de sesión en dispositivos de confianza para facilitar accesos futuros sin comprometer la seguridad.
+
+R01003: Los usuarios tienen la responsabilidad de mantener actualizados sus datos personales y de contacto dentro de la aplicación, lo cual es crucial para la comunicación efectiva y la gestión de servicios.
+
+R01004: Los clientes deben tener acceso a un historial detallado de sus servicios y el estado actual de sus pedidos, lo que permite un seguimiento transparente y mejora la experiencia del cliente.
+
+R01005: La aplicación debe cumplir con todas las regulaciones de privacidad y seguridad aplicables, asegurando que los datos de los usuarios estén protegidos y que solo el personal autorizado pueda acceder a funciones de gestión específicas.
 
 
 # Módulo de Gestión de Órdenes de Compra:
