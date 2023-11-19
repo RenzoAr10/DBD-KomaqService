@@ -103,6 +103,16 @@ Implementar y supervisar estándares de calidad en los servicios de mantenimient
 
 Preparar informes detallados sobre las operaciones de mantenimiento, proporcionando insights para la toma de decisiones y la mejora continua.
 
+R05001: Los usuarios deben poder visualizar una lista consolidada de las últimas actividades de mantenimiento desde la página principal del módulo, y esta vista debe ser actualizada en tiempo real tras cada nueva entrada de registro.
+
+R05002: El formulario de registro de mantenimiento debe ser completado en su totalidad antes de que se permita su envío, y debe incluir la validación de campos para asegurar que todos los datos necesarios sean recogidos (fecha, técnico, maquinaria, servicio, piezas).
+
+R05003: Solo los usuarios con los permisos adecuados, como los técnicos de mantenimiento o los administradores, pueden agregar o editar entradas en el historial de mantenimiento de la maquinaria.
+
+R05004: Los informes generados en la sección 'Análisis y Reportes' deben reflejar datos precisos y actuales, y deben ser accesibles basándose en el nivel de permisos del usuario, garantizando que la información sensible sea manejada de manera segura.
+
+R05005: Cada entrada en el historial de mantenimiento debe ser rastreable hasta un registro de mantenimiento específico, permitiendo auditorías detalladas y seguimiento de la calidad del servicio a lo largo del tiempo.
+
 # Módulo de Facturación y Pagos:
 
 Está relacionado con la facturación de servicios y permite a los clientes realizar pagos de manera conveniente, lo que es esencial para el flujo de ingresos de la empresa.
