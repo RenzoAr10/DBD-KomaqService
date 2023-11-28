@@ -48,11 +48,11 @@ Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 
 # Avance  04
 
-[Índices y otros objetos de BD ]()
+[Índices y otros objetos de BD ](Informe/09Indices.md)
 
-[PL/pgSQL – Proceso Batch ]()
+[PL/pgSQL – Proceso Batch ](Informe/10plpgSQL.md)
 
-[Actualizaciones a la Arquitectura de la Aplicación ]()
+[Actualizaciones a la Arquitectura de la Aplicación ](Informe/11ActualizacionDelSistema.md)
 
 [Versión Final de la Aplicación ]()
 
