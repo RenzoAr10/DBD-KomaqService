@@ -119,3 +119,36 @@ INSERT INTO factura (id_factura, estado, id_usuario, fecha_emision, costo_total)
 VALUES ('FAC002', 'Pagada', 'UR001', '2023-01-01', 100.00),
 
  ```
+
+# INDICES
+
+ ```sql
+CREATE INDEX idx_factura_id_factura ON factura (id_factura);
+
+CREATE INDEX idx_servicio_id_factura ON servicio (id_factura);
+
+CREATE INDEX idx_repuesto_id_factura ON repuesto (id_factura);
+
+ ```
+**ANTES**
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESfactura(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESservicio(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESrepuesto(id_factura).png)
+
+**DESPUES**
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESfactura(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESservicio(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESrepuesto(id_factura).png)
+
+# Proceso BATCH
+
+ ```sql
+DO $$ 
+BEGIN
+    INSERT INTO factura (id_factura, estado, id_usuario, fecha_emision, costo_total)
+    VALUES ('FAC002', 'Pagada', 'UR001', '2023-01-01', 100.00);
+END $$;
+
+ ```
