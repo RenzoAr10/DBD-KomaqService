@@ -1,4 +1,4 @@
-#INDICES PRO 003 
+# INDICES PRO 003 
 ##Consulta de Empleados y Repuestos:
  ```sql
 SELECT IdEmpleado, NombreEmpleado FROM Empleado;
@@ -8,7 +8,7 @@ CREATE INDEX idx_empleado_id ON Empleado(IdEmpleado);
 CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
 
  ```
-##Consulta con JOIN y Filtros:
+## Consulta con JOIN y Filtros:
  ```sql
 SELECT idServicio, NombreServicio, IdOrdenCompra, NombreUsuario 
 FROM Servicio as S
@@ -22,14 +22,14 @@ CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
 CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
  ```
 
-##Cálculo de Porcentaje de Actividades Completadas:
+## Cálculo de Porcentaje de Actividades Completadas:
  ```sql
 ((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra = 'OC001' and Estado = 'COMPLETADO') as CantidadActividadesFinalizadas) / 
 ((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra = 'OC001') as CantidadActividades) as PorcentajeCompletado;
 
 CREATE INDEX idx_acciones_idorden_estado ON AccionesRecomendada(idOrdenCompra, Estado);
  ```
-##Consulta Detallada de Servicio:
+## Consulta Detallada de Servicio:
  ```sql
 SELECT NombreServicio, FechaIncio, FechaFin, Costo, TecnicoAsignado, EstadoServicio, NombreConsumible, NombreRespuesto
 FROM Servicio;
