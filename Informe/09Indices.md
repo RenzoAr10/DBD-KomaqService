@@ -253,7 +253,8 @@ ON (
 ```
 Antes
 
-![OCdespues01](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/3b0c8974-9d88-4521-aec3-a4e425b2fb83)
+![OCantes01](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/0ca59574-8f3b-4afb-9f82-c1d1007342e1)
+
 
 Después
 
