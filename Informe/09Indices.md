@@ -216,6 +216,7 @@ CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
 # Informe de Gestion
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/416dec14-824e-4bfd-85eb-06db51b5ba18)
 
+Antes
  ```sql
 SELECT
     OC.id_orden_compra,
@@ -232,4 +233,38 @@ LEFT JOIN  Servicio S ON OC.id_orden_compra = S.id_orden_compra
 LEFT JOIN  Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
 LEFT JOIN  Proveedor P ON PR.id_proveedor = P.id_proveedor
 LEFT JOIN  Factura F ON OC.id_orden_compra = F.id_orden_compra;
-
+```
+Despues
+```sql
+CREATE INDEX idx_nombre_cliente
+ON (
+    SELECT
+        OC.id_orden_compra,
+        OC.fecha_oc,
+        OC.estado_oc,
+        S.cantidad_servicios,
+        CONCAT(C.apellido_paterno, ' ', C.apellido_materno, ' ', C.nombre) AS nombre_cliente,
+        P.nombre_empresa AS nombre_proveedor,
+        F.costo_total AS costo_total
+    FROM
+        OrdenCompra OC
+    JOIN
+        Cliente C ON OC.id_cliente = C.id_cliente
+    LEFT JOIN
+        (
+            SELECT
+                id_orden_compra,
+                COUNT(id_servicio) AS cantidad_servicios
+            FROM
+                Servicio
+            GROUP BY
+                id_orden_compra
+        ) S ON OC.id_orden_compra = S.id_orden_compra
+    LEFT JOIN
+        Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
+    LEFT JOIN
+        Proveedor P ON PR.id_proveedor = P.id_proveedor
+    LEFT JOIN
+        Factura F ON OC.id_orden_compra = F.id_orden_compra
+);
+```
