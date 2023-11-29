@@ -113,11 +113,12 @@ CALL GenerarInformeControlStock();
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/cb6016a7-22ea-4728-a190-ac7828a50c05)
 
 ```sql
-CREATE OR REPLACE FUNCTION info_ordencompra()
+CREATE OR REPLACE FUNCTION obtener_informacion_orden_compra()
 RETURNS TABLE (
     id_orden_compra VARCHAR(10),
     fecha_oc VARCHAR(100),
     estado_oc VARCHAR(100),
+    cantidad_servicios INT,
     nombre_cliente VARCHAR(200),
     nombre_proveedor VARCHAR(100),
     costo_total DECIMAL(8,2)
@@ -128,26 +129,22 @@ BEGIN
         OC.id_orden_compra,
         OC.fecha_oc,
         OC.estado_oc,
+        S.cantidad_servicios,
         C.apellido_paterno || ' ' || C.apellido_materno || ' ' || C.nombre AS nombre_cliente,
-        P.nombre_empresa AS nombre_proveedor,
-        SUM(S.costo) AS costo_total
-    FROM
-        OrdenCompra OC
-    JOIN
-        Cliente C ON OC.id_cliente = C.id_cliente
-    LEFT JOIN
-        Servicio S ON OC.id_orden_compra = S.id_orden_compra
-    LEFT JOIN
-        Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
-    LEFT JOIN
-        Proveedor P ON PR.id_proveedor = P.id_proveedor
-    GROUP BY
-        OC.id_orden_compra, OC.fecha_oc, OC.estado_oc, C.apellido_paterno, C.apellido_materno, C.nombre, P.nombre_empresa;
+        P.nombre_empresa,
+        F.costo_total
+    FROM OrdenCompra OC
+    JOIN Cliente C ON OC.id_cliente = C.id_cliente
+    LEFT JOIN    Servicio S ON OC.id_orden_compra = S.id_orden_compra
+    LEFT JOIN    Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
+    LEFT JOIN  Proveedor P ON PR.id_proveedor = P.id_proveedor
+    LEFT JOIN Factura F ON OC.id_orden_compra = F.id_orden_compra
+    GROUP BY  OC.id_orden_compra, OC.fecha_oc, OC.estado_oc, C.apellido_paterno, C.apellido_materno, C.nombre, P.nombre_empresa;
 
 END;
 $$ LANGUAGE plpgsql;
 
-SELECT * FROM info_ordencompra();
+SELECT * FROM obtener_informacion_orden_compra();
 ```
 ```sql
 --Actualizando estado de orden de compra
