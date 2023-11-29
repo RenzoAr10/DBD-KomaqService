@@ -54,10 +54,9 @@ BEGIN
     INSERT INTO factura (id_factura, estado, id_usuario, fecha_emision, costo_total)
     VALUES ('FAC002', 'Pagada', 'UR001', '2023-01-01', 100.00);
 END $$;
-
+```
 
 # Informe de STOCK
-
 ```sql
 -- Crear procedimiento almacenado para el proceso batch
 CREATE OR REPLACE PROCEDURE GenerarInformeControlStock()
@@ -103,4 +102,4 @@ $$;
 
 -- Ejecutar el procedimiento almacenado para generar el informe
 CALL GenerarInformeControlStock();
- ```
+```
