@@ -107,3 +107,30 @@ $$;
 -- Ejecutar el procedimiento almacenado para generar el informe
 CALL GenerarInformeControlStock();
 ```
+
+# Modulo de Gestion de Ordenes de compras
+
+![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/cb6016a7-22ea-4728-a190-ac7828a50c05)
+
+```sql
+SELECT
+    OC.id_orden_compra,
+    OC.fecha_oc,
+    OC.estado_oc,
+    C.apellido_paterno || ' ' || C.apellido_materno || ' ' || C.nombre AS nombre_cliente,
+    P.nombre_empresa AS nombre_proveedor,
+    SUM(S.costo) AS costo_total
+FROM
+    OrdenCompra OC
+JOIN
+    Cliente C ON OC.id_cliente = C.id_cliente
+LEFT JOIN
+    Servicio S ON OC.id_orden_compra = S.id_orden_compra
+LEFT JOIN
+    Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
+LEFT JOIN
+    Proveedor P ON PR.id_proveedor = P.id_proveedor
+GROUP BY
+    OC.id_orden_compra, OC.fecha_oc, OC.estado_oc, C.apellido_paterno, C.apellido_materno, C.nombre, P.nombre_empresa;
+```
+
