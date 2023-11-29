@@ -166,8 +166,12 @@ CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
 CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
  ```
 **Antes**
+
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c21b2248-163f-40f2-ae4d-2b7a1c16b2fb)
+
 **Despues**
+
+
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d7ae87dc-12ee-4749-a9eb-bc3092918797)
 
 
@@ -193,7 +197,10 @@ CREATE INDEX idx_consumible_idservicio ON Cosnumible(IdServicio);
 CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
  ```
 **Antes**
+
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/0d5ea2c0-673c-4de6-afe4-af8d53c30a58)
+
 **Despues**
+
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c89f5331-6fb3-4687-8041-6c847912c248)
 
