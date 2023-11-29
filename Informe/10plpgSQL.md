@@ -113,7 +113,7 @@ CALL GenerarInformeControlStock();
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/cb6016a7-22ea-4728-a190-ac7828a50c05)
 
 ```sql
-CREATE OR REPLACE FUNCTION obtener_informacion_orden_compra_procedural()
+CREATE OR REPLACE FUNCTION obtener_informacion_orden_compra()
 RETURNS TABLE (
     id_orden_compra VARCHAR(10),
     fecha_oc VARCHAR(100),
