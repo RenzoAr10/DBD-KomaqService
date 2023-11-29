@@ -1,65 +1,3 @@
-# INDICES PRO 003 
-##Consulta de Empleados y Repuestos:
- ```sql
-SELECT IdEmpleado, NombreEmpleado FROM Empleado;
-SELECT IdRepuesto, NombreRepuesto FROM Repuesto;
-
-CREATE INDEX idx_empleado_id ON Empleado(IdEmpleado);
-CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
-
- ```
-ANTES
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4d19b946-7214-4e2c-917c-6958b882a136)
-
- 
- 
-DESPUES
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/be9ae2dc-c704-4813-b20b-50d038872479)
-
-
-## Consulta con JOIN y Filtros:
- ```sql
-SELECT idServicio, NombreServicio, IdOrdenCompra, NombreUsuario 
-FROM Servicio as S
-INNER JOIN OrdenCompra as cp ON s.IdOrdenCompra = cp.IdOrdenCompra
-INNER JOIN NombreUsuario as un ON s.nombreUsuario = un.nombreUsusario
-WHERE nombreServicio = nombrex AND OrdenCompra = 'OC00x' AND NombreCliente = 'nombreclientex';
-
-CREATE INDEX idx_servicio_idorden ON Servicio(IdOrdenCompra);
-CREATE INDEX idx_servicio_nombre ON Servicio(nombreServicio);
-CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
-CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
- ```
-
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c21b2248-163f-40f2-ae4d-2b7a1c16b2fb)
-
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d7ae87dc-12ee-4749-a9eb-bc3092918797)
-
-
-## Cálculo de Porcentaje de Actividades Completadas:
- ```sql
-((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra = 'OC001' and Estado = 'COMPLETADO') as CantidadActividadesFinalizadas) / 
-((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra = 'OC001') as CantidadActividades) as PorcentajeCompletado;
-
-CREATE INDEX idx_acciones_idorden_estado ON AccionesRecomendada(idOrdenCompra, Estado);
- ```
-## Consulta Detallada de Servicio:
- ```sql
-SELECT NombreServicio, FechaIncio, FechaFin, Costo, TecnicoAsignado, EstadoServicio, NombreConsumible, NombreRespuesto
-FROM Servicio;
-
-SELECT NombreRespuesto FROM Respuesto WHERE idServicio = 'SER001';
-SELECT NombreConsumible FROM Cosnumible WHERE idServicio = 'SER001';
-SELECT IdAccionRecomendad FROM AccionRecomendad WHERE idOrdenCompra = 'OCP001';
-
-CREATE INDEX idx_servicio_id ON Servicio(idServicio);
-CREATE INDEX idx_respuesto_idservicio ON Respuesto(IdServicio);
-CREATE INDEX idx_consumible_idservicio ON Cosnumible(IdServicio);
-CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
- ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/0d5ea2c0-673c-4de6-afe4-af8d53c30a58)
-
-
 
 # Facturacion y Pagos
 
@@ -192,4 +130,68 @@ ANTES
 DESPUES
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESnombreempresa.png)
+
+
+##Consulta de Empleados y Repuestos:
+ ```sql
+SELECT IdEmpleado, NombreEmpleado FROM Empleado;
+SELECT IdRepuesto, NombreRepuesto FROM Repuesto;
+
+CREATE INDEX idx_empleado_id ON Empleado(IdEmpleado);
+CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
+
+ ```
+**ANTES**
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4d19b946-7214-4e2c-917c-6958b882a136)
+
+ 
+ 
+**DESPUES**
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/be9ae2dc-c704-4813-b20b-50d038872479)
+
+
+## Consulta con JOIN y Filtros:
+ ```sql
+SELECT idServicio, NombreServicio, IdOrdenCompra, NombreUsuario 
+FROM Servicio as S
+INNER JOIN OrdenCompra as cp ON s.IdOrdenCompra = cp.IdOrdenCompra
+INNER JOIN NombreUsuario as un ON s.nombreUsuario = un.nombreUsusario
+WHERE nombreServicio = nombrex AND OrdenCompra = 'OC00x' AND NombreCliente = 'nombreclientex';
+
+CREATE INDEX idx_servicio_idorden ON Servicio(IdOrdenCompra);
+CREATE INDEX idx_servicio_nombre ON Servicio(nombreServicio);
+CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
+CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
+ ```
+**Antes**
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c21b2248-163f-40f2-ae4d-2b7a1c16b2fb)
+**Despues**
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d7ae87dc-12ee-4749-a9eb-bc3092918797)
+
+
+## Cálculo de Porcentaje de Actividades Completadas:
+ ```sql
+((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra = 'OC001' and Estado = 'COMPLETADO') as CantidadActividadesFinalizadas) / 
+((SELECT COUNT(*) FROM AccionesRecomendada WHERE idOrdenCompra = 'OC001') as CantidadActividades) as PorcentajeCompletado;
+
+CREATE INDEX idx_acciones_idorden_estado ON AccionesRecomendada(idOrdenCompra, Estado);
+ ```
+## Consulta Detallada de Servicio:
+ ```sql
+SELECT NombreServicio, FechaIncio, FechaFin, Costo, TecnicoAsignado, EstadoServicio, NombreConsumible, NombreRespuesto
+FROM Servicio;
+
+SELECT NombreRespuesto FROM Respuesto WHERE idServicio = 'SER001';
+SELECT NombreConsumible FROM Cosnumible WHERE idServicio = 'SER001';
+SELECT IdAccionRecomendad FROM AccionRecomendad WHERE idOrdenCompra = 'OCP001';
+
+CREATE INDEX idx_servicio_id ON Servicio(idServicio);
+CREATE INDEX idx_respuesto_idservicio ON Respuesto(IdServicio);
+CREATE INDEX idx_consumible_idservicio ON Cosnumible(IdServicio);
+CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
+ ```
+**Antes**
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/0d5ea2c0-673c-4de6-afe4-af8d53c30a58)
+**Despues**
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c89f5331-6fb3-4687-8041-6c847912c248)
 
