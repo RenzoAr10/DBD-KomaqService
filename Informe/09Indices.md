@@ -245,27 +245,23 @@ ON (
         OC.estado_oc,
         S.cantidad_servicios,
         CONCAT(C.apellido_paterno, ' ', C.apellido_materno, ' ', C.nombre) AS nombre_cliente,
-        P.nombre_empresa AS nombre_proveedor,
-        F.costo_total AS costo_total
+        P.nombre_empresa AS proveedor,
+        F.costo_total
     FROM
         OrdenCompra OC
     JOIN
-        Cliente C ON OC.id_cliente = C.id_cliente
-    LEFT JOIN
-        (
-            SELECT
-                id_orden_compra,
-                COUNT(id_servicio) AS cantidad_servicios
-            FROM
-                Servicio
-            GROUP BY
-                id_orden_compra
-        ) S ON OC.id_orden_compra = S.id_orden_compra
-    LEFT JOIN
-        Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
-    LEFT JOIN
+        Usuario U ON OC.id_orden_compra = U.id_orden_compra
+    JOIN
+        Cliente C ON U.id_cliente = C.id_cliente
+    JOIN
+        Servicio S ON OC.id_orden_compra = S.id_orden_compra
+    JOIN
+        Repuesto R ON R.id_servicio = S.id_servicio
+    JOIN
+        Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
+    JOIN
         Proveedor P ON PR.id_proveedor = P.id_proveedor
     LEFT JOIN
-        Factura F ON OC.id_orden_compra = F.id_orden_compra
+        Factura F ON S.id_factura = F.id_factura
 );
 ```
