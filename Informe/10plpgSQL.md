@@ -150,7 +150,7 @@ $$ LANGUAGE plpgsql;
 SELECT * FROM info_ordencompra();
 ```
 ```sql
-Actualizando estado de orden de compra
+--Actualizando estado de orden de compra
 
 CREATE OR REPLACE FUNCTION actualizar_estado_orden_compra(p_id_orden_compra VARCHAR(10))
 RETURNS VOID AS $$
