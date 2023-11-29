@@ -57,6 +57,10 @@ END $$;
 ```
 
 # Informe de STOCK
+*PRO3001*
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7fe07380-3b13-4a8a-94cf-4c05973d3767)
+
 ```sql
 -- Crear procedimiento almacenado para el proceso batch
 CREATE OR REPLACE PROCEDURE GenerarInformeControlStock()
