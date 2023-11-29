@@ -30,10 +30,10 @@ CREATE INDEX idx_servicio_nombre ON Servicio(nombreServicio);
 CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
 CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
  ```
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c369dfa0-e560-411c-a51c-c4e40acc3203)
 
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c21b2248-163f-40f2-ae4d-2b7a1c16b2fb)
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/72f60bf7-8632-40b0-ac6f-51ae96f80486)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d7ae87dc-12ee-4749-a9eb-bc3092918797)
 
 
 ## Cálculo de Porcentaje de Actividades Completadas:
@@ -57,6 +57,9 @@ CREATE INDEX idx_respuesto_idservicio ON Respuesto(IdServicio);
 CREATE INDEX idx_consumible_idservicio ON Cosnumible(IdServicio);
 CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
  ```
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/0d5ea2c0-673c-4de6-afe4-af8d53c30a58)
+
+
 
 # Facturacion y Pagos
 
