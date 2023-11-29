@@ -56,3 +56,42 @@ CREATE INDEX idx_respuesto_idservicio ON Respuesto(IdServicio);
 CREATE INDEX idx_consumible_idservicio ON Cosnumible(IdServicio);
 CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
  ```
+
+# Facturacion y Pagos
+
+**PRO6002**
+
+![](https://raw.githubusercontent.com/RenzoAr10/DBD-KomaqService/e71deff2e181024cac1d58c5e07b5a90572862f1/Documentacion%20de%20Soporte/querys/FacturacionYPagos/vistaFactura.png)
+
+ ```sql
+CREATE INDEX idx_factura_id_factura ON factura (id_factura);
+
+CREATE INDEX idx_servicio_id_factura ON servicio (id_factura);
+
+CREATE INDEX idx_repuesto_id_factura ON repuesto (id_factura);
+
+ ```
+**ANTES**
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESfactura(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESservicio(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESrepuesto(id_factura).png)
+
+**DESPUES**
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESfactura(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESservicio(id_factura).png)
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESrepuesto(id_factura).png)
+
+
+# Informe de Gestion
+
+**PRO7001**
+
+![](https://raw.githubusercontent.com/RenzoAr10/DBD-KomaqService/0796b76f2f0a29e50fef25f8a30936ef6848abc4/Documentacion%20de%20Soporte/querys/FacturacionYPagos/GectionDeVentas.png)
+
+ ```sql
+-- Crear un índice en la columna nombreempresa de la tabla cliente
+CREATE INDEX idx_nombreempresa ON cliente (nombreempresa);
+```
+
