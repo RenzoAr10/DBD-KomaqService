@@ -132,7 +132,11 @@ CREATE INDEX idx_nombreempresa ON cliente (nombreempresa);
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESnombreempresa.png)
 
 
-##Consulta de Empleados y Repuestos:
+## Consulta de Empleados y Repuestos:
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7fe07380-3b13-4a8a-94cf-4c05973d3767)
+
+
  ```sql
 SELECT IdEmpleado, NombreEmpleado FROM Empleado;
 SELECT IdRepuesto, NombreRepuesto FROM Repuesto;
