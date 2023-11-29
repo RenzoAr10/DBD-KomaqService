@@ -212,3 +212,24 @@ CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c89f5331-6fb3-4687-8041-6c847912c248)
 
+
+# Informe de Gestion
+![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/416dec14-824e-4bfd-85eb-06db51b5ba18)
+
+ ```sql
+SELECT
+    OC.id_orden_compra,
+    OC.fecha_oc,
+    OC.estado_oc,
+    S.cantidad_servicios,
+    CONCAT(C.apellido_paterno, ' ', C.apellido_materno, ' ', C.nombre) AS nombre_cliente,
+    P.nombre_empresa AS Proveedor,
+    F.costo_total
+FROM
+    OrdenCompra OC
+JOIN    Cliente C ON OC.id_cliente = C.id_cliente
+LEFT JOIN  Servicio S ON OC.id_orden_compra = S.id_orden_compra
+LEFT JOIN  Proveedor_Repuesto PR ON S.id_servicio = PR.id_servicio
+LEFT JOIN  Proveedor P ON PR.id_proveedor = P.id_proveedor
+LEFT JOIN  Factura F ON OC.id_orden_compra = F.id_orden_compra;
+
