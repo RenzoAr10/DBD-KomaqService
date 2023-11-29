@@ -140,16 +140,24 @@ CREATE INDEX idx_nombreempresa ON cliente (nombreempresa);
 
 ## Consulta con JOIN y Filtros:
  ```sql
-SELECT idServicio, NombreServicio, IdOrdenCompra, NombreUsuario 
-FROM Servicio as S
-INNER JOIN OrdenCompra as cp ON s.IdOrdenCompra = cp.IdOrdenCompra
-INNER JOIN NombreUsuario as un ON s.nombreUsuario = un.nombreUsusario
-WHERE nombreServicio = nombrex AND OrdenCompra = 'OC00x' AND NombreCliente = 'nombreclientex';
+SELECT 
+    S.id_servicio AS idServicio,
+    S.nombre_servicio AS NombreServicio,
+    cp.id_orden_compra AS IdOrdenCompra,
+    un.nombre_usuario AS NombreUsuario
+FROM 
+    Servicio AS S
+    INNER JOIN OrdenCompra AS cp ON S.id_orden_compra = cp.id_orden_compra
+    INNER JOIN NomUsuario AS un ON S.tecnico_asignado = un.nombre_usuario
+WHERE 
+    S.nombre_servicio = 'nombrex'
+    AND cp.id_orden_compra = 'OC00x'
+    AND NombreUsuario = 'nombreclientex';
 
-CREATE INDEX idx_servicio_idorden ON Servicio(IdOrdenCompra);
-CREATE INDEX idx_servicio_nombre ON Servicio(nombreServicio);
+CREATE INDEX idx_servicio_idorden ON Servicio(id_orden_compra);
+CREATE INDEX idx_servicio_nombre ON Servicio(nombre_servicio);
 CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
-CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
+CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombre_ususario);
  ```
 **Antes**
 
