@@ -9,6 +9,9 @@ CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
 
  ```
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4d19b946-7214-4e2c-917c-6958b882a136)
+--Despues de crear los indices
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/be9ae2dc-c704-4813-b20b-50d038872479)
+
 
 ## Consulta con JOIN y Filtros:
  ```sql
