@@ -121,8 +121,6 @@ BEGIN
     WHERE id_orden_compra = p_id_orden_compra
     RETURNING estado_oc INTO nuevo_estado;
 
-    -- Puedes hacer más operaciones si es necesario
-
     RETURN nuevo_estado;
 END;
 $$ LANGUAGE plpgsql;
