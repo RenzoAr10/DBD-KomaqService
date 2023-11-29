@@ -194,7 +194,7 @@ CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
 # Informe de Gestion Ordenes de Compra
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/416dec14-824e-4bfd-85eb-06db51b5ba18)
 
-Antes
+
  ```sql
 SELECT
    OC.id_orden_compra,
@@ -213,7 +213,7 @@ JOIN  Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
 JOIN  Proveedor P ON PR.id_proveedor = P.id_proveedor
 LEFT JOIN  Factura F ON S.id_factura = F.id_factura;
 ```
-Despues
+
 ```sql
 CREATE INDEX idx_nombre_cliente
 ON (
