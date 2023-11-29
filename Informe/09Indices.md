@@ -29,6 +29,11 @@ CREATE INDEX idx_servicio_nombre ON Servicio(nombreServicio);
 CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
 CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombreUsusario);
  ```
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c369dfa0-e560-411c-a51c-c4e40acc3203)
+
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/72f60bf7-8632-40b0-ac6f-51ae96f80486)
+
 
 ## Cálculo de Porcentaje de Actividades Completadas:
  ```sql
