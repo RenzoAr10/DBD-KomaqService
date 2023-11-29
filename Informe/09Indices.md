@@ -156,7 +156,7 @@ WHERE
 
 CREATE INDEX idx_servicio_idorden ON Servicio(id_orden_compra);
 CREATE INDEX idx_servicio_nombre ON Servicio(nombre_servicio);
-CREATE INDEX idx_ordencompra_id ON OrdenCompra(IdOrdenCompra);
+CREATE INDEX idx_ordencompra_id ON OrdenCompra(Id_orden_Compra);
 CREATE INDEX idx_nombreusuario_nombre ON NombreUsuario(nombre_ususario);
  ```
 **Antes**
