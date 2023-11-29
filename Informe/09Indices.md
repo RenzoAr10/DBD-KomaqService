@@ -8,11 +8,12 @@ CREATE INDEX idx_empleado_id ON Empleado(IdEmpleado);
 CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
 
  ```
+ANTES
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4d19b946-7214-4e2c-917c-6958b882a136)
 
- Despues de crear los indices
  
-
+ 
+DESPUES
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/be9ae2dc-c704-4813-b20b-50d038872479)
 
 
