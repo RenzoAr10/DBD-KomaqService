@@ -47,3 +47,29 @@ VALUES (‘jcustodio’ , ‘password1’, ‘EMP001’)
 INSERT INTO Empleado (id_empleado, nombre, apellido_paterno, apellido_materno, dni, telefono, email, especializacion, cargo, id_jefe) VALUES
 ('EMP001', 'Hector', 'Rojas', 'Cotrina', '12345678', '987654321', 'hrojas@komq.com', 'Mecánico', 'Técnico Senior', NULL),
 ```
+
+
+
+# INDICES
+CREATE INDEX idx_usuario ON Usuarios(usuario);
+CREATE INDEX idx_usuario ON Empleados(usuario);
+CREATE INDEX idx_dni ON Empleados(dni);
+
+
+
+# BATCH
+
+BEGIN TRANSACTION;
+
+-- Insertar el nuevo empleado
+INSERT INTO Empleados (usuario, contrasena, nombre, apellido_paterno, apellido_materno, email, dni, telefono, especializacion, cargo, jefe)
+VALUES ('jcustodio', HASH('password1'), 'Hector', 'Rojas', 'Cotrina', 'hrojas@komq.com', '71234568', '987654321', 'Mecánico', 'Técnico Senior', NULL);
+
+-- Insertar en la tabla de roles, si existe una, por ejemplo
+INSERT INTO RolesEmpleados (usuario, rol) VALUES ('jcustodio', 'rol_default');
+
+-- Insertar en la tabla de auditoría, si existe una, por ejemplo
+INSERT INTO AuditoriaEmpleados (usuario, accion, fecha)
+VALUES ('jcustodio', 'Creación de usuario', CURRENT_TIMESTAMP);
+
+COMMIT TRANSACTION;
