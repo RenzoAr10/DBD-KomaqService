@@ -54,3 +54,53 @@ BEGIN
     INSERT INTO factura (id_factura, estado, id_usuario, fecha_emision, costo_total)
     VALUES ('FAC002', 'Pagada', 'UR001', '2023-01-01', 100.00);
 END $$;
+
+
+# Informe de STOCK
+
+```sql
+-- Crear procedimiento almacenado para el proceso batch
+CREATE OR REPLACE PROCEDURE GenerarInformeControlStock()
+LANGUAGE PLPGSQL
+AS $$
+BEGIN
+    -- Obtener la fecha actual
+    DECLARE fecha_actual DATE := CURRENT_DATE;
+
+    -- Crear una tabla temporal para almacenar el informe
+    CREATE TEMPORARY TABLE TempInformeStock AS
+    SELECT
+        id_repuesto,
+        nombreRepuesto,
+        stock,
+        cantidad,
+        precioUnitario
+    FROM
+        Repuesto;
+
+    -- Insertar registros en la tabla temporal según el filtro
+    INSERT INTO TempInformeStock
+    SELECT
+        id_repuesto,
+        nombreRepuesto,
+        stock,
+        cantidad,
+        precioUnitario
+    FROM
+        Repuesto
+    WHERE
+        NombreRepuesto = '%NombreRepuesto_x%'
+        AND CantidadRespuesto <= Cantidad_x;
+
+    -- Imprimir el informe en la consola o en una tabla de informes
+    RAISE NOTICE 'Informe de Control de Stock (%)', fecha_actual;
+    SELECT * FROM TempInformeStock;
+
+    -- Limpiar la tabla temporal después de generar el informe
+    DROP TABLE IF EXISTS TempInformeStock;
+END;
+$$;
+
+-- Ejecutar el procedimiento almacenado para generar el informe
+CALL GenerarInformeControlStock();
+ ```
