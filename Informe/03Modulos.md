@@ -171,5 +171,6 @@ R07002: Proporcionar información valiosa para la toma de decisiones estratégic
 
 R07003: Ayudar a mejorar la eficiencia operativa y el cumplimiento de objetivos.
 
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/e6d73b53-4bd3-43c1-ba5a-d1041de034b6)
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/02f370bc-039e-4d05-9fd5-9445ed7ac445)
+
 
