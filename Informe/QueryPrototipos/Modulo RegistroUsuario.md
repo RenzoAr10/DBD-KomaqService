@@ -51,14 +51,16 @@ INSERT INTO Empleado (id_empleado, nombre, apellido_paterno, apellido_materno, d
 
 
 # INDICES
+```sql
 CREATE INDEX idx_usuario ON Usuarios(usuario);
 CREATE INDEX idx_usuario ON Empleados(usuario);
 CREATE INDEX idx_dni ON Empleados(dni);
-
+```
 
 
 # BATCH
 
+```sql
 BEGIN TRANSACTION;
 
 -- Insertar el nuevo empleado
@@ -73,3 +75,4 @@ INSERT INTO AuditoriaEmpleados (usuario, accion, fecha)
 VALUES ('jcustodio', 'Creación de usuario', CURRENT_TIMESTAMP);
 
 COMMIT TRANSACTION;
+```
