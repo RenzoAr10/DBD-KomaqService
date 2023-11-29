@@ -132,28 +132,6 @@ CREATE INDEX idx_nombreempresa ON cliente (nombreempresa);
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESnombreempresa.png)
 
 
-## Consulta de Empleados y Repuestos:
-
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/7fe07380-3b13-4a8a-94cf-4c05973d3767)
-
-
- ```sql
-SELECT IdEmpleado, NombreEmpleado FROM Empleado;
-SELECT IdRepuesto, NombreRepuesto FROM Repuesto;
-
-CREATE INDEX idx_empleado_id ON Empleado(IdEmpleado);
-CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
-
- ```
-**ANTES**
-
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4d19b946-7214-4e2c-917c-6958b882a136)
-
- 
- 
-**DESPUES**
-
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/be9ae2dc-c704-4813-b20b-50d038872479)
 
 
 
