@@ -109,14 +109,21 @@ SELECT * FROM info_orden_compra();
 ```sql
 --Actualizando estado de orden de compra
 
-CREATE OR REPLACE FUNCTION actualizar_estado_orden_compra(p_id_orden_compra VARCHAR(10))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION actualizar_estado_orden_compra(
+    p_id_orden_compra VARCHAR(10)
+)
+RETURNS VARCHAR(100) AS $$
+DECLARE
+    nuevo_estado VARCHAR(100);
 BEGIN
     UPDATE OrdenCompra
     SET estado_oc = 'Finalizado'
-    WHERE id_orden_compra = p_id_orden_compra;
+    WHERE id_orden_compra = p_id_orden_compra
+    RETURNING estado_oc INTO nuevo_estado;
+
+    -- Puedes hacer más operaciones si es necesario
+
+    RETURN nuevo_estado;
 END;
 $$ LANGUAGE plpgsql;
-
-SELECT actualizar_estado_orden_compra('OC002');
-```sql
+```
