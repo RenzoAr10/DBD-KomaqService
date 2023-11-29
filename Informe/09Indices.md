@@ -181,4 +181,11 @@ WHERE
 -- Crear un índice en la columna nombreempresa de la tabla cliente
 CREATE INDEX idx_nombreempresa ON cliente (nombreempresa);
 ```
+ANTES
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESnombreempresa.png)
+
+DESPUES
+
+![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/ANTESnombreempresa.png)
 
