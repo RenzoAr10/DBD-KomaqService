@@ -119,7 +119,7 @@ RETURNS TABLE (
     fecha_oc VARCHAR(100),
     estado_oc VARCHAR(100),
     cantidad_servicios INT,
-    nombre_cliente VARCHAR(200),
+    nombre_cliente TEXT,
     proveedor VARCHAR(100),
     costo_total DECIMAL(8,2)
 ) AS $$
