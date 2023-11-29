@@ -252,6 +252,9 @@ ON (
 );
 ```
 Antes
+
 ![OCdespues01](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/3b0c8974-9d88-4521-aec3-a4e425b2fb83)
+
 Después
+
 ![OCdespues01](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/e24b82f9-c1ca-4285-97b7-bcfffdb3972e)
