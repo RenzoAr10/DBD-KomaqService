@@ -30,7 +30,7 @@ PR01003
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/d49ed786-4f8c-427e-a0d9-6a3e7ed4159b)
 ```sql
 SELECT *
-FROM Usuarios
+FROM Usuario
 WHERE nombreUsuario = @user2 AND contrasenaUsuario = @pass2;
 ```
 
