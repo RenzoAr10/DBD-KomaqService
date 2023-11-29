@@ -8,6 +8,8 @@ CREATE INDEX idx_empleado_id ON Empleado(IdEmpleado);
 CREATE INDEX idx_repuesto_id ON Repuesto(IdRepuesto);
 
  ```
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/4d19b946-7214-4e2c-917c-6958b882a136)
+
 ## Consulta con JOIN y Filtros:
  ```sql
 SELECT idServicio, NombreServicio, IdOrdenCompra, NombreUsuario 
