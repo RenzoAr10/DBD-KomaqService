@@ -20,3 +20,27 @@ FROM EstadoServicios
 WHERE usuario_id = 'id_del_cliente';
 ```
 
+# INDICE
+```sql
+CREATE INDEX idx_tipo_maquina ON Servicios(tipo_maquina);
+CREATE INDEX idx_ano_fabricacion ON Servicios(ano_fabricacion);
+```
+
+# BATCH 
+
+BEGIN TRANSACTION;
+```sql
+-- Insertar la nueva solicitud de servicio
+INSERT INTO Servicios (servicio, maquina, descripcion, tipo_de_maquina, modelo, ano_de_fabricacion)
+VALUES ('valor_servicio', 'valor_maquina', 'valor_descripcion', 'valor_tipo_de_maquina', 'valor_modelo', 'valor_ano_de_fabricacion');
+
+-- Suponiendo que hay un sistema de notificaciones o auditoría
+INSERT INTO Notificaciones (tipo, descripcion, fecha, id_servicio)
+VALUES ('Nueva solicitud de servicio', 'Se ha registrado una nueva solicitud de servicio.', CURRENT_TIMESTAMP, SCOPE_IDENTITY());
+
+-- O insertar en la tabla de auditoría
+INSERT INTO AuditoriaServicios (accion, fecha, usuario)
+VALUES ('Creación de solicitud de servicio', CURRENT_TIMESTAMP, 'usuario_cliente');
+
+COMMIT TRANSACTION;
+```
