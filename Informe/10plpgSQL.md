@@ -113,7 +113,7 @@ CALL GenerarInformeControlStock();
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/cb6016a7-22ea-4728-a190-ac7828a50c05)
 
 ```sql
-CREATE OR REPLACE FUNCTION obtener_informacion_orden_compra()
+CREATE OR REPLACE FUNCTION info_orden_compra()
 RETURNS TABLE (
     id_orden_compra VARCHAR(10),
     fecha_oc VARCHAR(100),
@@ -123,42 +123,38 @@ RETURNS TABLE (
     proveedor VARCHAR(100),
     costo_total DECIMAL(8,2)
 ) AS $$
-DECLARE
-    rec RECORD;
 BEGIN
-    FOR rec IN
-        SELECT
-            OC.id_orden_compra,
-            OC.fecha_oc,
-            OC.estado_oc,
-            S.cantidad_servicios,
-            CONCAT(C.apellido_paterno, ' ', C.apellido_materno, ' ', C.nombre) AS nombre_cliente,
-            P.nombre_empresa AS proveedor,
-            F.costo_total
-        FROM
-            OrdenCompra OC
-        JOIN
-            Usuario U ON OC.id_orden_compra = U.id_orden_compra
-        JOIN
-            Cliente C ON U.id_cliente = C.id_cliente
-        JOIN
-            Servicio S ON OC.id_orden_compra = S.id_orden_compra
-        JOIN
-            Repuesto R ON R.id_servicio = S.id_servicio
-        JOIN
-            Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
-        JOIN
-            Proveedor P ON PR.id_proveedor = P.id_proveedor
-        LEFT JOIN
-            Factura F ON S.id_factura = F.id_factura
-    LOOP
-        RETURN NEXT rec;
-    END LOOP;
+    RETURN QUERY
+    SELECT
+        OC.id_orden_compra,
+        OC.fecha_oc,
+        OC.estado_oc,
+        S.cantidad_servicios,
+        CONCAT(C.apellido_paterno, ' ', C.apellido_materno, ' ', C.nombre) AS nombre_cliente,
+        P.nombre_empresa AS proveedor,
+        F.costo_total
+    FROM
+        OrdenCompra OC
+    JOIN
+        Usuario U ON OC.id_orden_compra = U.id_orden_compra
+    JOIN
+        Cliente C ON U.id_cliente = C.id_cliente
+    JOIN
+        Servicio S ON OC.id_orden_compra = S.id_orden_compra
+    JOIN
+        Repuesto R ON R.id_servicio = S.id_servicio
+    JOIN
+        Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
+    JOIN
+        Proveedor P ON PR.id_proveedor = P.id_proveedor
+    LEFT JOIN
+        Factura F ON S.id_factura = F.id_factura;
+
     RETURN;
 END;
 $$ LANGUAGE plpgsql;
 
-SELECT * FROM obtener_informacion_orden_compra();
+SELECT * FROM info_orden_compra();
 ```
 ```sql
 --Actualizando estado de orden de compra
