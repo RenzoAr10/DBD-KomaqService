@@ -9,7 +9,7 @@ VALUES ('SERV001', 'Reparación de motor', '2023-04-15', 'Juan Pérez', 'OC123',
 
 ```
 
-R03004
+R03004 R03005
 
 PR03002
 
@@ -18,15 +18,5 @@ PR03002
 SELECT id_solicitud, estado_revision, fecha_revision, detalles
 FROM EstadoServicios
 WHERE usuario_id = 'id_del_cliente';
-```
-
-R03005
-
-PR03003
-
-![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/55066238/54ca6118-eee3-4200-8678-fc18cbb19b30)
-```sql
-INSERT INTO Comentarios (id_servicio, comentario, fecha_comentario, usuario_id) 
-VALUES ('SOL002', 'El servicio fue excelente y en tiempo.', CURRENT_DATE, 'usuario_cliente');
 ```
 
