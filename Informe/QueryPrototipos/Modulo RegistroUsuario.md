@@ -5,7 +5,7 @@ PR01001
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/24255496-932a-490a-83ff-701b7602dbd9)
 ```sql
 SELECT *
-FROM Usuarios
+FROM Usuario
 WHERE nombreUsuario = @user1 AND contrasenaUsuario = @pass1;
 ```
 
