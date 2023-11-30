@@ -2,7 +2,7 @@
  
  ```sql
 CREATE TABLE Cliente (
-	id_cliente VARCHAR(10) PRIMARY KEY,
+	id_cliente SERIAL PRIMARY KEY,
 	nombre VARCHAR(50),
 	apellido_paterno VARCHAR(50),
 	apellido_materno VARCHAR(50),
@@ -15,13 +15,13 @@ CREATE TABLE Cliente (
 );
 
 CREATE TABLE OrdenCompra (
-	id_orden_compra VARCHAR(10) PRIMARY KEY,
+	id_orden_compra SERIAL PRIMARY KEY,
 	estado_oc VARCHAR(100),
 	fecha_oc VARCHAR(100)
 );
 
 CREATE TABLE Usuario (
-	id_usuario VARCHAR(10) PRIMARY KEY,
+	id_usuario SERIAL PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
 	contrasena_usuario VARCHAR(50),
 	id_cliente VARCHAR(10),
@@ -31,7 +31,7 @@ CREATE TABLE Usuario (
 );
 	
 CREATE TABLE Empleado (
-	id_empleado VARCHAR(10) PRIMARY KEY,
+	id_empleado SERIAL PRIMARY KEY,
 	nombre VARCHAR(50),
 	apellido_paterno VARCHAR(50),
 	apellido_materno VARCHAR(50),
@@ -46,7 +46,7 @@ CREATE TABLE Empleado (
 
 
 CREATE TABLE Factura (
-	id_factura VARCHAR(10) PRIMARY KEY,
+	id_factura SERIAL PRIMARY KEY,
 	forma_pago VARCHAR(100),
 	fecha_emision VARCHAR(100),
 	costo_total DECIMAL(8,2),
@@ -55,7 +55,7 @@ CREATE TABLE Factura (
 );
 
 CREATE TABLE Servicio (
-	id_servicio VARCHAR(10) PRIMARY KEY,
+	id_servicio SERIAL PRIMARY KEY,
 	nombre_servicio VARCHAR(100),
 	fecha_inicio DATE,
 	fecha_fin DATE,
@@ -70,7 +70,7 @@ CREATE TABLE Servicio (
 );
 
 CREATE TABLE NomUsuario (
-	id_nomusuario VARCHAR(10) PRIMARY KEY,
+	id_nomusuario SERIAL PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
     contrasena_usuario VARCHAR(50),
 	id_empleado VARCHAR(10),
@@ -81,7 +81,7 @@ CREATE TABLE NomUsuario (
 
 	
 CREATE TABLE Maquina (
-	id_maquina VARCHAR(10) PRIMARY KEY,
+	id_maquina SERIAL PRIMARY KEY,
 	nombre_maquina VARCHAR(100),
 	modelo VARCHAR(100),
 	combustible VARCHAR(100),
@@ -93,7 +93,7 @@ CREATE TABLE Maquina (
 
 
 CREATE TABLE Problemas (
-	id_problema VARCHAR(10) PRIMARY KEY,
+	id_problema SERIAL PRIMARY KEY,
 	tipo_problema VARCHAR(100),
 	modelo VARCHAR(100),
 	id_maquina VARCHAR(10),
@@ -101,7 +101,7 @@ CREATE TABLE Problemas (
 );
 
 CREATE TABLE Consumible (
-	id_consumible VARCHAR(10) PRIMARY KEY,
+	id_consumible SERIAL PRIMARY KEY,
 	nombre_consumible VARCHAR(100),
 	fecha_uso DATE,
 	cantidad INT,
@@ -111,7 +111,7 @@ CREATE TABLE Consumible (
 );
 
 CREATE TABLE Repuesto (
-	id_repuesto VARCHAR(10) PRIMARY KEY,
+	id_repuesto SERIAL PRIMARY KEY,
 	stock INT,
 	precio INT,
 	cantidad INT,
@@ -124,7 +124,7 @@ CREATE TABLE Repuesto (
 );
    
 CREATE TABLE Proveedor (
-	id_proveedor VARCHAR(10) PRIMARY KEY,
+	id_proveedor SERIAL PRIMARY KEY,
 	nombre_empresa VARCHAR(100),
 	telefono_prov INTEGER,
 	direccion_prov VARCHAR(100),
@@ -132,15 +132,15 @@ CREATE TABLE Proveedor (
 );
 
 CREATE TABLE Proveedor_Repuesto (
-    id_proveedor VARCHAR(10),
-    id_repuesto VARCHAR(10),
+    id_proveedor SERIAL,
+    id_repuesto SERIAL,
     PRIMARY KEY (id_proveedor, id_repuesto),
     FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor),
     FOREIGN KEY (id_repuesto) REFERENCES Repuesto(id_repuesto)
 );
 
 CREATE TABLE AccionRecomendada (
-    id_accion VARCHAR(10) PRIMARY KEY,
+    id_accion SERIAL PRIMARY KEY,
 	nombre_accion VARCHAR(70),
 	costo_asociado DECIMAL(8,2),
 	id_orden_compra VARCHAR(10),
