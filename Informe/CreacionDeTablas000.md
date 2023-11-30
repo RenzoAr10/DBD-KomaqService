@@ -87,8 +87,8 @@ CREATE TABLE Maquina (
 	combustible VARCHAR(100),
 	motor VARCHAR(100),
 	serie_motor VARCHAR(100),
-	id_usuario SERIAL,
-	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+	id_orden_compra SERIAL,
+	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
 );
 
 
