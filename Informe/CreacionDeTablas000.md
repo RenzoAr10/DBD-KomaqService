@@ -24,8 +24,8 @@ CREATE TABLE Usuario (
 	id_usuario SERIAL PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
 	contrasena_usuario VARCHAR(50),
-	id_cliente VARCHAR(10),
-	id_orden_compra VARCHAR(10),
+	id_cliente SERIAL,
+	id_orden_compra SERIAL,
 	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
 	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
 );
@@ -40,7 +40,7 @@ CREATE TABLE Empleado (
 	email VARCHAR(100),
 	especializacion VARCHAR(100),
 	cargo VARCHAR(255),
-	id_jefe VARCHAR(10),
+	id_jefe SERIAL,
     FOREIGN KEY (id_jefe) REFERENCES Empleado(id_empleado)
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE Factura (
 	forma_pago VARCHAR(100),
 	fecha_emision VARCHAR(100),
 	costo_total DECIMAL(8,2),
-        id_usuario VARCHAR(10),
+        id_usuario SERIAL,
         FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
@@ -63,8 +63,8 @@ CREATE TABLE Servicio (
 	cantidad_servicios INT,
 	subtotal_servicios DECIMAL(8,2),
 	tecnico_asignado VARCHAR(100),
-	id_orden_compra VARCHAR(10),
-	id_factura VARCHAR(10),
+	id_orden_compra SERIAL,
+	id_factura SERIAL,
 	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra),
 	FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
 );
@@ -73,8 +73,8 @@ CREATE TABLE NomUsuario (
 	id_nomusuario SERIAL PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
     contrasena_usuario VARCHAR(50),
-	id_empleado VARCHAR(10),
-	id_servicio VARCHAR(10),
+	id_empleado SERIAL,
+	id_servicio SERIAL,
     FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
 	FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
 );
@@ -87,7 +87,7 @@ CREATE TABLE Maquina (
 	combustible VARCHAR(100),
 	motor VARCHAR(100),
 	serie_motor VARCHAR(100),
-	id_usuario VARCHAR(10),
+	id_usuario SERIAL,
 	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
@@ -96,7 +96,7 @@ CREATE TABLE Problemas (
 	id_problema SERIAL PRIMARY KEY,
 	tipo_problema VARCHAR(100),
 	modelo VARCHAR(100),
-	id_maquina VARCHAR(10),
+	id_maquina SERIAL,
 	FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
 );
 
@@ -106,7 +106,7 @@ CREATE TABLE Consumible (
 	fecha_uso DATE,
 	cantidad INT,
 	costo DECIMAL(8,2),
-	id_servicio VARCHAR(10),
+	id_servicio SERIAL,
 	FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
 );
 
@@ -116,8 +116,8 @@ CREATE TABLE Repuesto (
 	precio INT,
 	cantidad INT,
 	subtotal_repuesto INT,
-	id_servicio VARCHAR(10),
-	id_factura VARCHAR(10),
+	id_servicio SERIAL,
+	id_factura SERIAL,
         nombrerepuesto VARCHAR(50),
 	FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio),
 	FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
@@ -143,7 +143,7 @@ CREATE TABLE AccionRecomendada (
     id_accion SERIAL PRIMARY KEY,
 	nombre_accion VARCHAR(70),
 	costo_asociado DECIMAL(8,2),
-	id_orden_compra VARCHAR(10),
+	id_orden_compra SERIAL,
 	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
 );
 
