@@ -11,7 +11,7 @@ CREATE TABLE Cliente (
 	telefono INTEGER,
 	email VARCHAR(100),
 	direccion VARCHAR(255),
-        NombreEmpresa VARCHAR(50)
+	NombreEmpresa VARCHAR(50)
 );
 
 CREATE TABLE OrdenCompra (
