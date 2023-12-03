@@ -227,6 +227,8 @@ CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c89f5331-6fb3-4687-8041-6c847912c248)
 
 
+AJUSTE DE INDICES
+
 ```sql
 
 --Mas que todo recomendacion en caso de  eliminar un índice de clave primaria, no se hace a menos que se este rediseñando cómo se manejan las claves en la base de datos
