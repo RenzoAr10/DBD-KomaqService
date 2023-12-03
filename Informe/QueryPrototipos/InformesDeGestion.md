@@ -121,3 +121,24 @@ $$ LANGUAGE plpgsql;
 
 SELECT * FROM generar_reporte_ventas();
  ```
+
+# AJUSTE DE INDICE
+
+```sql
+--Índice para Búsqueda por Nombre de Empresa:
+CREATE INDEX idx_nombreempresa ON cliente (nombreempresa);
+
+--Índice para Filtrar por Estado de Factura:
+CREATE INDEX idx_estado ON factura (estado);
+
+--Índice para Búsquedas por Rango de Fechas:
+CREATE INDEX idx_fecha_emision ON factura (fecha_emision);
+
+--Índices Compuestos:
+CREATE INDEX idx_cliente_fecha ON factura (id_usuario, fecha_emision);
+
+--Revisar la Necesidad de Índices Existentes:
+DROP INDEX IF EXISTS idx_nombreempresa;
+
+
+ ```
