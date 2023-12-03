@@ -448,13 +448,49 @@ INSERT INTO Factura (forma_pago, fecha_emision, costo_total, id_usuario) VALUES
    ('Efectivo', '2023-06-06', 1800, 15);
 
 -- TABLA SERVICIO
-INSERT INTO Servicio (id_servicio, nombre_servicio, fecha_inicio, fecha_fin, costo, cantidad_servicios, subtotal_servicios, tecnico_asignado, id_orden_compra, id_factura) VALUES
-('SERV001', 'Mantenimiento Preventivo', '2023-04-20', '2023-04-21', 500, 1, 500, 'Hector Rojas', 'OC001', 'FAC001'),
-('SERV002', 'Reparación del Sistema Hidráulico', '2023-04-22', '2023-04-23', 1200, 2, 2400, 'Jefferson Cotrina', 'OC002', 'FAC002'),
-('SERV003', 'Cambio de Neumáticos', '2023-04-24', '2023-04-25', 300, 4, 1200, 'Gabriel Campos', 'OC003', 'FAC003'),
-('SERV004', 'Servicio de Transmisión', '2023-04-26', '2023-04-27', 800, 1, 800, 'Lucia Ramirez', 'OC004', 'FAC004'),
-('SERV005', 'Inspección Técnica', '2023-04-28', '2023-04-29', 200, 3, 600, 'Carlos Gonzales', 'OC005', 'FAC005');
-
+INSERT INTO Servicio (nombre_servicio, fecha_inicio, fecha_fin, costo, cantidad_servicios, subtotal_servicios, tecnico_asignado, id_orden_compra, id_factura) VALUES
+('Mantenimiento Preventivo', '2023-04-20', '2023-04-21', 500, 1, 500, 'Hector Rojas', 1, 1),
+('Reparación del Sistema Hidráulico', '2023-04-22', '2023-04-23', 1200, 2, 2400, 'Jefferson Cotrina', 2, 2),
+('Cambio de Neumáticos', '2023-04-24', '2023-04-25', 300, 4, 1200, 'Gabriel Campos', 3, 3),
+('Servicio de Transmisión', '2023-04-26', '2023-04-27', 800, 1, 800, 'Lucia Ramirez', 4, 4),
+('Inspección Técnica', '2023-04-28', '2023-04-29', 200, 3, 600, 'Carlos Gonzales', 5, 5),
+('Cambio de Aceite', '2023-05-01', '2023-05-02', 150, 1, 150, 'Ana Perez', 6, 6),
+('Reparación de Frenos', '2023-05-03', '2023-05-04', 400, 2, 800, 'Juan Rodriguez', 7, 7),
+('Inspección de Motor', '2023-05-05', '2023-05-06', 250, 1, 250, 'Maria Gutierrez', 8, 8),
+('Alineación y Balanceo', '2023-05-07', '2023-05-08', 120, 4, 480, 'Carlos Silva', 9, 9),
+('Diagnóstico de Fallas', '2023-05-09', '2023-05-10', 300, 1, 300, 'Laura Medina', 10, 10),
+('Cambio de Filtros', '2023-05-11', '2023-05-12', 180, 3, 540, 'Pedro Martinez', 11, 11),
+('Revisión de Luces', '2023-05-13', '2023-05-14', 100, 1, 100, 'Sofia Hernandez', 12, 12),
+('Reparación de Transmisión', '2023-05-15', '2023-05-16', 700, 2, 1400, 'Alberto Ramirez', 13, 13),
+('Cambio de Batería', '2023-05-17', '2023-05-18', 200, 1, 200, 'Elena Cruz', 14, 14),
+('Servicio de Pintura', '2023-05-19', '2023-05-20', 600, 1, 600, 'Jorge Flores', 15, 15),
+('Diagnóstico de Computadora', '2023-05-21', '2023-05-22', 350, 2, 700, 'Raul Diaz', 16, 16),
+('Cambio de Pastillas de Freno', '2023-05-23', '2023-05-24', 180, 4, 720, 'Carmen Torres', 17, 17),
+('Lavado y Encerado', '2023-05-25', '2023-05-26', 80, 1, 80, 'Diego Ortega', 18, 18),
+('Reparación de Sistema Eléctrico', '2023-05-27', '2023-05-28', 450, 1, 450, 'Luisa Gomez', 19, 19),
+('Cambio de Amortiguadores', '2023-05-29', '2023-05-30', 300, 2, 600, 'Manuel Vargas', 20, 20),
+('Ajuste de Embrague', '2023-05-31', '2023-06-01', 200, 1, 200, 'Isabel Castro', 21, 21),
+('Reparación de Sistema de Escape', '2023-06-02', '2023-06-03', 250, 3, 750, 'Fernando Lopez', 22, 22),
+('Recarga de Aire Acondicionado', '2023-06-04', '2023-06-05', 120, 1, 120, 'Miguel Sanchez', 23, 23),
+('Reparación de Radiador', '2023-06-06', '2023-06-07', 280, 2, 560, 'Patricia Mendoza', 24, 24),
+('Cambio de Correa de Distribución', '2023-06-08', '2023-06-09', 400, 1, 400, 'Ricardo Herrera', 25, 25),
+('Alineación de Chasis', '2023-06-10', '2023-06-11', 150, 1, 150, 'Alejandro Fernandez', 26, 26),
+('Reparación de Neumáticos', '2023-06-12', '2023-06-13', 100, 2, 200, 'Monica Silva', 27, 27),
+('Diagnóstico de Sistema de Combustible', '2023-06-14', '2023-06-15', 300, 1, 300, 'Daniel Gomez', 28, 28),
+('Cambio de Sensor de Oxígeno', '2023-06-16', '2023-06-17', 120, 3, 360, 'Cristina Torres', 29, 29),
+('Servicio de Desinfección Interior', '2023-06-18', '2023-06-19', 80, 1, 80, 'Hugo Morales', 30, 30),
+('Reparación de Ventanas Eléctricas', '2023-06-20', '2023-06-21', 200, 1, 200, 'Laura Rodriguez', 31, 31),
+('Cambio de Placas de Freno', '2023-06-22', '2023-06-23', 180, 2, 360, 'Sergio Perez', 32, 32),
+('Ajuste de Suspensión', '2023-06-24', '2023-06-25', 250, 1, 250, 'Angela Diaz', 33, 33),
+('Limpieza de Inyectores', '2023-06-26', '2023-06-27', 150, 3, 450, 'Francisco Garcia', 34, 34),
+('Cambio de Bomba de Agua', '2023-06-28', '2023-06-29', 300, 1, 300, 'Eva Martinez', 35, 35),
+('Reparación de Sistema de Escape', '2023-07-01', '2023-07-02', 250, 2, 500, 'Rosa Gutierrez', 36, 36),
+('Recarga de Aire Acondicionado', '2023-07-03', '2023-07-04', 120, 1, 120, 'David Ramirez', 37, 37),
+('Reparación de Radiador', '2023-07-05', '2023-07-06', 280, 3, 840, 'Karla Vargas', 38, 38),
+('Cambio de Correa de Distribución', '2023-07-07', '2023-07-08', 400, 1, 400, 'Martin Rodriguez', 39, 39),
+('Alineación de Chasis', '2023-07-09', '2023-07-10', 150, 1, 150, 'Natalia Diaz', 40, 40),
+('Reparación de Neumáticos', '2023-07-11', '2023-07-12', 100, 2, 200, 'Oscar Torres', 41, 41),
+('Diagnóstico de Sistema de Combustible', '2023-07-13', '2023-07-14', 300, 1, 300, 'Paula Martinez', 42, 42);
 
 -- TABLA CONSUMIBLE
 INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, costo, id_servicio) VALUES
