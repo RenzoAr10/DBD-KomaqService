@@ -45,7 +45,7 @@ VALUES ('Creación de solicitud de servicio', CURRENT_TIMESTAMP, 'usuario_client
 COMMIT TRANSACTION;
 ```
 
-#AJUSTE DEL INDICE
+# AJUSTE DEL INDICE
 ```sql
 --Índice para la Tabla EstadoServicios:
 CREATE INDEX idx_usuario_id ON EstadoServicios(usuario_id);
