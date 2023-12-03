@@ -49,3 +49,20 @@ SELECT NombreRespuesto FROM Respuesto WHERE idServicio = SER001;
 SELECT NombreConsumible FROM Cosnumible WHERE idServicio = SER001;
 SELECT IdAccionRecomendad FROM AccionRecomendad WHERE idOrdenCompra= OCP001;
 ```
+
+AJUSTE DE INDICES
+
+```sql
+-- Índices en las claves foráneas
+CREATE INDEX idx_servicio_id_orden_compra ON Servicio(id_orden_compra);
+CREATE INDEX idx_servicio_id_factura ON Servicio(id_factura);
+CREATE INDEX idx_consumible_id_servicio ON Consumible(id_servicio);
+CREATE INDEX idx_respuesto_id_servicio ON Respuesto(IdServicio);
+
+-- Índice en las columnas utilizadas en búsquedas por texto
+CREATE INDEX idx_servicio_nombre ON Servicio(nombre_servicio);
+
+ --Índices para Consultas de Porcentaje de Actividades Completadas:
+CREATE INDEX idx_acciones_orden_compra_estado ON AccionesRecomendada(idOrdenCompra, Estado);
+
+```
