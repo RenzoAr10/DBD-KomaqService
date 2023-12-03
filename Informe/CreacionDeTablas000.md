@@ -360,12 +360,92 @@ INSERT INTO Maquina (nombre_maquina, modelo, combustible, motor, serie_motor, id
 
 
 -- TABLA PROBLEMAS
-INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
-('PROB001', 'Fallo del sistema hidráulico', 'MT-X 1030', 'MAQ001'),
-('PROB002', 'Desgaste de neumáticos', 'CAT 980M', 'MAQ002'),
-('PROB003', 'Problemas de arranque en frío', 'ZX350LC-6', 'MAQ003'),
-('PROB004', 'Fallo en la transmisión', '3CX', 'MAQ004'),
-('PROB005', 'Sobrecalentamiento del motor', 'H60FT', 'MAQ005');
+INSERT INTO Problemas (tipo_problema, id_maquina) VALUES
+   ('Fallo del sistema hidráulico', 1),
+   ('Problema en el motor', 2),
+   ('Fugas de aceite', 3),
+   ('Sobrecalentamiento', 4),
+   ('Mal funcionamiento de la transmisión', 5),
+   ('Problema eléctrico', 6),
+   ('Desgaste excesivo de las llantas', 7),
+   ('Problema en el sistema de dirección', 8),
+   ('Batería descargada', 9),
+   ('Problema en el sistema de frenos', 10),
+   ('Desgaste prematuro de las cuchillas', 11),
+   ('Fallo en el sistema neumático', 12),
+   ('Problema en el sistema de combustible', 13),
+   ('Ruido anormal en el motor', 14),
+   ('Problema en el sistema de elevación', 15),
+   ('Desgaste en los componentes del tren de rodaje', 16),
+   ('Problema en el sistema de carga', 17),
+   ('Vibraciones inusuales', 18),
+   ('Problema en el sistema de iluminación', 19),
+   ('Fallo en el sistema de refrigeración', 20),
+   ('Problema en el sistema hidrostático', 21),
+   ('Desgaste en los dientes de la excavadora', 22),
+   ('Problema en el sistema de escape', 23),
+   ('Falla en el sistema de seguridad', 24),
+   ('Problema en el sistema de tracción', 25),
+   ('Fallo del sistema hidráulico', 26),
+   ('Problema en el motor', 27),
+   ('Fugas de aceite', 28),
+   ('Sobrecalentamiento', 29),
+   ('Mal funcionamiento de la transmisión', 30),
+   ('Problema eléctrico', 31),
+   ('Desgaste excesivo de las llantas', 32),
+   ('Problema en el sistema de dirección', 33),
+   ('Batería descargada', 34),
+   ('Problema en el sistema de frenos', 35),
+   ('Desgaste prematuro de las cuchillas', 36),
+   ('Fallo en el sistema neumático', 37),
+   ('Problema en el sistema de combustible', 38),
+   ('Ruido anormal en el motor', 39);
+
+
+-- TABLA FACTURA
+INSERT INTO Factura (forma_pago, fecha_emision, costo_total, id_usuario) VALUES
+   ('Tarjeta de Crédito', '2023-04-20', 150, 14),
+   ('Efectivo', '2023-04-21', 1200, 3),
+   ('Transferencia Bancaria', '2023-04-22', 500, 8),
+   ('Pago Móvil', '2023-04-23', 800, 5),
+   ('Cheque', '2023-04-24', 1600, 20),
+   ('Tarjeta de Crédito', '2023-05-01', 900, 10),
+   ('Efectivo', '2023-05-02', 300, 18),
+   ('Transferencia Bancaria', '2023-05-03', 700, 12),
+   ('Pago Móvil', '2023-05-04', 1500, 7),
+   ('Cheque', '2023-05-05', 1800, 25),
+   ('Tarjeta de Crédito', '2023-05-06', 1000, 1),
+   ('Efectivo', '2023-05-07', 1300, 16),
+   ('Transferencia Bancaria', '2023-05-08', 400, 22),
+   ('Pago Móvil', '2023-05-09', 1200, 9),
+   ('Cheque', '2023-05-10', 600, 2),
+   ('Tarjeta de Crédito', '2023-05-11', 1800, 19),
+   ('Efectivo', '2023-05-12', 700, 15),
+   ('Transferencia Bancaria', '2023-05-13', 1000, 11),
+   ('Pago Móvil', '2023-05-14', 300, 6),
+   ('Cheque', '2023-05-15', 1600, 13),
+   ('Tarjeta de Crédito', '2023-05-16', 1200, 24),
+   ('Efectivo', '2023-05-17', 900, 17),
+   ('Transferencia Bancaria', '2023-05-18', 500, 21),
+   ('Pago Móvil', '2023-05-19', 1400, 23),
+   ('Cheque', '2023-05-20', 800, 4),
+   ('Tarjeta de Crédito', '2023-05-21', 1300, 8),
+   ('Efectivo', '2023-05-22', 1000, 14),
+   ('Transferencia Bancaria', '2023-05-23', 700, 7),
+   ('Pago Móvil', '2023-05-24', 900, 16),
+   ('Cheque', '2023-05-25', 1200, 5),
+   ('Tarjeta de Crédito', '2023-05-26', 1500, 12),
+   ('Efectivo', '2023-05-27', 1800, 2),
+   ('Transferencia Bancaria', '2023-05-28', 1000, 18),
+   ('Pago Móvil', '2023-05-29', 1200, 10),
+   ('Cheque', '2023-05-30', 800, 22),
+   ('Tarjeta de Crédito', '2023-05-31', 500, 9),
+   ('Efectivo', '2023-06-01', 700, 1),
+   ('Transferencia Bancaria', '2023-06-02', 1500, 25),
+   ('Pago Móvil', '2023-06-03', 300, 6),
+   ('Cheque', '2023-06-04', 1200, 13),
+   ('Tarjeta de Crédito', '2023-06-05', 1000, 19),
+   ('Efectivo', '2023-06-06', 1800, 15);
 
 -- TABLA SERVICIO
 INSERT INTO Servicio (id_servicio, nombre_servicio, fecha_inicio, fecha_fin, costo, cantidad_servicios, subtotal_servicios, tecnico_asignado, id_orden_compra, id_factura) VALUES
@@ -375,12 +455,6 @@ INSERT INTO Servicio (id_servicio, nombre_servicio, fecha_inicio, fecha_fin, cos
 ('SERV004', 'Servicio de Transmisión', '2023-04-26', '2023-04-27', 800, 1, 800, 'Lucia Ramirez', 'OC004', 'FAC004'),
 ('SERV005', 'Inspección Técnica', '2023-04-28', '2023-04-29', 200, 3, 600, 'Carlos Gonzales', 'OC005', 'FAC005');
 
--- TABLA FACTURA
-INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC001', 'Tarjeta de Crédito', '2023-11-17', 1000);
-INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC002', 'Efectivo', '2023-11-18', 500);
-INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC003', 'Transferencia Bancaria', '2023-11-19', 750);
-INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC004', 'Pago Móvil', '2023-11-20', 1250);
-INSERT INTO Factura (id_factura, forma_pago, fecha_emision, costo_total) VALUES ('FAC005', 'Cheque', '2023-11-21', 3000);
 
 -- TABLA CONSUMIBLE
 INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, costo, id_servicio) VALUES
