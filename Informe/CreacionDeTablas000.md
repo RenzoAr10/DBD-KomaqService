@@ -27,7 +27,7 @@ CREATE TABLE Usuario (
 	nombre_usuario VARCHAR(50),
 	contrasena_usuario VARCHAR(50),
 	id_cliente SERIAL,
-	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
+	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
 );
 	
 CREATE TABLE Empleado (
