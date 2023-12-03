@@ -61,7 +61,7 @@ Se adapta la aplicación para interactuar con InfluxDB, utilizando sus bibliotec
 - Configuramos los ajustes de seguridad, como grupos de seguridad y políticas de acceso.
 
 
-## Implementación
+# Implementación
 
 ### Crear Measurements y Schema:
 
