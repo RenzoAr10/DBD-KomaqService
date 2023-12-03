@@ -27,7 +27,6 @@ CREATE TABLE Usuario (
 	nombre_usuario VARCHAR(50),
 	contrasena_usuario VARCHAR(50),
 	id_cliente SERIAL,
-	id_orden_compra SERIAL,
 	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
 );
 	
@@ -95,8 +94,7 @@ CREATE TABLE Maquina (
 
 CREATE TABLE Problemas (
 	id_problema SERIAL PRIMARY KEY,
-	tipo_problema VARCHAR(100),
-	modelo VARCHAR(100),
+	nombre_problema VARCHAR(100),
 	id_maquina SERIAL,
 	FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
 );
