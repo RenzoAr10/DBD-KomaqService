@@ -86,18 +86,32 @@ CREATE TABLE Maquina (
 	modelo VARCHAR(100),
 	combustible VARCHAR(100),
 	motor VARCHAR(100),
-	serie_motor VARCHAR(100),
-	id_orden_compra SERIAL,
-	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
+	serie_motor VARCHAR(100)
+
 );
+CREATE TABLE MaquinaOrdenCompra (
+    id_relacion SERIAL PRIMARY KEY,
+    id_maquina INT,
+    id_orden_compra INT,
+    FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina),
+    FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
+);
+
 
 
 CREATE TABLE Problemas (
 	id_problema SERIAL PRIMARY KEY,
-	nombre_problema VARCHAR(100),
-	id_maquina SERIAL,
-	FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
+	nombre_problema VARCHAR(100)
+
 );
+CREATE TABLE ProblemaMaquina (
+    id_relacion SERIAL PRIMARY KEY,
+    id_problema INT,
+    id_maquina INT,
+    FOREIGN KEY (id_problema) REFERENCES Problemas(id_problema),
+    FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
+);
+
 
 CREATE TABLE Consumible (
 	id_consumible SERIAL PRIMARY KEY,
