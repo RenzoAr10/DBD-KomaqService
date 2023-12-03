@@ -76,3 +76,23 @@ VALUES ('jcustodio', 'Creación de usuario', CURRENT_TIMESTAMP);
 
 COMMIT TRANSACTION;
 ```
+
+# AJUSTE DE INDICE
+```sql
+--Índice para la Tabla de Usuarios:
+CREATE INDEX idx_nombre_usuario ON Usuario(nombreUsuario);
+
+--Índice para la Tabla de Empleados:
+CREATE INDEX idx_dni_empleados ON Empleados(dni);
+
+-- procedimiento almacenado para la autenticación
+CREATE PROCEDURE sp_AutenticarUsuario
+@nombreUsuario VARCHAR(255),
+@hashContrasena VARBINARY(256)
+AS
+BEGIN
+    SELECT id, nombreUsuario, rol
+    FROM Usuario
+    WHERE nombreUsuario = @nombreUsuario AND hashContrasena = @hashContrasena;
+END
+```
