@@ -42,4 +42,55 @@ Nos aseguramos de que InfluxDB esté configurado de manera segura, con autentica
 InfluxDB es especialmente potente para el monitoreo y análisis en tiempo real debido a su capacidad para manejar grandes volúmenes de escrituras y consultas rápidas.
 
 ## Integración con la Aplicación
-Se adapta la aplicación para interactuar con InfluxDB, utilizando sus bibliotecas cliente para el lenguaje de programación que se este usando.
+Se adapta la aplicación para interactuar con InfluxDB, utilizando sus bibliotecas cliente para el lenguaje de programación que se esta usando.
+
+
+
+# Configuración
+
+## Instalación Local:
+
+- Se descarga InfluxDB desde el sitio web oficial.
+- Se instala InfluxDB siguiendo las instrucciones para el sistema operativo.
+- Se inicia el servicio de InfluxDB y asegúrate de que esté corriendo.
+
+## Como Servicio en la Nube:
+
+- Elegimos un proveedor de servicios en la nube que ofrezca InfluxDB como un servicio gestionado (por ejemplo, AWS, Azure, o InfluxData Cloud).
+- Creamos una instancia de InfluxDB a través del portal del proveedor.
+- Configuramos los ajustes de seguridad, como grupos de seguridad y políticas de acceso.
+
+
+## Implementación
+
+### Crear Measurements y Schema:
+
+- Definimos los measurements (equivalentes a las tablas en SQL).
+- Establecimos los tags (p.ej., ID de usuario, tipo de máquina) y fields (p.ej., duración del servicio, costos).
+
+
+ ### Insertar Datos:
+
+-Utilizamos la línea de comandos de InfluxDB o clientes de biblioteca en la aplicación para insertar datos.
+-Formato de ejemplo para inserción:
+```sql
+insert servicio,usuario_id=user1234,tipo_maquina=excavadora duracion=3h,costo=300
+
+ ```
+### Realizar Consultas:
+
+InfluxQL para realizar consultas que extraigan datos de series temporales relevantes para la aplicación.
+Ejemplo de consulta para obtener la duración total del servicio por usuario:
+```sql
+SELECT sum(duracion) FROM servicio WHERE usuario_id = 'user1234'
+
+ ```
+### Modificar el Código de Aplicación:
+
+- Integramos la biblioteca cliente de InfluxDB en la aplicación.
+- Reemplazamos las operaciones de base de datos relacional por llamadas a la API de InfluxDB para escribir y leer datos.
+
+### Generar el Escenario Externamente:
+
+- Creamos un conjunto de scripts o una interfaz de administración para gestionar los measurements y datos.
+- Implementamos una función de exportación/importación si se necesitan operaciones de migración de datos desde o hacia sistemas relacionales.
