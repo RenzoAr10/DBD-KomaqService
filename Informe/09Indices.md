@@ -227,6 +227,34 @@ CREATE INDEX idx_accionrecomendada_idorden ON AccionRecomendada(idOrdenCompra);
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/c89f5331-6fb3-4687-8041-6c847912c248)
 
 
+```sql
+
+--Mas que todo recomendacion en caso de  eliminar un índice de clave primaria, no se hace a menos que se este rediseñando cómo se manejan las claves en la base de datos
+
+--Eliminar indices
+DROP INDEX idx_nombreempresa ON cliente;
+
+-- si SE quiere indexar clientes activos
+CREATE INDEX idx_nombreempresa_active ON cliente(nombreempresa)
+WHERE estado = 'Activo';
+
+
+-- crear un índice compuesto que incluya ambas columnas : nombreempresa y  id_cliente
+CREATE INDEX idx_nombreempresa_idcliente ON cliente(nombreempresa, id_cliente);
+
+
+-- Si un índice se ha fragmentado mucho con el tiempo, se reconstruye para mejorar el rendimiento
+ALTER INDEX idx_nombreempresa ON cliente REBUILD;
+
+
+-- Reconstruir un índice
+ALTER INDEX idx_factura_id_factura ON factura REBUILD;
+
+-- Actualizar estadísticas
+UPDATE STATISTICS cliente idx_nombreempresa;
+
+
+ ```
 # Informe de Gestion Ordenes de Compra
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/416dec14-824e-4bfd-85eb-06db51b5ba18)
 
