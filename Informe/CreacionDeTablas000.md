@@ -118,13 +118,13 @@ CREATE TABLE Consumible (
 
 CREATE TABLE Repuesto (
 	id_repuesto SERIAL PRIMARY KEY,
+	nombrerepuesto VARCHAR(50),
 	stock INT,
 	precio INT,
 	cantidad INT,
 	subtotal_repuesto INT,
 	id_servicio SERIAL,
 	id_factura SERIAL,
-        nombrerepuesto VARCHAR(50),
 	FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio),
 	FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
 );
@@ -530,65 +530,64 @@ INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, c
 ('CONS005', 'Batería', '2023-04-28', 2, 100, 'SERV005');
 
 -- TABLA REPUESTO
-INSERT INTO Repuesto (id_repuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura,nombrerepuesto) VALUES
-('Aceite Hidráulico', '2023-04-20', 10, 50, 5),
-('Filtro de Aire', '2023-04-22', 5, 30, 10),
-('Neumáticos', '2023-04-24', 4, 300, 15),
-('Aceite de Transmisión', '2023-04-26', 20, 40, 20),
-('Batería', '2023-04-28', 2, 100, 25),
-('Aceite de Motor', '2023-07-11', 15, 80, 21),
-('Filtro de Combustible', '2023-07-12', 7, 35, 26),
-('Bujías', '2023-07-13', 4, 25, 31),
-('Líquido Refrigerante', '2023-07-14', 10, 60, 36),
-('Pastillas de Freno', '2023-07-15', 3, 20, 41),
-('Llantas de Repuesto', '2023-07-16', 2, 150, 8),
-('Aceite para Frenos', '2023-07-17', 6, 45, 13),
-('Filtro de Aceite', '2023-07-18', 5, 30, 18),
-('Líquido de Dirección Asistida', '2023-07-19', 9, 55, 23),
-('Batería de Repuesto', '2023-07-20', 1, 110, 28),
-('Lubricante Multiusos', '2023-07-21', 3, 15, 33),
-('Kit de Herramientas', '2023-07-22', 1, 120, 38),
-('Líquido Limpiaparabrisas', '2023-07-23', 8, 40, 43),
-('Fusibles', '2023-07-24', 2, 10, 7),
-('Herramientas de Reparación', '2023-07-25', 1, 80, 12),
-('Líquido de Frenos', '2023-07-26', 7, 50, 17),
-('Filtro de Polen', '2023-07-27', 4, 30, 22),
-('Gas Refrigerante', '2023-07-28', 6, 70, 27),
-('Pastillas Limpiaparabrisas', '2023-07-29', 3, 25, 32),
-('Anticongelante', '2023-07-30', 10, 60, 37),
-('Llave Inglesa', '2023-07-31', 1, 20, 42),
-('Silenciador', '2023-08-01', 1, 50, 9),
-('Lámparas de Repuesto', '2023-08-02', 4, 15, 14),
-('Cinta Aislante', '2023-08-03', 1, 10, 19),
-('Herramienta de Diagnóstico', '2023-08-04', 1, 100, 24),
-('Kit de Reparación de Neumáticos', '2023-08-05', 5, 40, 29),
-('Baterías para Controles Remotos', '2023-08-06', 2, 15, 34),
-('Gato Hidráulico', '2023-08-07', 1, 75, 39),
-('Cables de Batería', '2023-08-08', 3, 30, 44),
-('Aceite para Caja de Cambios', '2023-08-09', 7, 55, 10),
-('Llave de Ruedas', '2023-08-10', 1, 20, 15),
-('Gafas de Seguridad', '2023-08-11', 2, 10, 20),
-('Botiquín de Primeros Auxilios', '2023-08-12', 1, 30, 25),
-('Manual de Reparación', '2023-08-13', 1, 20, 30),
-('Herramienta de Extracción de Tuercas', '2023-08-14', 1, 25, 35),
-('Linterna Recargable', '2023-08-15', 1, 15, 40),
-('Impermeabilizante para Cables', '2023-08-16', 2, 10, 45);
+INSERT INTO Repuesto (nombrerepuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura) VALUES
+('Aceite Hidráulico', 100, 10, 50, 500, 50, 5),
+('Filtro de Aire', 50, 5, 30, 150, 30, 10),
+('Neumáticos', 200, 4, 300, 1200, 20, 15),
+('Aceite de Transmisión', 50, 20, 40, 800, 10, 20),
+('Batería', 10, 2, 100, 200, 40, 25),
+('Aceite de Motor', 80, 15, 80, 1200, 5, 21),
+('Filtro de Combustible', 35, 7, 35, 245, 15, 31),
+('Líquido Refrigerante', 60, 10, 60, 600, 12, 36),
+('Pastillas de Freno', 20, 3, 20, 60, 8, 41),
+('Llantas de Repuesto', 150, 2, 150, 300, 4, 8),
+('Aceite para Frenos', 45, 6, 45, 270, 20, 13),
+('Filtro de Aceite', 30, 5, 30, 150, 18, 18),
+('Líquido de Dirección Asistida', 55, 9, 55, 495, 32, 23),
+('Batería de Repuesto', 110, 1, 110, 110, 2, 28),
+('Lubricante Multiusos', 15, 3, 15, 45, 42, 33),
+('Kit de Herramientas', 120, 1, 120, 120, 25, 38),
+('Líquido Limpiaparabrisas', 40, 8, 40, 320, 35, 43),
+('Fusibles', 10, 2, 10, 20, 15, 7),
+('Herramientas de Reparación', 80, 1, 80, 80, 28, 12),
+('Líquido de Frenos', 50, 7, 50, 350, 42, 17),
+('Filtro de Polen', 30, 4, 30, 120, 10, 22),
+('Gas Refrigerante', 70, 6, 70, 420, 25, 27),
+('Pastillas Limpiaparabrisas', 25, 3, 25, 75, 5, 32),
+('Anticongelante', 60, 10, 60, 600, 15, 37),
+('Llave Inglesa', 20, 1, 20, 20, 30, 42),
+('Silenciador', 50, 1, 50, 50, 20, 9),
+('Lámparas de Repuesto', 15, 4, 15, 60, 38, 14),
+('Cinta Aislante', 10, 1, 10, 10, 10, 19),
+('Herramienta de Diagnóstico', 100, 1, 100, 100, 12, 24),
+('Kit de Reparación de Neumáticos', 40, 5, 40, 200, 4, 29),
+('Baterías para Controles Remotos', 15, 2, 15, 30, 30, 34),
+('Gato Hidráulico', 75, 1, 75, 75, 40, 39),
+('Cables de Batería', 30, 3, 30, 90, 5, 44),
+('Aceite para Caja de Cambios', 55, 7, 55, 385, 15, 10),
+('Llave de Ruedas', 20, 1, 20, 20, 25, 15),
+('Gafas de Seguridad', 10, 2, 10, 20, 32, 20),
+('Botiquín de Primeros Auxilios', 30, 1, 30, 30, 18, 25),
+('Manual de Reparación', 20, 1, 20, 20, 22, 30),
+('Herramienta de Extracción de Tuercas', 25, 1, 25, 25, 7, 35),
+('Linterna Recargable', 15, 1, 15, 15, 42, 40),
+('Impermeabilizante para Cables', 10, 2, 10, 20, 15, 45);
 
 -- TABLA PROVEEDOR
-INSERT INTO Proveedor (id_proveedor, nombre_empresa, telefono_prov, direccion_prov, email) VALUES
-('PROV001', 'Ferreyros', '01 712 3000', 'Av. Arequipa 1067, Lima, Perú', 'contacto@ferreyros.com'),
-('PROV002', 'Repuestos Maquinaria Pesada - Mining Corp.', '999 123 456', 'Av. Los Próceres 123, San Juan de Lurigancho, Perú', 'ventas@miningcorp.com'),
-('PROV003', 'GC SERVICE & PARTS SAC', '999 687 090', 'Av. Universitaria 123, San Martín de Porres, Perú', 'ventas@gcserparts.com'),
-('PROV004', 'M.LL.V. Ventas y Servicios Empresariales', '(01) 523 7420', 'Av. Los Olivos 123, Los Olivos, Perú', 'ventas@mllv.com'),
-('PROV005', 'Técnica Repuestos', '987 654 321', 'Av. Panamericana Norte 123, Callao, Perú', 'ventas@tecnicarepuestos.com');
+INSERT INTO Proveedor (nombre_empresa, telefono_prov, direccion_prov, email) VALUES
+('Ferreyros', '01 712 3000', 'Av. Arequipa 1067, Lima, Perú', 'contacto@ferreyros.com'),
+('Repuestos Maquinaria Pesada - Mining Corp.', '999 123 456', 'Av. Los Próceres 123, San Juan de Lurigancho, Perú', 'ventas@miningcorp.com'),
+('GC SERVICE & PARTS SAC', '999 687 090', 'Av. Universitaria 123, San Martín de Porres, Perú', 'ventas@gcserparts.com'),
+('M.LL.V. Ventas y Servicios Empresariales', '(01) 523 7420', 'Av. Los Olivos 123, Los Olivos, Perú', 'ventas@mllv.com'),
+('Técnica Repuestos', '987 654 321', 'Av. Panamericana Norte 123, Callao, Perú', 'ventas@tecnicarepuestos.com');
 
 -- TABLA PROVEEDORREPUESTO
-INSERT INTO Proveedor_Repuesto (id_proveedor, id_repuesto ) VALUES
-('PROV001', 'REP001'),
-('PROV001', 'REP002'),
-('PROV001', 'REP003'),
-('PROV002', 'REP004'),
-('PROV003', 'REP004');
+INSERT INTO Proveedor_Repuesto (id_proveedor, id_repuesto) VALUES
+(1, 1), (3, 2), (5, 3), (1, 4), (3, 5), (5, 6), (1, 7), (3, 8), (5, 9), (1, 10),
+(3, 11), (5, 12), (1, 13), (3, 14), (5, 15), (1, 16), (3, 17), (5, 18), (1, 19), (3, 20),
+(5, 21), (1, 22), (3, 23), (5, 24), (1, 25), (3, 26), (5, 27), (1, 28), (3, 29), (5, 30),
+(1, 31), (3, 32), (5, 33), (1, 34), (3, 35), (5, 36), (1, 37), (3, 38), (5, 39), (1, 40),
+(3, 41);
 
 -- TABLA ACCION RECOMENDADA
 INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra)
