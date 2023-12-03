@@ -252,12 +252,40 @@ INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente,
 ('US005', 'lramirez', 'password5', 'CL005', 'OC005');
 
 -- TABLA EMPLEADO
-INSERT INTO Empleado (id_empleado, nombre, apellido_paterno, apellido_materno, dni, telefono, email, especializacion, cargo, id_jefe) VALUES
-('EMP001', 'Hector', 'Rojas', '', '12345678', '987654321', 'hrojas@komq.com', 'Mecánico', 'Técnico Senior', NULL),
-('EMP002', 'Jefferson', 'Cotrina', '', '87654321', '987650123', 'jcotrina@komq.com', 'Mecánico', 'Técnico Junior', 'EMP001'),
-('EMP003', 'Gabriel', 'Campos', '', '23456789', '987651234', 'gcampos@komq.com', 'Logística', 'Gerente de Operaciones', NULL),
-('EMP004', 'Lucia', 'Ramirez', '', '34567890', '987652345', 'lramirez@komq.com', 'Administración', 'Asistente de Gerencia', 'EMP003'),
-('EMP005', 'Carlos', 'Gonzales', '', '45678901', '987653456', 'cgonzales@komq.com', 'Mecánico', 'Especialista de Campo', 'EMP001');
+
+INSERT INTO Empleado (nombre, apellido_paterno, apellido_materno, dni, telefono, email, especializacion, cargo, id_jefe) VALUES
+--Jefes
+('Hector', 'Rojas', 'Gomez', '12345678', '987654321', 'hrojas@komq.com', 'Mecánico', 'Jefe de Departamento', NULL),
+('Jefferson', 'Cotrina', 'Lopez', '87654321', '987650123', 'jcotrina@komq.com', 'Mecánico', 'Jefe de Equipo', NULL),
+('Gabriel', 'Campos', 'Diaz', '23456789', '987651234', 'gcampos@komq.com', 'Logística', 'Gerente General', NULL),
+('Lucia', 'Ramirez', 'Martinez', '34567890', '987652345', 'lramirez@komq.com', 'Administración', 'Directora de Operaciones', NULL),
+('Carlos', 'Gonzales', 'Lopez', '45678901', '987653456', 'cgonzales@komq.com', 'Mecánico', 'Jefe de Área', NULL);
+--Otros empleados
+('Luis', 'Martinez', 'Sanchez', '56789012', '987654322', 'lmartinez@komq.com', 'Mecánico', 'Técnico Senior', 1),
+('Alejandra', 'Lopez', 'Gomez', '67890123', '987650124', 'alopez@komq.com', 'Mecánico', 'Técnico Junior', 2),
+('Diego', 'Hernandez', 'Ramirez', '78901234', '987651235', 'dhernandez@komq.com', 'Logística', 'Gerente de Operaciones', 3),
+('Fernanda', 'Santos', 'Cotrina', '89012345', '987652346', 'fsantos@komq.com', 'Administración', 'Asistente de Gerencia', 4),
+('Ana', 'Ramirez', 'Gonzales', '90123456', '987653457', 'aramirez@komq.com', 'Mecánico', 'Especialista de Campo', 1),
+('Pablo', 'Gutierrez', 'Sanchez', '12345432', '987654323', 'pgutierrez@komq.com', 'Mecánico', 'Técnico Senior', 1),
+('Elena', 'Castro', 'Lopez', '23454543', '987650125', 'ecastro@komq.com', 'Mecánico', 'Técnico Junior', 2),
+('Martín', 'Fernandez', 'Hernandez', '34565432', '987651236', 'mfernandez@komq.com', 'Logística', 'Gerente de Operaciones', 3),
+('Lorena', 'Diaz', 'Santos', '45654321', '987652347', 'ldiaz@komq.com', 'Administración', 'Asistente de Gerencia', 4),
+('Raúl', 'Sanchez', 'Cotrina', '56765432', '987653458', 'rsanchez@komq.com', 'Mecánico', 'Especialista de Campo', 1),
+('Patricia', 'Martinez', 'Gutierrez', '67876543', '987654324', 'pmartinez@komq.com', 'Mecánico', 'Técnico Senior', 5),
+('Miguel', 'Lopez', 'Castro', '78987654', '987650126', 'mlopez@komq.com', 'Mecánico', 'Técnico Junior', 2),
+('Laura', 'Hernandez', 'Fernandez', '89098765', '987651237', 'lhernandez@komq.com', 'Logística', 'Gerente de Operaciones', 3),
+('Gonzalo', 'Santos', 'Diaz', '90109876', '987652348', 'gsantos@komq.com', 'Administración', 'Asistente de Gerencia', 5),
+('Valeria', 'Ramirez', 'Sanchez', '98765401', '987653459', 'vramirez@komq.com', 'Mecánico', 'Especialista de Campo', 5),
+('Roberto', 'Gutierrez', 'Gomez', '10234567', '987654325', 'rgutierrez@komq.com', 'Mecánico', 'Técnico Senior', 5),
+('Cecilia', 'Castro', 'Lopez', '11223344', '987650127', 'ccastro@komq.com', 'Mecánico', 'Técnico Junior', 2),
+('Jorge', 'Fernandez', 'Hernandez', '44556677', '987651238', 'jfernandez@komq.com', 'Logística', 'Gerente de Operaciones', 3),
+('Marina', 'Diaz', 'Santos', '55667788', '987652349', 'mdiaz@komq.com', 'Administración', 'Asistente de Gerencia', 4),
+('Oscar', 'Sanchez', 'Cotrina', '66778899', '987653450', 'osanchez@komq.com', 'Mecánico', 'Especialista de Campo', 1),
+('Evelyn', 'Ramirez', 'Gutierrez', '77889900', '987654331', 'eramirez@komq.com', 'Mecánico', 'Técnico Senior', 1),
+('Ricardo', 'Lopez', 'Castro', '88990011', '987650132', 'rlopez@komq.com', 'Mecánico', 'Técnico Junior', 2),
+('Isabel', 'Hernandez', 'Fernandez', '99001122', '987651243', 'ihernandez@komq.com', 'Logística', 'Gerente de Operaciones', 3),
+('Pedro', 'Santos', 'Diaz', '00112233', '987652354', 'psantos@komq.com', 'Administración', 'Asistente de Gerencia', 4),
+('Carmen', 'Ramirez', 'Sanchez', '11223344', '987653465', 'cramirez@komq.com', 'Mecánico', 'Especialista de Campo', 1);
 
 -- TABLA MAQUINA
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'US001');
