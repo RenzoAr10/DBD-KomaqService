@@ -25,3 +25,15 @@ UPDATE OrdenCompra
 SET estado = 'Finalizado'
 WHERE estado = 'En proceso' AND id_orden_compra = 'OC002';
 ```
+
+
+AJUSTE DE INDICES
+```sql
+CREATE INDEX idx_id_orden_compra ON OrdenCompra(id_orden_compra);
+CREATE INDEX idx_id_servicio ON Servicio(id_servicio);
+CREATE INDEX idx_id_cliente ON Cliente(id_cliente);
+CREATE INDEX idx_id_proveedor ON Proveedor(id_proveedor);
+CREATE INDEX idx_id_factura ON Factura(id_factura);
+CREATE INDEX idx_servicio_cliente ON Servicio(id_servicio, id_cliente);
+
+```
