@@ -14,13 +14,6 @@ CREATE TABLE Cliente (
 	NombreEmpresa VARCHAR(50)
 );
 
-CREATE TABLE OrdenCompra (
-	id_orden_compra SERIAL PRIMARY KEY,
-	estado_oc VARCHAR(100),        
-	fecha_oc VARCHAR(100),
-	id_usuario SERIAL,
-	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
-);
 
 CREATE TABLE Usuario (
 	id_usuario SERIAL PRIMARY KEY,
@@ -29,6 +22,16 @@ CREATE TABLE Usuario (
 	id_cliente SERIAL,
 	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
 );
+
+
+CREATE TABLE OrdenCompra (
+	id_orden_compra SERIAL PRIMARY KEY,
+	estado_oc VARCHAR(100),        
+	fecha_oc VARCHAR(100),
+	id_usuario SERIAL,
+	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+);
+
 	
 CREATE TABLE Empleado (
 	id_empleado SERIAL PRIMARY KEY,
@@ -244,12 +247,32 @@ INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
 
 
 -- TABLA USUARIO
-INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente, id_orden_compra) VALUES
-('US001', 'jcustodio', 'password1', 'CL001', 'OC001'),
-('US002', 'hrojas', 'password2', 'CL002', 'OC002'),
-('US003', 'jcotrina', 'password3', 'CL003', 'OC003'),
-('US004', 'gcampos', 'password4', 'CL004', 'OC004'),
-('US005', 'lramirez', 'password5', 'CL005', 'OC005');
+INSERT INTO Usuario (nombre_usuario, contrasena_usuario, id_cliente) VALUES
+('jgomez', 'password1', 1),
+('arodriguez', 'password2', 2),
+('cdiaz', 'password3', 3),
+('lramirez', 'password4', 4),
+('pmartinez', 'password5', 5),
+('lgarcia', 'password6', 6),
+('rsanchez', 'password7', 7),
+('efernandez', 'password8', 8),
+('jhernandez', 'password9', 9),
+('cjimenez', 'password10', 10),
+('mlopez', 'password11', 11),
+('atorres', 'password12', 12),
+('sgutierrez', 'password13', 13),
+('gmendoza', 'password14', 14),
+('vcruz', 'password15', 15),
+('lcastro', 'password16', 16),
+('lsilva', 'password17', 17),
+('mrios', 'password18', 18),
+('vdiaz', 'password19', 19),
+('lgonzalez', 'password20', 20),
+('cfernandez', 'password21', 21),
+('srios', 'password22', 22),
+('tdiaz', 'password23', 23),
+('mcruz', 'password24', 24),
+('iramirez', 'password25', 25)
 
 -- TABLA EMPLEADO
 
