@@ -142,3 +142,33 @@ DROP INDEX IF EXISTS idx_nombreempresa;
 
 
  ```
+AJUSTE DE INDICES
+
+```sql
+
+--Mas que todo recomendacion en caso de  eliminar un índice de clave primaria, no se hace a menos que se este rediseñando cómo se manejan las claves en la base de datos
+
+--Eliminar indices
+DROP INDEX idx_nombreempresa ON cliente;
+
+-- si SE quiere indexar clientes activos
+CREATE INDEX idx_nombreempresa_active ON cliente(nombreempresa)
+WHERE estado = 'Activo';
+
+
+-- crear un índice compuesto que incluya ambas columnas : nombreempresa y  id_cliente
+CREATE INDEX idx_nombreempresa_idcliente ON cliente(nombreempresa, id_cliente);
+
+
+-- Si un índice se ha fragmentado mucho con el tiempo, se reconstruye para mejorar el rendimiento
+ALTER INDEX idx_nombreempresa ON cliente REBUILD;
+
+
+-- Reconstruir un índice
+ALTER INDEX idx_factura_id_factura ON factura REBUILD;
+
+-- Actualizar estadísticas
+UPDATE STATISTICS cliente idx_nombreempresa;
+
+
+ ```
