@@ -317,3 +317,30 @@ Antes
 Después
 
 ![OCdespues01](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/e24b82f9-c1ca-4285-97b7-bcfffdb3972e)
+
+
+AJUSTE DE INDICES
+
+```sql
+
+--Mas que todo recomendacion en caso de  eliminar un índice de clave primaria, no se hace a menos que se este rediseñando cómo se manejan las claves en la base de datos
+
+--Crear un Índice en Columnas Individuales
+CREATE INDEX idx_apellido_paterno ON Cliente(apellido_paterno);
+CREATE INDEX idx_apellido_materno ON Cliente(apellido_materno);
+CREATE INDEX idx_nombre ON Cliente(nombre);
+
+-- Crear un Índice Compuesto
+CREATE INDEX idx_nombre_completo ON Cliente(apellido_paterno, apellido_materno, nombre);
+
+-- Optimizar Búsquedas para Concatenación
+ALTER TABLE Cliente ADD nombre_completo VARCHAR(255);
+UPDATE Cliente SET nombre_completo = CONCAT(apellido_paterno, ' ', apellido_materno, ' ', nombre);
+CREATE INDEX idx_nombre_completo ON Cliente(nombre_completo);
+
+
+-- Actualizar Estadísticas
+UPDATE STATISTICS Cliente idx_nombre_completo;
+
+
+ ```
