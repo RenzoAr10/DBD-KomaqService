@@ -18,8 +18,8 @@ CREATE TABLE OrdenCompra (
 	id_orden_compra SERIAL PRIMARY KEY,
 	estado_oc VARCHAR(100),        
 	fecha_oc VARCHAR(100),
-        id_usuario SERIAL,
-        FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+	id_usuario SERIAL,
+	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
 CREATE TABLE Usuario (
