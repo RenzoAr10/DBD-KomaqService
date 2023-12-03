@@ -16,8 +16,10 @@ CREATE TABLE Cliente (
 
 CREATE TABLE OrdenCompra (
 	id_orden_compra SERIAL PRIMARY KEY,
-	estado_oc VARCHAR(100),
-	fecha_oc VARCHAR(100)
+	estado_oc VARCHAR(100),        
+	fecha_oc VARCHAR(100),
+        id_usuario SERIAL,
+        FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
 CREATE TABLE Usuario (
@@ -27,7 +29,6 @@ CREATE TABLE Usuario (
 	id_cliente SERIAL,
 	id_orden_compra SERIAL,
 	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
-	FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
 );
 	
 CREATE TABLE Empleado (
