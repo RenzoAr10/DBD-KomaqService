@@ -34,4 +34,8 @@ INSERT estado_solicitudes,usuario_id=id_del_cliente estado_revision="En curso", 
 ### Seguridad
 Nos aseguramos de que InfluxDB esté configurado de manera segura, con autenticación y autorización adecuadas para proteger los datos.
 
+### Monitoreo y Análisis
+InfluxDB es especialmente potente para el monitoreo y análisis en tiempo real debido a su capacidad para manejar grandes volúmenes de escrituras y consultas rápidas.
 
+### Integración con la Aplicación
+Se adapta la aplicación para interactuar con InfluxDB, utilizando sus bibliotecas cliente para el lenguaje de programación que se este usando.
