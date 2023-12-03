@@ -1,5 +1,8 @@
 # Descripcion de la implementacion BD no relacional
+
 InfluxDB es una base de datos de series temporales optimizada para operaciones de alta velocidad de escritura y lectura, y es ideal para manejar métricas, eventos y otros datos temporales.
+Implementar InfluxDB  podría ofrecer un rendimiento mejorado para datos temporales y métricas, pero también requerirá que se adapten los métodos actuales de manejo de datos para acomodar una estructura de almacenamiento y consulta diferente. Esto incluiría repensar los modelos de datos, cómo y cuándo se eswcribe en la base de datos, y cómo  se realizan las consultas para extraer información relevante.
+
 La implementación de InfluxDB para el proyecto implica un cambio significativo en la forma en que se almacenen y consulten los datos.
 
 ## ¿Cómo se podría implementar InfluxDB en el proyecto?
