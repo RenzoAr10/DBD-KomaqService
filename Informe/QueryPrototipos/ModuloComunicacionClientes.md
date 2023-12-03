@@ -44,3 +44,25 @@ VALUES ('Creación de solicitud de servicio', CURRENT_TIMESTAMP, 'usuario_client
 
 COMMIT TRANSACTION;
 ```
+
+#AJUSTE DEL INDICE
+```sql
+--Índice para la Tabla EstadoServicios:
+CREATE INDEX idx_usuario_id ON EstadoServicios(usuario_id);
+
+--Índice para la Columna fecha_inicio en la Tabla Servicios:
+CREATE INDEX idx_fecha_inicio ON Servicios(fecha_inicio);
+
+--Índices Basados en las Operaciones de Inserción:
+CREATE INDEX idx_servicio ON Servicios(servicio);
+CREATE INDEX idx_maquina ON Servicios(maquina);
+CREATE INDEX idx_modelo ON Servicios(modelo);
+
+--Índices Compuestos:
+CREATE INDEX idx_tipo_modelo ON Servicios(tipo_de_maquina, modelo);
+
+--Índice para la Tabla Notificaciones:
+CREATE INDEX idx_id_servicio_notificaciones ON Notificaciones(id_servicio);
+
+
+```
