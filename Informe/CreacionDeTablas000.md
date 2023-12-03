@@ -170,7 +170,7 @@ CREATE TABLE AccionRecomendada (
 ## INSERCION DE VALORES
  ```sql
 -- TABLA CLIENTE
-INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion, NombreEmpresa)
+INSERT INTO Cliente (nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion, NombreEmpresa)
 VALUES
   ('Juan', 'Gomez', 'Perez', 12345678901, '70123456', 975977906, 'juan.gomez@email.com', 'Av. Principal 123, Lima', 'Mminera las bambas s.a.'),
   ('Ana', 'Rodriguez', 'Lopez', 19876543210, '71234567', 912345678, 'ana.rodriguez@email.com', 'Jr. Las Flores 456, Arequipa', 'Compañia minera poderosa s.a.'),
