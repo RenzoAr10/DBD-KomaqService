@@ -88,3 +88,25 @@ UPDATE SET nombre_empresa='FERREYROS' , telefono_prov = '987541364', direccion_p
 WHERE idProveedor = 'PROV_05';
 ```
 
+
+AJUSTE DE INDICES
+```sql
+--Índice para Búsquedas en la Tabla Repuesto:
+CREATE INDEX idx_nombre_repuesto ON Repuesto(nombreRepuesto);
+
+--Índice para Operaciones de Rango en la Tabla Repuesto:
+CREATE INDEX idx_cantidad_repuesto ON Repuesto(cantidad);
+
+--Índice para la Tabla Proveedor:
+CREATE INDEX idx_id_proveedor ON Proveedor(id_proveedor);
+
+--Índices para las Tablas Relacionales:
+CREATE INDEX idx_prov_resp_proveedor ON ProveedorRepuesto(idProveedor);
+CREATE INDEX idx_prov_resp_repuesto ON ProveedorRepuesto(idRepuesto);
+
+Índice para Filtros de Búsqueda en la Tabla Proveedor:
+CREATE INDEX idx_nombre_empresa_proveedor ON Proveedor(nombre_empresa);
+CREATE INDEX idx_desempeno_proveedor ON Proveedor(desempeno);
+
+
+```
