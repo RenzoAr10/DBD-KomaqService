@@ -18,4 +18,20 @@ Las consultas en InfluxDB se hacen con su lenguaje de consulta InfluxQL, que tie
 
 Por ejemplo, para consultar el estado de las solicitudes de servicios se tiene:
 
+ ```sql
 SELECT * FROM estado_solicitudes WHERE usuario_id = 'id_del_cliente' AND time > now() - 1d
+
+ ```
+### Inserciones
+Las inserciones se realizan enviando puntos a la base de datos. Cada punto consiste en un conjunto de tags y fields, así como un timestamp.
+
+Por ejemplo:
+```sql
+INSERT estado_solicitudes,usuario_id=id_del_cliente estado_revision="En curso", detalles="Solicitud visualizada por técnico" 1465839830100400200
+
+ ```
+
+### Seguridad
+Nos aseguramos de que InfluxDB esté configurado de manera segura, con autenticación y autorización adecuadas para proteger los datos.
+
+
