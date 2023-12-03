@@ -329,9 +329,34 @@ INSERT INTO Maquina (nombre_maquina, modelo, combustible, motor, serie_motor, id
     ('Tractor John Deere 8335R', '8335R', 'Diésel', 'John Deere 9.0L 6-cyl', 'JD8335R123', 17),
     ('Excavadora Volvo EC350E', 'EC350E', 'Diésel', 'Volvo D8J', 'VOLVOEC350E567', 20),
     ('Cargadora Compacta Bobcat S650', 'S650', 'Diésel', 'Bobcat D24NAP', 'BOBCATS650890', 23),
-    ('Motoniveladora Caterpillar 140M', '140M', 'Diésel', 'Cat C7 ACERT', 'CAT140M456', 26),
+    ('Motoniveladora Caterpillar 140M', '140M', 'Diésel', 'Cat C7 ACERT', 'CAT140M456', 22),
     ('Compactadora Bomag BW120AD-5', 'BW120AD-5', 'Diésel', 'Kubota D1703-M-E3', 'BOMAGBW120AD', 29),
     ('Excavadora Case CX350D', 'CX350D', 'Diésel', 'FPT 6.7L', 'CASECX350D123', 2);
+   ('Cargador Frontal Volvo', 'L120H', 'Diésel', 'Volvo D8J', 'VOLVOL120H456', 17),
+   ('Compactadora Hamm HD+ 120i VO', 'HD+ 120i VO', 'Diésel', 'Kubota V3800', 'HAMMHD120I789', 6),
+   ('Excavadora Caterpillar 320', '320GC', 'Diésel', 'Cat C4.4 ACERT', 'CAT320GC789', 20),
+   ('Bulldozer Dressta TD-14M Extra', 'TD-14M Extra', 'Diésel', 'Cummins QSL9', 'DRESSTATD14M789', 11),
+   ('Grúa Terex RT555-1', 'RT555-1', 'Diésel', 'Cummins QSB 6.7L', 'TEREXRT555123', 23),
+   ('Compactadora Dynapac CA2500PD', 'CA2500PD', 'Diésel', 'Cummins B3.3', 'DYNAPACCA2500', 4),
+   ('Motoniveladora Komatsu GD555-5', 'GD555-5', 'Diésel', 'Komatsu SAA6D107E-1', 'KOMGD555678', 8),
+   ('Cargador Frontal Case 721G', '721G', 'Diésel', 'FPT 6.7L', 'CASE721G123', 1),
+   ('Retroexcavadora Case 590SN', '590SN', 'Diésel', 'FPT 3.4L', 'CASE590SN456', 25),
+   ('Tractor New Holland T7.315', 'T7.315', 'Diésel', 'FPT 6.7L', 'NH315123', 15),
+   ('Palas Eléctricas Hitachi EX5600-7', 'EX5600-7', 'Eléctrico', 'ABB AC Drive', 'HITACHIEX5600', 7),
+   ('Cargadora Compacta Gehl R135', 'R135', 'Diésel', 'Yanmar 4TNV98C', 'GEHLR135789', 18),
+   ('Excavadora Hyundai R220LC-9S', 'R220LC-9S', 'Diésel', 'Cummins B5.9-C', 'HYUNDAIR220123', 2),
+   ('Retroexcavadora JCB 3CX Eco', '3CX Eco', 'Diésel', 'JCB EcoMax T4F', 'JCBEco123', 16),
+   ('Motoniveladora CAT 140K', '140K', 'Diésel', 'Cat C7.1 ACERT', 'CAT140K456', 12),
+   ('Grúa Grove GMK6300L-1', 'GMK6300L-1', 'Diésel', 'Mercedes-Benz OM471LA', 'GROVEGMK6300', 21),
+   ('Bulldozer John Deere 850K', '850K', 'Diésel', 'John Deere 6068H', 'JD850K789', 10),
+   ('Excavadora Doosan DX225LC-5', 'DX225LC-5', 'Diésel', 'Doosan DL06', 'DOOSANDX225567', 3),
+   ('Cargadora Compacta Kubota SSV75', 'SSV75', 'Diésel', 'Kubota V3307', 'KUBOTASSV75890', 24),
+   ('Tractor Massey Ferguson 7719S', '7719S', 'Diésel', 'AGCO Power 4.9L', 'MF7719S456', 14),
+   ('Excavadora Takeuchi TB240', 'TB240', 'Diésel', 'Yanmar 4TNV86', 'TAKEUCHITB240123', 9),
+   ('Excavadora Kobelco SK350LC-10', 'SK350LC-10', 'Diésel', 'HINO J05E', 'KOBELCOSK350567', 13),
+   ('Palas Eléctricas Caterpillar 7495 HF', '7495 HF', 'Eléctrico', 'ABB AC Drive', 'CAT7495HF789', 22),
+   ('Excavadora Kubota U55-4', 'U55-4', 'Diésel', 'Kubota V2403', 'KUBOTAU55456', 5);
+
 
 
 -- TABLA PROBLEMAS
