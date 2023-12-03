@@ -197,6 +197,51 @@ VALUES
   ('Facundo', 'Gutierrez', 'Diaz', 11234567890, '98901234', 911234567, 'facundo.gutierrez@email.com', 'Av. Los Olivos 567, Ayacucho', 'Minerales del Norte S.A.A.'),
   ('Antonella', 'Castro', 'Herrera', 12345678901, '99012345', 922345678, 'antonella.castro@email.com', 'Calle Azul 890, Tacna', 'Exploraciones Mineras del Sur S.A.C.');
 
+-- TABLA ORDEN DE COMPRA
+INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
+('Finalizado', '2023-04-20'),
+('En proceso', '2023-04-21'),
+('En proceso', '2023-04-22'),
+('Finalizado', '2023-04-23'),
+('Finalizado', '2023-04-24'),
+('Finalizado', '2023-05-01'),
+('En proceso', '2023-05-02'),
+('En proceso', '2023-05-03'),
+('Finalizado', '2023-05-04'),
+('Finalizado', '2023-05-05'),
+('En proceso', '2023-05-06'),
+('En proceso', '2023-05-07'),
+('Finalizado', '2023-05-08'),
+('Finalizado', '2023-05-09'),
+('En proceso', '2023-05-10'),
+('En proceso', '2023-05-11'),
+('Finalizado', '2023-05-12'),
+('Finalizado', '2023-05-13'),
+('En proceso', '2023-05-14'),
+('En proceso', '2023-05-15'),
+('Finalizado', '2023-05-16'),
+('Finalizado', '2023-05-17'),
+('En proceso', '2023-05-18'),
+('En proceso', '2023-05-19'),
+('Finalizado', '2023-05-20'),
+('Finalizado', '2023-05-21'),
+('En proceso', '2023-05-22'),
+('En proceso', '2023-05-23'),
+('Finalizado', '2023-05-24'),
+('Finalizado', '2023-05-25'),
+('En proceso', '2023-05-26'),
+('En proceso', '2023-05-27'),
+('Finalizado', '2023-05-28'),
+('Finalizado', '2023-05-29'),
+('En proceso', '2023-05-30'),
+('En proceso', '2023-05-31'),
+('Finalizado', '2023-06-01'),
+('Finalizado', '2023-06-02'),
+('En proceso', '2023-06-03'),
+('En proceso', '2023-06-04'),
+('Finalizado', '2023-06-05'),
+('Finalizado', '2023-06-06');
+
 
 -- TABLA USUARIO
 INSERT INTO Usuario (id_usuario, nombre_usuario, contrasena_usuario, id_cliente, id_orden_compra) VALUES
@@ -221,13 +266,6 @@ INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, ser
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ004', 'Montacargas Hyster', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 'US004');
 INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ005', 'Retroexcavadora JCB', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 'US005');
 
--- TABLA ORDEN DE COMPRA
-INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
-('OC001', 'Finalizado', '2023-04-20'),
-('OC002', 'En proceso', '2023-04-21'),
-('OC003', 'En proceso', '2023-04-22'),
-('OC004', 'Finalizado', '2023-04-23'),
-('OC005', 'Finalizado', '2023-04-24');
 
 -- TABLA PROBLEMAS
 INSERT INTO Problemas (id_problema, tipo_problema, modelo, id_maquina) VALUES
