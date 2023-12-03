@@ -166,16 +166,36 @@ CREATE TABLE AccionRecomendada (
 -- TABLA CLIENTE
 INSERT INTO Cliente (id_cliente, nombre, apellido_paterno, apellido_materno, RUC, dni, telefono, email, direccion, NombreEmpresa)
 VALUES
-   ('CL001', 'Juan', 'Gomez', 'Perez', 12345678901, '70123456', 975977906, 'juan.gomez@email.com', 'Av. Principal 123, Lima', 'Mminera las bambas s.a.'),
-   ('CL002', 'Ana', 'Rodriguez', 'Lopez', 19876543210, '71234567', 912345678, 'ana.rodriguez@email.com', 'Jr. Las Flores 456, Arequipa', 'Compañia minera poderosa s.a.'),
-   ('CL003', 'Carlos', 'Diaz', 'Cordova', 17654321098, '72345678', 934567890, 'carlos.diaz@email.com', 'Calle Central 789, Trujillo', 'Minera yanacocha s.r.l.'),
-   ('CL004', 'Laura', 'Ramirez', 'Mendoza', 19987654321, '73456789', 945678901, 'laura.ramirez@email.com', 'Av. Independencia 012, Chiclayo', 'Volcan compañía minera s.a.a.'),
-   ('CL005', 'Pedro', 'Martinez', 'Santos', 11234567890, '74567890', 956789012, 'pedro.martinez@email.com', 'Jr. Amazonas 345, Huancayo', 'Compañia minera ares s.a.c.'),
-   ('CL006', 'Luisa', 'Garcia', 'Flores', 19876543210, '75678901', 967890123, 'luisa.garcia@email.com', 'Av. El Sol 678, Iquitos', 'Nexa resources peru'),
-   ('CL007', 'Roberto', 'Sanchez', 'Torres', 12345678901, '76789012', 978901234, 'roberto.sanchez@email.com', 'Calle Primavera 901, Piura', 'Shougang hierro peru s.a.a.'),
-   ('CL008', 'Elena', 'Fernandez', 'Luna', 11234567890, '77890123', 989012345, 'elena.fernandez@email.com', 'Jr. Los Pinos 234, Cusco', 'Anglo american quellaveco s.a.'),
-   ('CL009', 'Javier', 'Hernandez', 'Luna', 11234567890, '78901234', 990123456, 'javier.hernandez@email.com', 'Av. Las Palmeras 567, Ayacucho', 'Marcobre s.a.c.'),
-   ('CL010', 'Carmen', 'Jimenez', 'Cruz', 12345678901, '79012345', 911234567, 'carmen.jimenez@email.com', 'Calle Victoria 890, Tacna', 'Minera chinalco peru s.a.');
+  ('Juan', 'Gomez', 'Perez', 12345678901, '70123456', 975977906, 'juan.gomez@email.com', 'Av. Principal 123, Lima', 'Mminera las bambas s.a.'),
+  ('Ana', 'Rodriguez', 'Lopez', 19876543210, '71234567', 912345678, 'ana.rodriguez@email.com', 'Jr. Las Flores 456, Arequipa', 'Compañia minera poderosa s.a.'),
+  ('Carlos', 'Diaz', 'Cordova', 17654321098, '72345678', 934567890, 'carlos.diaz@email.com', 'Calle Central 789, Trujillo', 'Minera yanacocha s.r.l.'),
+  ('Laura', 'Ramirez', 'Mendoza', 19987654321, '73456789', 945678901, 'laura.ramirez@email.com', 'Av. Independencia 012, Chiclayo', 'Volcan compañía minera s.a.a.'),
+  ('Pedro', 'Martinez', 'Santos', 11234567890, '74567890', 956789012, 'pedro.martinez@email.com', 'Jr. Amazonas 345, Huancayo', 'Compañia minera ares s.a.c.'),
+  ('Luisa', 'Garcia', 'Flores', 19876543210, '75678901', 967890123, 'luisa.garcia@email.com', 'Av. El Sol 678, Iquitos', 'Nexa resources peru'),
+  ('Roberto', 'Sanchez', 'Torres', 12345678901, '76789012', 978901234, 'roberto.sanchez@email.com', 'Calle Primavera 901, Piura', 'Shougang hierro peru s.a.a.'),
+  ('Elena', 'Fernandez', 'Luna', 11234567890, '77890123', 989012345, 'elena.fernandez@email.com', 'Jr. Los Pinos 234, Cusco', 'Anglo american quellaveco s.a.'),
+  ('Javier', 'Hernandez', 'Luna', 11234567890, '78901234', 990123456, 'javier.hernandez@email.com', 'Av. Las Palmeras 567, Ayacucho', 'Marcobre s.a.c.'),
+  ('Carmen', 'Jimenez', 'Cruz', 12345678901, '79012345', 911234567, 'carmen.jimenez@email.com', 'Calle Victoria 890, Tacna', 'Minera chinalco peru s.a.'),
+  ('María', 'Lopez', 'Gonzalez', 98765432109, '80123456', 923456789, 'maria.lopez@email.com', 'Av. Libertad 567, Lima', 'Minera San Jorge S.A.C.'),
+  ('Alejandro', 'Torres', 'Martinez', 87654321098, '81234567', 934567890, 'alejandro.torres@email.com', 'Jr. Los Pinos 123, Arequipa', 'Inversiones Mineras del Sur S.A.'),
+  ('Sofía', 'Gutierrez', 'Paredes', 76543210987, '82345678', 945678901, 'sofia.gutierrez@email.com', 'Calle Sol 789, Trujillo', 'Minería Moderna S.R.L.'),
+  ('Gabriel', 'Mendoza', 'Salazar', 65432109876, '83456789', 956789012, 'gabriel.mendoza@email.com', 'Av. Primavera 012, Chiclayo', 'Minerales del Norte S.A.A.'),
+  ('Valentina', 'Cruz', 'Herrera', 54321098765, '84567890', 967890123, 'valentina.cruz@email.com', 'Jr. Los Olivos 345, Huancayo', 'Inversiones Mineras del Centro S.A.C.'),
+  ('Lucas', 'Castro', 'Silva', 87654321098, '85678901', 978901234, 'lucas.castro@email.com', 'Calle Azul 678, Iquitos', 'Minerales del Amazonas'),
+  ('Camila', 'Flores', 'Diaz', 98765432109, '86789012', 989012345, 'camila.flores@email.com', 'Av. Las Palmeras 901, Piura', 'Minera San Miguel S.A.A.'),
+  ('Matías', 'Santos', 'Vega', 65432109876, '87890123', 990123456, 'matias.santos@email.com', 'Jr. Los Alamos 234, Cusco', 'Exploraciones Mineras del Sur S.A.C.'),
+  ('Isabella', 'Perez', 'Gomez', 65432109876, '88901234', 911234567, 'isabella.perez@email.com', 'Av. Los Pinos 567, Ayacucho', 'Minería del Futuro S.A.C.'),
+  ('Martín', 'Hernandez', 'Fernandez', 98765432109, '89012345', 922345678, 'martin.hernandez@email.com', 'Calle Sucre 890, Tacna', 'Minerales del Perú S.A.C.'),
+  ('Mariano', 'Jimenez', 'Cabrera', 12345678901, '90123456', 933456789, 'mariano.jimenez@email.com', 'Jr. Arequipa 345, Lima', 'Minerales del Norte S.A.C.'),
+  ('Valeria', 'Garcia', 'Mendez', 19876543210, '91234567', 944567890, 'valeria.garcia@email.com', 'Av. Grau 678, Arequipa', 'Minería Moderna S.R.L.'),
+  ('Nicolás', 'Martinez', 'Rios', 17654321098, '92345678', 955678901, 'nicolas.martinez@email.com', 'Calle Luna 012, Trujillo', 'Minerales del Centro S.A.A.'),
+  ('Martina', 'Diaz', 'Torres', 19987654321, '93456789', 966789012, 'martina.diaz@email.com', 'Jr. Los Laureles 123, Chiclayo', 'Minería del Futuro S.A.C.'),
+  ('Ignacio', 'Ramirez', 'Cruz', 11234567890, '94567890', 977890123, 'ignacio.ramirez@email.com', 'Av. Los Robles 456, Huancayo', 'Minera San Miguel S.A.A.'),
+  ('Renata', 'Fernandez', 'Luna', 19876543210, '95678901', 988901234, 'renata.fernandez@email.com', 'Calle Sol 789, Iquitos', 'Minerales del Amazonas'),
+  ('Santiago', 'Sanchez', 'Mendoza', 12345678901, '96789012', 999012345, 'santiago.sanchez@email.com', 'Av. Las Flores 901, Piura', 'Inversiones Mineras del Sur S.A.C.'),
+  ('Delfina', 'Lopez', 'Silva', 11234567890, '97890123', 900123456, 'delfina.lopez@email.com', 'Jr. Los Pinos 234, Cusco', 'Minera San Jorge S.A.C.'),
+  ('Facundo', 'Gutierrez', 'Diaz', 11234567890, '98901234', 911234567, 'facundo.gutierrez@email.com', 'Av. Los Olivos 567, Ayacucho', 'Minerales del Norte S.A.A.'),
+  ('Antonella', 'Castro', 'Herrera', 12345678901, '99012345', 922345678, 'antonella.castro@email.com', 'Calle Azul 890, Tacna', 'Exploraciones Mineras del Sur S.A.C.');
 
 
 -- TABLA USUARIO
