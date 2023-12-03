@@ -15,21 +15,21 @@ CREATE TABLE Cliente (
 );
 
 
-CREATE TABLE Usuario (
-	id_usuario SERIAL PRIMARY KEY,
-	nombre_usuario VARCHAR(50),
-	contrasena_usuario VARCHAR(50),
-	id_cliente SERIAL,
-	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
-);
-
-
 CREATE TABLE OrdenCompra (
 	id_orden_compra SERIAL PRIMARY KEY,
 	estado_oc VARCHAR(100),        
 	fecha_oc VARCHAR(100),
 	id_usuario SERIAL,
 	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+);
+
+
+CREATE TABLE Usuario (
+	id_usuario SERIAL PRIMARY KEY,
+	nombre_usuario VARCHAR(50),
+	contrasena_usuario VARCHAR(50),
+	id_cliente SERIAL,
+	FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
 );
 
 	
@@ -44,7 +44,7 @@ CREATE TABLE Empleado (
 	especializacion VARCHAR(100),
 	cargo VARCHAR(255),
 	id_jefe SERIAL,
-    FOREIGN KEY (id_jefe) REFERENCES Empleado(id_empleado)
+	FOREIGN KEY (id_jefe) REFERENCES Empleado(id_empleado)
 );
 
 
@@ -75,23 +75,26 @@ CREATE TABLE Servicio (
 CREATE TABLE NomUsuario (
 	id_nomusuario SERIAL PRIMARY KEY,
 	nombre_usuario VARCHAR(50),
-    contrasena_usuario VARCHAR(50),
+	contrasena_usuario VARCHAR(50),
 	id_empleado SERIAL,
 	id_servicio SERIAL,
-    FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
+	FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
 	FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
 );
 
 	
 CREATE TABLE Maquina (
-	id_maquina SERIAL PRIMARY KEY,
-	nombre_maquina VARCHAR(100),
-	modelo VARCHAR(100),
-	combustible VARCHAR(100),
-	motor VARCHAR(100),
-	serie_motor VARCHAR(100)
-
+    id_maquina SERIAL PRIMARY KEY,
+    nombre_maquina VARCHAR(100),
+    modelo VARCHAR(100),
+    combustible VARCHAR(100),
+    motor VARCHAR(100),
+    serie_motor VARCHAR(100),
+    id_usuario SERIAL,
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
+
+
 CREATE TABLE MaquinaOrdenCompra (
     id_relacion SERIAL PRIMARY KEY,
     id_maquina INT,
@@ -200,51 +203,6 @@ VALUES
   ('Facundo', 'Gutierrez', 'Diaz', 11234567890, '98901234', 911234567, 'facundo.gutierrez@email.com', 'Av. Los Olivos 567, Ayacucho', 'Minerales del Norte S.A.A.'),
   ('Antonella', 'Castro', 'Herrera', 12345678901, '99012345', 922345678, 'antonella.castro@email.com', 'Calle Azul 890, Tacna', 'Exploraciones Mineras del Sur S.A.C.');
 
--- TABLA ORDEN DE COMPRA
-INSERT INTO OrdenCompra (id_orden_compra, fecha_orden) VALUES
-('Finalizado', '2023-04-20'),
-('En proceso', '2023-04-21'),
-('En proceso', '2023-04-22'),
-('Finalizado', '2023-04-23'),
-('Finalizado', '2023-04-24'),
-('Finalizado', '2023-05-01'),
-('En proceso', '2023-05-02'),
-('En proceso', '2023-05-03'),
-('Finalizado', '2023-05-04'),
-('Finalizado', '2023-05-05'),
-('En proceso', '2023-05-06'),
-('En proceso', '2023-05-07'),
-('Finalizado', '2023-05-08'),
-('Finalizado', '2023-05-09'),
-('En proceso', '2023-05-10'),
-('En proceso', '2023-05-11'),
-('Finalizado', '2023-05-12'),
-('Finalizado', '2023-05-13'),
-('En proceso', '2023-05-14'),
-('En proceso', '2023-05-15'),
-('Finalizado', '2023-05-16'),
-('Finalizado', '2023-05-17'),
-('En proceso', '2023-05-18'),
-('En proceso', '2023-05-19'),
-('Finalizado', '2023-05-20'),
-('Finalizado', '2023-05-21'),
-('En proceso', '2023-05-22'),
-('En proceso', '2023-05-23'),
-('Finalizado', '2023-05-24'),
-('Finalizado', '2023-05-25'),
-('En proceso', '2023-05-26'),
-('En proceso', '2023-05-27'),
-('Finalizado', '2023-05-28'),
-('Finalizado', '2023-05-29'),
-('En proceso', '2023-05-30'),
-('En proceso', '2023-05-31'),
-('Finalizado', '2023-06-01'),
-('Finalizado', '2023-06-02'),
-('En proceso', '2023-06-03'),
-('En proceso', '2023-06-04'),
-('Finalizado', '2023-06-05'),
-('Finalizado', '2023-06-06');
-
 
 -- TABLA USUARIO
 INSERT INTO Usuario (nombre_usuario, contrasena_usuario, id_cliente) VALUES
@@ -272,7 +230,54 @@ INSERT INTO Usuario (nombre_usuario, contrasena_usuario, id_cliente) VALUES
 ('srios', 'password22', 22),
 ('tdiaz', 'password23', 23),
 ('mcruz', 'password24', 24),
-('iramirez', 'password25', 25)
+('iramirez', 'password25', 25);
+
+
+-- TABLA ORDEN DE COMPRA
+INSERT INTO OrdenCompra (estado_oc, fecha_oc, id_usuario) VALUES
+  ('Finalizado', '2023-04-20', 14),
+  ('En proceso', '2023-04-21', 3),
+  ('En proceso', '2023-04-22', 8),
+  ('Finalizado', '2023-04-23', 5),
+  ('Finalizado', '2023-04-24', 20),
+  ('Finalizado', '2023-05-01', 10),
+  ('En proceso', '2023-05-02', 18),
+  ('En proceso', '2023-05-03', 12),
+  ('Finalizado', '2023-05-04', 7),
+  ('Finalizado', '2023-05-05', 25),
+  ('En proceso', '2023-05-06', 1),
+  ('En proceso', '2023-05-07', 16),
+  ('Finalizado', '2023-05-08', 22),
+  ('Finalizado', '2023-05-09', 9),
+  ('En proceso', '2023-05-10', 2),
+  ('En proceso', '2023-05-11', 19),
+  ('Finalizado', '2023-05-12', 15),
+  ('Finalizado', '2023-05-13', 11),
+  ('En proceso', '2023-05-14', 6),
+  ('En proceso', '2023-05-15', 13),
+  ('Finalizado', '2023-05-16', 24),
+  ('Finalizado', '2023-05-17', 17),
+  ('En proceso', '2023-05-18', 21),
+  ('En proceso', '2023-05-19', 23),
+  ('Finalizado', '2023-05-20', 4),
+  ('Finalizado', '2023-05-21', 8),
+  ('En proceso', '2023-05-22', 14),
+  ('En proceso', '2023-05-23', 7),
+  ('Finalizado', '2023-05-24', 16),
+  ('Finalizado', '2023-05-25', 5),
+  ('En proceso', '2023-05-26', 12),
+  ('En proceso', '2023-05-27', 2),
+  ('Finalizado', '2023-05-28', 18),
+  ('Finalizado', '2023-05-29', 10),
+  ('En proceso', '2023-05-30', 22),
+  ('En proceso', '2023-05-31', 9),
+  ('Finalizado', '2023-06-01', 1),
+  ('Finalizado', '2023-06-02', 25),
+  ('En proceso', '2023-06-03', 6),
+  ('En proceso', '2023-06-04', 13),
+  ('Finalizado', '2023-06-05', 19),
+  ('Finalizado', '2023-06-06', 15);
+
 
 -- TABLA EMPLEADO
 
@@ -311,11 +316,22 @@ INSERT INTO Empleado (nombre, apellido_paterno, apellido_materno, dni, telefono,
 ('Carmen', 'Ramirez', 'Sanchez', '11223344', '987653465', 'cramirez@komq.com', 'Mecánico', 'Especialista de Campo', 1);
 
 -- TABLA MAQUINA
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ001', 'Telehandler Manitou', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 'US001');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ002', 'Cargador Frontal Cat', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 'US002');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ003', 'Excavadora Komatsu', 'PC350LC-8', 'Diésel', 'Komatsu SAA6D114E-3', 'KOMEX1234', 'US003');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ004', 'Montacargas Hyster', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 'US004');
-INSERT INTO Maquina (id_maquina, nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES ('MAQ005', 'Retroexcavadora JCB', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 'US005');
+INSERT INTO Maquina (nombre_maquina, modelo, combustible, motor, serie_motor, id_usuario) VALUES
+    ('Manipulador Telescópico', 'MT-X 1030', 'Diésel', 'Perkins 1104D-44TA', 'U31540B', 15),
+    ('Cargador Frontal Caterpillar', 'CAT 980K', 'Diésel', 'Cat C13 ACERT', 'X3C1234B', 12),
+    ('Excavadora Komatsu PC350', 'PC350LC-8', 'Diésel', 'Komatsu SAA6D114E-3', 'KOMEX1234', 7),
+    ('Montacargas Hyster H50FT', 'H50FT', 'Gas LP', 'Hyster H5.0FT', 'HYSTF12345', 3),
+    ('Retroexcavadora JCB 3CX', '3CX 14', 'Diésel', 'JCB EcoMax T4', 'JCB3CX4045', 22),
+    ('Excavadora Hitachi ZX210LC', 'ZX210LC', 'Diésel', 'Isuzu AI-4HK1XYSS', 'HITZX210123', 5),
+    ('Bulldozer Caterpillar D6', 'D6', 'Diésel', 'Cat C9.3 ACERT', 'CATD612345', 8),
+    ('Grúa Liebherr LTM 1200-5.1', 'LTM 1200-5.1', 'Diésel', 'Liebherr D934S A6', 'LIEBHERR1200', 11),
+    ('Palas Eléctricas P&H 4100XPC', '4100XPC', 'Eléctrico', 'ABB AC1600SD', 'PH4100XPC789', 14),
+    ('Tractor John Deere 8335R', '8335R', 'Diésel', 'John Deere 9.0L 6-cyl', 'JD8335R123', 17),
+    ('Excavadora Volvo EC350E', 'EC350E', 'Diésel', 'Volvo D8J', 'VOLVOEC350E567', 20),
+    ('Cargadora Compacta Bobcat S650', 'S650', 'Diésel', 'Bobcat D24NAP', 'BOBCATS650890', 23),
+    ('Motoniveladora Caterpillar 140M', '140M', 'Diésel', 'Cat C7 ACERT', 'CAT140M456', 26),
+    ('Compactadora Bomag BW120AD-5', 'BW120AD-5', 'Diésel', 'Kubota D1703-M-E3', 'BOMAGBW120AD', 29),
+    ('Excavadora Case CX350D', 'CX350D', 'Diésel', 'FPT 6.7L', 'CASECX350D123', 2);
 
 
 -- TABLA PROBLEMAS
