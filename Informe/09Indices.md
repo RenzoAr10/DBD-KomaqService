@@ -100,6 +100,34 @@ CREATE INDEX idx_repuesto_id_factura ON repuesto (id_factura);
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/querys/imagescostosIndices/DESPUESrepuesto(id_factura).png)
 
 
+AJUSTE DE INDICES
+
+```sql
+
+--Mas que todo recomendacion en caso de  eliminar un índice de clave primaria, no se hace a menos que se este rediseñando cómo se manejan las claves en la base de datos
+
+--Eliminar indices
+DROP INDEX IF EXISTS idx_factura_id_factura ON factura;
+DROP INDEX IF EXISTS idx_servicio_id_factura ON servicio;
+DROP INDEX IF EXISTS idx_repuesto_id_factura ON repuesto;
+
+-- Ejemplo de índice filtrado para registros activos en una tabla de facturas
+CREATE INDEX idx_factura_activa ON factura (id_factura) WHERE estado = 'Activa';
+
+-- Ejemplo de índice compuesto basado en el id de factura y otra columna comúnmente usada
+CREATE INDEX idx_factura_composite ON factura (id_factura, otra_columna);
+
+-- Los índices estan en las columnas utilizadas en las cláusulas JOIN
+CREATE INDEX idx_servicio_join ON servicio (id_factura, id_otro_campo);
+
+-- Reconstruir un índice
+ALTER INDEX idx_factura_id_factura ON factura REBUILD;
+
+-- Actualizar estadísticas
+UPDATE STATISTICS factura idx_factura_id_factura;
+
+ ```
+
 # Informe de Gestion
 
 **PRO7001**
