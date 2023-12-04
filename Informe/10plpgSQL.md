@@ -63,7 +63,10 @@ END $$;
 ![GestiónOC v2](https://github.com/RenzoAr10/DBD-KomaqService/assets/144966624/cb6016a7-22ea-4728-a190-ac7828a50c05)
 
 ```sql
-CREATE OR REPLACE FUNCTION info_orden_compra()
+CREATE OR REPLACE FUNCTION info_orden_compra(
+    fecha_inicio_param DATE,
+    fecha_fin_param DATE
+)
 RETURNS TABLE (
     id_orden_compra VARCHAR(10),
     fecha_oc VARCHAR(100),
@@ -71,7 +74,8 @@ RETURNS TABLE (
     cantidad_servicios INT,
     nombre_cliente TEXT,
     proveedor VARCHAR(100),
-    costo_total DECIMAL(8,2)
+    costo_total DECIMAL(8,2),
+    costo_promedio DECIMAL(8,2)
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -82,26 +86,30 @@ BEGIN
         S.cantidad_servicios,
         CONCAT(C.apellido_paterno, ' ', C.apellido_materno, ' ', C.nombre) AS nombre_cliente,
         P.nombre_empresa AS proveedor,
-        F.costo_total
+        F.costo_total,
+        F.costo_total / S.cantidad_servicios AS costo_promedio
     FROM OrdenCompra OC
-    JOIN  Usuario U ON OC.id_orden_compra = U.id_orden_compra
-    JOIN  Cliente C ON U.id_cliente = C.id_cliente
-    JOIN  Servicio S ON OC.id_orden_compra = S.id_orden_compra
-    JOIN  Repuesto R ON R.id_servicio = S.id_servicio
-    JOIN  Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
-    JOIN  Proveedor P ON PR.id_proveedor = P.id_proveedor
-    LEFT JOIN  Factura F ON S.id_factura = F.id_factura;
+    JOIN Usuario U ON OC.id_orden_compra = U.id_orden_compra
+    JOIN Cliente C ON U.id_cliente = C.id_cliente
+    JOIN Servicio S ON OC.id_orden_compra = S.id_orden_compra
+    JOIN Repuesto R ON R.id_servicio = S.id_servicio
+    JOIN Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
+    JOIN Proveedor P ON PR.id_proveedor = P.id_proveedor
+    LEFT JOIN Factura F ON S.id_factura = F.id_factura
+    WHERE OC.fecha_oc BETWEEN fecha_inicio_param AND fecha_fin_param;
+    
     RETURN;
-END;
-$$ LANGUAGE plpgsql;
 
-SELECT * FROM info_orden_compra();
-```
+---------
+--Asi puedo ver el por ejemplo solo del ultimo año
+SELECT * FROM info_orden_compra('2023-01-01'::DATE, '2023-12-31'::DATE);
+ ```
+
 ```sql
---Actualizando estado de orden de compra
+--Actualizando el estado de orden de compra
 
 CREATE OR REPLACE FUNCTION actualizar_estado_orden_compra(
-    p_id_orden_compra VARCHAR(10)
+    p_id_orden_compra INT
 )
 RETURNS VARCHAR(100) AS $$
 DECLARE
