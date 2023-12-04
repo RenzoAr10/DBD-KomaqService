@@ -84,13 +84,13 @@ BEGIN
         P.nombre_empresa AS proveedor,
         F.costo_total
     FROM OrdenCompra OC
-    JOIN Usuario U ON OC.id_orden_compra = U.id_orden_compra
-    JOIN Cliente C ON U.id_cliente = C.id_cliente
-    JOIN Servicio S ON OC.id_orden_compra = S.id_orden_compra
-    JOIN Repuesto R ON R.id_servicio = S.id_servicio
-    JOIN Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
-    JOIN Proveedor P ON PR.id_proveedor = P.id_proveedor
-    LEFT JOIN Factura F ON S.id_factura = F.id_factura;
+    JOIN  Usuario U ON OC.id_orden_compra = U.id_orden_compra
+    JOIN  Cliente C ON U.id_cliente = C.id_cliente
+    JOIN  Servicio S ON OC.id_orden_compra = S.id_orden_compra
+    JOIN  Repuesto R ON R.id_servicio = S.id_servicio
+    JOIN  Proveedor_Repuesto PR ON R.id_repuesto = PR.id_repuesto
+    JOIN  Proveedor P ON PR.id_proveedor = P.id_proveedor
+    LEFT JOIN  Factura F ON S.id_factura = F.id_factura;
     RETURN;
 END;
 $$ LANGUAGE plpgsql;
@@ -101,9 +101,11 @@ SELECT * FROM info_orden_compra();
 --Actualizando estado de orden de compra
 
 CREATE OR REPLACE FUNCTION actualizar_estado_orden_compra(
-    p_id_orden_compra INT)
+    p_id_orden_compra VARCHAR(10)
+)
 RETURNS VARCHAR(100) AS $$
-DECLARE nuevo_estado VARCHAR(100);
+DECLARE
+    nuevo_estado VARCHAR(100);
 BEGIN
     UPDATE OrdenCompra
     SET estado_oc = 'Finalizado'
@@ -114,3 +116,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
+
