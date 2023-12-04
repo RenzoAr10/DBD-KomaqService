@@ -590,28 +590,28 @@ INSERT INTO Proveedor_Repuesto (id_proveedor, id_repuesto) VALUES
 (3, 41);
 
 -- TABLA ACCION RECOMENDADA
-INSERT INTO AccionRecomendada (id_accion, nombre_accion, costo_asociado, id_orden_compra)
-VALUES
-  ('ACC001', 'Lavado de cada componente', 600, 'OC003'),
-  ('ACC002', 'Reemplazo y Armado de piñón de ataque', 1200, 'OC003'),
-  ('ACC003', 'Montaje de eje propulsor', 800, 'OC004'),
-  ('ACC004', 'Armado del housing de pistón de freno Lh y Rh', 700, 'OC004'),
-  ('ACC005', 'Reemplazo de resortes y pernos de pistón de servicio', 550, 'OC005'),
-  ('ACC006', 'Reemplazo de tapa de bocamasa', 900, 'OC005'),
-  ('ACC007', 'Montaje de fundas', 600, 'OC002'),
-  ('ACC008', 'Reemplazo de bocina de bocamasa', 550, 'OC002'),
-  ('ACC009', 'Reemplazo de reten, rodajes y pistas de bocamasa (Mandos finales)', 1000, 'OC005'),
-  ('ACC010', 'Reemplazo de pernos de tapa de bocamasa', 700, 'OC001'),
-  ('ACC011', 'Armado de diferencial', 1100, 'OC003'),
-  ('ACC012', 'Se midió juego de Backlash', 600, 'OC003'),
-  ('ACC013', 'Montaje de tapa de cubos reductores', 800, 'OC004'),
-  ('ACC014', 'Reemplazo de todos los o-ring', 500, 'OC004'),
-  ('ACC015', 'Metalización de eje propulsor', 700, 'OC004'),
-  ('ACC016', 'Reemplazo de bocinas de tapas de bocamasa', 550, 'OC005'),
-  ('ACC017', 'Reemplazo de 4 arandelas de los espárragos', 600, 'OC005'),
-  ('ACC018', 'Reemplazo de respiradero', 650, 'OC005'),
-  ('ACC019', 'Montaje de housing de freno Lh y Rh', 750, 'OC004'),
-  ('ACC020', 'Se verificó pisada de los dientes de piñón de ataque y la corona', 900, 'OC004');
+
+INSERT INTO AccionRecomendada (nombre_accion, costo_asociado, id_orden_compra) VALUES
+  ('Lavado de cada componente', 600, 7),
+  ('Reemplazo y Armado de piñón de ataque', 1200, 15),
+  ('Montaje de eje propulsor', 800, 23),
+  ('Armado del housing de pistón de freno Lh y Rh', 700, 31),
+  ('Reemplazo de resortes y pernos de pistón de servicio', 550, 39),
+  ('Reemplazo de tapa de bocamasa', 900, 5),
+  ('Montaje de fundas', 600, 12),
+  ('Reemplazo de bocina de bocamasa', 550, 20),
+  ('Reemplazo de reten, rodajes y pistas de bocamasa (Mandos finales)', 1000, 28),
+  ('Reemplazo de pernos de tapa de bocamasa', 700, 36),
+  ('Armado de diferencial', 1100, 2),
+  ('Se midió juego de Backlash', 600, 10),
+  ('Montaje de tapa de cubos reductores', 800, 18),
+  ('Reemplazo de todos los o-ring', 500, 26),
+  ('Metalización de eje propulsor', 700, 34),
+  ('Reemplazo de bocinas de tapas de bocamasa', 550, 42),
+  ('Reemplazo de 4 arandelas de los espárragos', 600, 8),
+  ('Reemplazo de respiradero', 650, 16),
+  ('Montaje de housing de freno Lh y Rh', 750, 24),
+  ('Se verificó pisada de los dientes de piñón de ataque y la corona', 900, 32);
 
 ```
 
