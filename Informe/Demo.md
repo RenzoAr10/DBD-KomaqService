@@ -1,6 +1,7 @@
 # Aldave (Orden de compra)
 https://github.com/RenzoAr10/DemoQomak.git
 
+Demo 02: https://github.com/RenzoAr10/DemoQomak02.git
 
 
 # Palomino (Gestionar - Registrar Servicio)
