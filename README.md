@@ -56,3 +56,7 @@ Contacto: Jasmin Aldave Reyes (Administradora de la empresa)
 
 [Versión Final de la Aplicación ](Informe/Demo.md)
 
+# MONOGRAFIA
+
+[NoSQL]()
+[Documentacion]()
