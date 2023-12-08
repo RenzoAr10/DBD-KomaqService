@@ -1,4 +1,4 @@
-# Aldave (Orden de compra)
+# Aldave (Cliente)
 https://github.com/RenzoAr10/DemoQomak.git
 
 Demo 02: https://github.com/RenzoAr10/DemoQomak02.git
