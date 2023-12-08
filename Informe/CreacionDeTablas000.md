@@ -18,11 +18,16 @@ CREATE TABLE Cliente (
 CREATE TABLE OrdenCompra (
 	id_orden_compra SERIAL PRIMARY KEY,
 	estado_oc VARCHAR(100),        
-	fecha_oc VARCHAR(100),
-	id_usuario SERIAL,
-	FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
-);
+	fecha_oc VARCHAR(100)
 
+);
+CREATE TABLE MaquinaOrdenCompra (
+    id_relacion SERIAL PRIMARY KEY,
+    id_maquina SERIAL,
+    id_orden_compra SERIAL,
+    FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina),
+    FOREIGN KEY (id_ordencompra) REFERENCES OrdenCompra(id_orden_compra)
+);
 
 CREATE TABLE Usuario (
 	id_usuario SERIAL PRIMARY KEY,
@@ -91,12 +96,16 @@ CREATE TABLE Maquina (
     modelo VARCHAR(100),
     combustible VARCHAR(100),
     motor VARCHAR(100),
-    serie_motor VARCHAR(100),
-    id_usuario SERIAL,
-    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+    serie_motor VARCHAR(100)
 );
 
-
+CREATE TABLE ProblemaMaquina (
+    id_relacion SERIAL PRIMARY KEY,
+    id_problema SERIAL,
+    id_maquina SERIAL,
+    FOREIGN KEY (id_problema) REFERENCES Problemas(id_problema),
+    FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
+);
 
 CREATE TABLE Problemas (
 	id_problema SERIAL PRIMARY KEY,
