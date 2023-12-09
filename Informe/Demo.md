@@ -8,3 +8,5 @@ Demo 02: https://github.com/RenzoAr10/DemoQomak02.git
 https://github.com/erickzok/REPOSITORIOIMPLEMENTACION.git
 
 Video : https://youtu.be/5udQZK7dkSo
+
+Demo 02 (version Final) : https://github.com/erickzok/Demo2ImplementacionEmpleado
