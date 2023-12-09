@@ -34,7 +34,7 @@
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/539938a4-ca7a-4017-bf83-2c34ffec0626)
 
-**Al visualizar a detalle cada servicio podrá ver no solo los atributos realciones al servicio sino tambien las entidad de Repuesto y consumibles relacionadas al servicio , asi como tambien las actividades recomendadas asociadas a la OC ( Orden de compra) , verificando y modificando el estado de estas mismas **
+**Al visualizar a detalle cada servicio podrá ver no solo los atributos realciones al servicio sino tambien las entidad de Repuesto y consumibles relacionadas al servicio , asi como tambien las actividades recomendadas asociadas a la OC ( Orden de compra) , verificando y modificando el estado de estas mismas**
 
 SERV001
 
@@ -44,6 +44,6 @@ SERV002
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/a15c52d5-70e2-4c9c-b24b-750aa13ef035)
 
-**En esta seccion de registro del servicio , el empleado podrá añadir un servicio a la BD , asociandola asi mismo a un tecnico y OC , previa generada , ademas podrá asignar a dicho servicio los repuesto y consumibles empleados para dicho servicio.
+**En esta seccion de registro del servicio , el empleado podrá añadir un servicio a la BD , asociandola asi mismo a un tecnico y OC , previa generada , ademas podrá asignar a dicho servicio los repuesto y consumibles empleados para dicho servicio.**
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/f3b63e12-4672-4751-99e7-1ea5fec8af33)
