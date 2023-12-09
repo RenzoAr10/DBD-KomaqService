@@ -11,7 +11,7 @@ Consultas Temporales: Ofrecen un rendimiento superior en consultas que involucra
 
 Escritura de Alta Velocidad: Diseñadas para manejar un alto volumen de escrituras, lo que es esencial para aplicaciones como monitoreo en tiempo real y telemetría.
 
-## Motor de Base de Datos Elegido: InfluxDB
+## Motor de Base de Datos Elegido
 InfluxDB se destaca entre las bases de datos de series temporales por varias razones:
 
 Estructura de Datos: Utiliza 'measurements' y puntos, donde cada punto consta de tags (para metadatos) y fields (para valores medidos), acompañados de un timestamp. Esto facilita un esquema flexible y eficiente para datos temporales.
