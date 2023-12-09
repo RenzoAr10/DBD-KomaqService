@@ -28,4 +28,8 @@
 
 ![](https://github.com/RenzoAr10/DBD-KomaqService/blob/main/Documentacion%20de%20Soporte/Screenshot_23.png)
 
+# INTERFAZ DEL EMPLEADO
 
+**En esta seccion de Gestionar Servicio , se listaran todos los servicios para que el empleado pueda gestionar el estado (Finalizado, En proceso) , ademas de poder ver a detalle cada uno de los servicios brindados , seleccionando alguna fila correspondiente
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/539938a4-ca7a-4017-bf83-2c34ffec0626)
