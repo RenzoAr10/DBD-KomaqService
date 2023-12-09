@@ -1,6 +1,6 @@
 # InfluxDB
 
-La implementación de InfluxDB en el proyecto implica la transición a una base de datos de series temporales, un tipo especial de base de datos NoSQL. Vamos a explorar el desarrollo conceptual de esta decisión, enfocándonos en el tipo de motor elegido y el motor de base de datos específico.
+La implementación de InfluxDB en el proyecto implica la transición a una base de datos de series temporales, un tipo especial de base de datos NoSQL. Vamos a explorar el desarrollo conceptual de esta decisión, enfocándonos en el tipo de motor elegido y el motor de base de datos específico. 
 
 ## Tipo de Motor Elegido: Base de Datos de Series Temporales
 Las bases de datos de series temporales como InfluxDB se especializan en el manejo de datos que cambian o se registran con el tiempo. A diferencia de los motores de bases de datos tradicionales (como bases de datos relacionales o documentales), las bases de datos de series temporales están optimizadas para:
