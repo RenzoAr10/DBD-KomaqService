@@ -39,7 +39,7 @@ Implementar InfluxDB  podría ofrecer un rendimiento mejorado para datos tempora
 
 La implementación de InfluxDB para el proyecto implica un cambio significativo en la forma en que se almacenen y consulten los datos.
 
-
+ 
 
 ### ¿Cómo se podría implementar InfluxDB en el proyecto?
 
