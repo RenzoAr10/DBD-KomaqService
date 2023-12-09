@@ -39,7 +39,11 @@ Implementar InfluxDB  podría ofrecer un rendimiento mejorado para datos tempora
 
 La implementación de InfluxDB para el proyecto implica un cambio significativo en la forma en que se almacenen y consulten los datos.
 
+
+
 ### ¿Cómo se podría implementar InfluxDB en el proyecto?
+
+
 
 ## Estructura de Datos
 En lugar de tablas con relaciones, se usa "measurements" para almacenar series de tiempo. Cada measurement contiene puntos que consisten en un conjunto de campos y tags, junto con un timestamp.
