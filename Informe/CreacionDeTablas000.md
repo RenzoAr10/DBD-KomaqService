@@ -2,156 +2,156 @@
  
  ```sql
 CREATE TABLE Cliente (
-   id_cliente VARCHAR(20) PRIMARY KEY,
-   nombre VARCHAR(50),
-   apellido_paterno VARCHAR(50),
-   apellido_materno VARCHAR(50),
-   RUC INTEGER,
-   dni VARCHAR(15),
-   telefono INTEGER,
-   email VARCHAR(100),
-   direccion VARCHAR(255),
-   NombreEmpresa VARCHAR(50)
+  id_cliente SERIAL PRIMARY KEY,
+  nombre VARCHAR(50),
+  apellido_paterno VARCHAR(50),
+  apellido_materno VARCHAR(50),
+  RUC INTEGER,
+  dni VARCHAR(15),
+  telefono INTEGER,
+  email VARCHAR(100),
+  direccion VARCHAR(255),
+  NombreEmpresa VARCHAR(50)
 );
 
 CREATE TABLE OrdenCompra (
-   id_orden_compra VARCHAR(20) PRIMARY KEY,
-   estado_oc VARCHAR(100),
-   fecha_oc DATE
+  id_orden_compra SERIAL PRIMARY KEY,
+  estado_oc VARCHAR(100),
+  fecha_oc DATE
 );
 
 CREATE TABLE MaquinaOrdenCompra (
-   id_relacion VARCHAR(20) PRIMARY KEY,
-   id_maquina VARCHAR(20),
-   id_orden_compra VARCHAR(20),
-   FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina),
-   FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
+  id_relacion SERIAL PRIMARY KEY,
+  id_maquina VARCHAR(20),
+  id_orden_compra VARCHAR(20),
+  FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina),
+  FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
 );
 
 CREATE TABLE Usuario (
-   id_usuario VARCHAR(20) PRIMARY KEY,
-   nombre_usuario VARCHAR(50),
-   contrasena_usuario VARCHAR(50),
-   id_cliente VARCHAR(20),
-   FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
+  id_usuario SERIAL PRIMARY KEY,
+  nombre_usuario VARCHAR(50),
+  contrasena_usuario VARCHAR(50),
+  id_cliente VARCHAR(20),
+  FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
 );
 
 CREATE TABLE Empleado (
-   id_empleado VARCHAR(20) PRIMARY KEY,
-   nombre VARCHAR(50),
-   apellido_paterno VARCHAR(50),
-   apellido_materno VARCHAR(50),
-   dni VARCHAR(15),
-   telefono INTEGER,
-   email VARCHAR(100),
-   especializacion VARCHAR(100),
-   cargo VARCHAR(255),
-   id_jefe VARCHAR(20),
-   FOREIGN KEY (id_jefe) REFERENCES Empleado(id_empleado)
+  id_empleado SERIAL PRIMARY KEY,
+  nombre VARCHAR(50),
+  apellido_paterno VARCHAR(50),
+  apellido_materno VARCHAR(50),
+  dni VARCHAR(15),
+  telefono INTEGER,
+  email VARCHAR(100),
+  especializacion VARCHAR(100),
+  cargo VARCHAR(255),
+  id_jefe VARCHAR(20),
+  FOREIGN KEY (id_jefe) REFERENCES Empleado(id_empleado)
 );
 
 CREATE TABLE NomUsuario (
-   id_nomusuario VARCHAR(20) PRIMARY KEY,
-   nombre_usuario VARCHAR(50),
-   contrasena_usuario VARCHAR(50),
-   id_empleado VARCHAR(20),
-   id_servicio VARCHAR(20),
-   FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
-   FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
+  id_nomusuario SERIAL PRIMARY KEY,
+  nombre_usuario VARCHAR(50),
+  contrasena_usuario VARCHAR(50),
+  id_empleado VARCHAR(20),
+  id_servicio VARCHAR(20),
+  FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado),
+  FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
 );
 
 CREATE TABLE Factura (
-   id_factura VARCHAR(20) PRIMARY KEY,
-   forma_pago VARCHAR(100),
-   fecha_emision DATE,
-   costo_total DECIMAL(8,2),
-   id_usuario VARCHAR(20),
-   FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+  id_factura SERIAL PRIMARY KEY,
+  forma_pago VARCHAR(100),
+  fecha_emision DATE,
+  costo_total DECIMAL(8,2),
+  id_usuario VARCHAR(20),
+  FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
 CREATE TABLE Servicio (
-   id_servicio VARCHAR(20) PRIMARY KEY,
-   nombre_servicio VARCHAR(100),
-   fecha_inicio DATE,
-   fecha_fin DATE,
-   costo DECIMAL(8,2),
-   cantidad_servicios INT,
-   subtotal_servicios DECIMAL(8,2),
-   id_orden_compra VARCHAR(20),
-   id_factura VARCHAR(20),
-   id_nomusuario VARCHAR(20),
-   FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra),
-   FOREIGN KEY (id_factura) REFERENCES Factura(id_factura),
-   FOREIGN KEY (id_nomusuario) REFERENCES NomUsuario(id_nomusuario)
+  id_servicio SERIAL PRIMARY KEY,
+  nombre_servicio VARCHAR(100),
+  fecha_inicio DATE,
+  fecha_fin DATE,
+  costo DECIMAL(8,2),
+  cantidad_servicios INT,
+  subtotal_servicios DECIMAL(8,2),
+  id_orden_compra VARCHAR(20),
+  id_factura VARCHAR(20),
+  id_nomusuario VARCHAR(20),
+  FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra),
+  FOREIGN KEY (id_factura) REFERENCES Factura(id_factura),
+  FOREIGN KEY (id_nomusuario) REFERENCES NomUsuario(id_nomusuario)
 );
 
 CREATE TABLE Maquina (
-   id_maquina VARCHAR(20) PRIMARY KEY,
-   nombre_maquina VARCHAR(100),
-   modelo VARCHAR(100),
-   combustible VARCHAR(100),
-   motor VARCHAR(100),
-   serie_motor VARCHAR(100)
+  id_maquina SERIAL PRIMARY KEY,
+  nombre_maquina VARCHAR(100),
+  modelo VARCHAR(100),
+  combustible VARCHAR(100),
+  motor VARCHAR(100),
+  serie_motor VARCHAR(100)
 );
 
 CREATE TABLE ProblemaMaquina (
-   id_relacion VARCHAR(20) PRIMARY KEY,
-   id_problema VARCHAR(20),
-   id_maquina VARCHAR(20),
-   FOREIGN KEY (id_problema) REFERENCES Problemas(id_problema),
-   FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
+  id_relacion SERIAL PRIMARY KEY,
+  id_problema VARCHAR(20),
+  id_maquina VARCHAR(20),
+  FOREIGN KEY (id_problema) REFERENCES Problemas(id_problema),
+  FOREIGN KEY (id_maquina) REFERENCES Maquina(id_maquina)
 );
 
 CREATE TABLE Problemas (
-   id_problema VARCHAR(20) PRIMARY KEY,
-   nombre_problema VARCHAR(100)
+  id_problema SERIAL PRIMARY KEY,
+  nombre_problema VARCHAR(100)
 );
 
 CREATE TABLE Consumible (
-   id_consumible VARCHAR(20) PRIMARY KEY,
-   nombre_consumible VARCHAR(100),
-   fecha_uso DATE,
-   cantidad INT,
-   costo DECIMAL(8,2),
-   id_servicio VARCHAR(20),
-   FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
+  id_consumible SERIAL PRIMARY KEY,
+  nombre_consumible VARCHAR(100),
+  fecha_uso DATE,
+  cantidad INT,
+  costo DECIMAL(8,2),
+  id_servicio VARCHAR(20),
+  FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio)
 );
 
 CREATE TABLE Repuesto (
-   id_repuesto VARCHAR(20) PRIMARY KEY,
-   nombrerepuesto VARCHAR(50),
-   stock INT,
-   precio INT,
-   cantidad INT,
-   subtotal_repuesto INT,
-   id_servicio VARCHAR(20),
-   id_factura VARCHAR(20),
-   FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio),
-   FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
+  id_repuesto SERIAL PRIMARY KEY,
+  nombrerepuesto VARCHAR(50),
+  stock INT,
+  precio INT,
+  cantidad INT,
+  subtotal_repuesto INT,
+  id_servicio VARCHAR(20),
+  id_factura VARCHAR(20),
+  FOREIGN KEY (id_servicio) REFERENCES Servicio(id_servicio),
+  FOREIGN KEY (id_factura) REFERENCES Factura(id_factura)
 );
 
 CREATE TABLE Proveedor (
-   id_proveedor VARCHAR(20) PRIMARY KEY,
-   nombre_empresa VARCHAR(100),
-   telefono_prov INTEGER,
-   direccion_prov VARCHAR(100),
-   email VARCHAR(50)
+  id_proveedor SERIAL PRIMARY KEY,
+  nombre_empresa VARCHAR(100),
+  telefono_prov INTEGER,
+  direccion_prov VARCHAR(100),
+  email VARCHAR(50)
 );
 
 CREATE TABLE Proveedor_Repuesto (
-   id_proveedor VARCHAR(20),
-   id_repuesto VARCHAR(20),
-   PRIMARY KEY (id_proveedor, id_repuesto),
-   FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor),
-   FOREIGN KEY (id_repuesto) REFERENCES Repuesto(id_repuesto)
+  id_proveedor VARCHAR(20),
+  id_repuesto VARCHAR(20),
+  PRIMARY KEY (id_proveedor, id_repuesto),
+  FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor),
+  FOREIGN KEY (id_repuesto) REFERENCES Repuesto(id_repuesto)
 );
 
 CREATE TABLE AccionRecomendada (
-   id_accion VARCHAR(20) PRIMARY KEY,
-   nombre_accion VARCHAR(70),
-   costo_asociado DECIMAL(8,2),
-   id_orden_compra VARCHAR(20),
-   FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
+  id_accion SERIAL PRIMARY KEY,
+  nombre_accion VARCHAR(70),
+  costo_asociado DECIMAL(8,2),
+  id_orden_compra VARCHAR(20),
+  FOREIGN KEY (id_orden_compra) REFERENCES OrdenCompra(id_orden_compra)
 );
 
  ```
@@ -524,11 +524,12 @@ INSERT INTO Servicio (nombre_servicio, fecha_inicio, fecha_fin, costo, cantidad_
 
 -- TABLA CONSUMIBLE
 INSERT INTO Consumible (id_consumible, nombre_consumible, fecha_uso, cantidad, costo, id_servicio) VALUES
-('CONS001', 'Aceite Hidráulico', '2023-04-20', 10, 50, 'SERV001'),
-('CONS002', 'Filtro de Aire', '2023-04-22', 5, 30, 'SERV002'),
-('CONS003', 'Neumáticos', '2023-04-24', 4, 300, 'SERV003'),
-('CONS004', 'Aceite de Transmisión', '2023-04-26', 20, 40, 'SERV004'),
-('CONS005', 'Batería', '2023-04-28', 2, 100, 'SERV005');
+('CONS001', 'Aceite Hidráulico', '2023-04-20', 10, 50, 1),
+('CONS002', 'Filtro de Aire', '2023-04-22', 5, 30, 2),
+('CONS003', 'Neumáticos', '2023-04-24', 4, 300, 1),
+('CONS004', 'Aceite de Transmisión', '2023-04-26', 20, 40, 4),
+('CONS005', 'Batería', '2023-04-28', 2, 100, 2),
+('CONS005', 'Neumáticos', '2023-04-28', 2, 100, 5);
 
 -- TABLA REPUESTO
 INSERT INTO Repuesto (nombrerepuesto, stock, precio, cantidad, subtotal_repuesto, id_servicio, id_factura) VALUES
