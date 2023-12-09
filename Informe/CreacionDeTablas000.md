@@ -12,7 +12,7 @@ CREATE TABLE Cliente (
   email VARCHAR(100),
   direccion VARCHAR(255),
   NombreEmpresa VARCHAR(50)
-);
+); 
 
 CREATE TABLE OrdenCompra (
   id_orden_compra SERIAL PRIMARY KEY,
