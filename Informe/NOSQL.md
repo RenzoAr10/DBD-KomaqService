@@ -6,7 +6,7 @@ La implementación de InfluxDB en el proyecto implica la transición a una base 
 Las bases de datos de series temporales como InfluxDB se especializan en el manejo de datos que cambian o se registran con el tiempo. A diferencia de los motores de bases de datos tradicionales (como bases de datos relacionales o documentales), las bases de datos de series temporales están optimizadas para:
 
 Almacenamiento Eficiente: Pueden almacenar grandes cantidades de puntos de datos temporales de manera eficiente, aprovechando compresiones y estructuras de datos especializadas.
-
+ 
 Consultas Temporales: Ofrecen un rendimiento superior en consultas que involucran intervalos de tiempo, como promedios móviles, sumas acumulativas, y comparaciones a lo largo del tiempo.
 
 Escritura de Alta Velocidad: Diseñadas para manejar un alto volumen de escrituras, lo que es esencial para aplicaciones como monitoreo en tiempo real y telemetría.
