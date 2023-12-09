@@ -30,6 +30,10 @@
 
 # INTERFAZ DEL EMPLEADO
 
-**En esta seccion de Gestionar Servicio , se listaran todos los servicios para que el empleado pueda gestionar el estado (Finalizado, En proceso) , ademas de poder ver a detalle cada uno de los servicios brindados , seleccionando alguna fila correspondiente
+**En esta seccion de Gestionar Servicio , se listaran todos los servicios para que el empleado pueda gestionar el estado (Finalizado, En proceso) , ademas de poder ver a detalle cada uno de los servicios brindados , seleccionando alguna fila correspondiente**
 
 ![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/539938a4-ca7a-4017-bf83-2c34ffec0626)
+
+**Al visualizar a detalle cada servicio podrá ver no solo los atributos realciones al servicio sino tambien las entidad de Repuesto y consumibles relacionadas al servicio , asi como tambien las actividades recomendadas asociadas a la OC ( Orden de compra) , verificando y modificando el estado de estas mismas **
+
+![image](https://github.com/RenzoAr10/DBD-KomaqService/assets/121067321/8fc04e45-39ef-424e-94f2-18b3899a303a)
