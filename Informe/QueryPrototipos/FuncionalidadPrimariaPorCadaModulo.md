@@ -1,3 +1,39 @@
+**Funcionalidad Primaria: Gestión Integral de Servicios**
+
+**Interfaz del Cliente:**
+1. **Página de Inicio:**
+   - Presenta los diferentes servicios ofrecidos por la empresa, junto con los números de contacto.
+   - Proporciona un acceso directo a la sección de Inicio de Sesión.
+
+2. **Inicio de Sesión:**
+   - Permite a los clientes ingresar con una cuenta existente o los dirige a registrarse si no tienen una.
+   - Durante el registro, se asigna un nombre de usuario y una contraseña.
+
+3. **Calendario y Avisos:**
+   - En la página de inicio, muestra un calendario y avisos relevantes para facilitar la interacción del cliente con la plataforma.
+
+4. **Datos Personales:**
+   - Permite a los clientes visualizar y gestionar sus datos personales.
+   - Muestra la lista de órdenes de compra realizadas, con detalles como ID, fecha y estado.
+
+5. **Generar Orden de Compra:**
+   - Permite al cliente crear una orden de compra, especificando la máquina y sus problemas asociados.
+
+**Interfaz del Empleado:**
+1. **Gestionar Servicio:**
+   - Lista todos los servicios para que los empleados gestionen su estado (Finalizado, En proceso).
+   - Permite ver detalles específicos de cada servicio, incluyendo repuestos, consumibles y actividades recomendadas asociadas a la Orden de Compra (OC).
+
+2. **Visualizar Detalles del Servicio:**
+   - Permite a los empleados examinar en detalle cada servicio.
+   - Proporciona información sobre atributos del servicio, entidades de repuesto y consumibles relacionados, así como actividades asociadas a la OC.
+
+3. **Registro del Servicio:**
+   - Permite a los empleados añadir un nuevo servicio a la base de datos.
+   - Asocia el servicio a un técnico y a una OC previamente generada.
+   - Permite asignar repuestos y consumibles utilizados en el servicio.
+
+Esta funcionalidad integrada facilita la interacción entre clientes y empleados, proporcionando una plataforma completa para la gestión de servicios, desde la generación de órdenes de compra hasta el seguimiento detallado de cada servicio prestado.
 
 
 
